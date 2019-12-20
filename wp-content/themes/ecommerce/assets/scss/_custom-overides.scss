@@ -1,0 +1,163 @@
+.text-default{
+  color: $accent_default !important;
+}
+.bck-default{
+  background-color: $accent_default !important;
+}
+.line-height-normal{
+  line-height: normal;
+}
+
+
+.b-header_right{
+  .b-search_icon,.b-wishlist_icon{
+    visibility: hidden;
+
+    @include media-breakpoint-up(lg){
+      visibility: visible;
+    }
+  }
+
+}
+
+
+
+.b-user-block{
+  padding:0 10px;
+  line-height: normal;
+
+  &__image{
+    display: block;
+    width: 35px;
+    padding-top: 8px;
+  }
+}
+.title-saperator{
+  opacity:  0.7;
+  height: 2px;
+  width: 50px;
+}
+.b-logo{
+  max-width: 200px;
+}
+.b-instagram{
+  &_feeds{
+    position: relative;
+  }
+  &_content_inner{
+    z-index: 5;
+    background: #fff;
+    outline: 5px solid rgba(255,255,255,0.5);
+    max-width: 300px;
+    height: 220px;
+    margin: auto;
+    width: 100%;
+    padding: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+}
+
+.b-main_menu {
+  > ul {
+    > li{
+    > a{
+      font-weight: 600;
+    }
+  }
+  }
+}
+.dropdown-menu{
+  margin: 0;
+  padding: 10px 0;
+  min-width: 200px;
+  transition: all 0.25s ease;
+  left: 0;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+
+
+  li{
+    line-height: normal;
+
+    a{
+      padding:15px;
+      font-size: 14px;
+      display: block;
+      text-transform: capitalize;
+      color: $gray-dark;
+
+      &:hover{
+        background-color: $gray-lighter;
+      }
+    }
+  }
+}
+
+.border-right__dashed{
+  position: relative;
+
+  &:after{
+    content: '';
+    display: block;
+    height: 45px;
+    width: 1px;
+    border-right:1px dashed #ccc;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform:translateY(-50%);
+
+  }
+}
+//header
+.b-main_menu{
+  .b-dropdown_wrapper{
+    .b-dropdown_content{
+      ul > .b-dropdown_wrapper{
+        position: static;
+        .b-dropdown_content{
+          top: 0;
+          left: 100%;
+        }
+      }
+    }
+  }
+}
+
+.b-main_menu .dropdown-inner ul>li>a{
+  text-transform: capitalize;
+}
+.bck-cover{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mobile-menu-open{
+  .b-main_menu-wrapper {
+    .dropdown-content{
+      display: none;
+
+      .dropdown-inner{
+        a{
+          .fa{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .b-user-block__content{
+      padding:11px 14px;
+    }
+  }
+}
+
+
+
+
+
+

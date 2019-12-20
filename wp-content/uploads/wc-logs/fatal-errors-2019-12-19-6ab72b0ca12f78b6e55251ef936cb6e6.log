@@ -1,0 +1,375 @@
+2019-12-19T05:53:09+00:00 CRITICAL Uncaught Exception: Invalid product. in C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php:163
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(8): WC_Product->__construct('27')
+#3 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_add_cart_ajax_callback('')
+#4 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#5 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php on line 163
+
+2019-12-19T05:53:24+00:00 CRITICAL Uncaught Exception: Invalid product. in C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php:163
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(8): WC_Product->__construct('27')
+#3 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_add_cart_ajax_callback('')
+#4 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#5 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php on line 163
+
+2019-12-19T05:58:24+00:00 CRITICAL Uncaught Exception: Invalid product. in C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php:163
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(220): WC_Product->__construct('26')
+#3 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#4 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#5 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php on line 163
+
+2019-12-19T05:58:37+00:00 CRITICAL Uncaught Exception: Invalid product. in C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php:163
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\class-wc-data-store.php(159): WC_Product_Data_Store_CPT->read(Object(WC_Product))
+#1 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-product.php(135): WC_Data_Store->read(Object(WC_Product))
+#2 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(8): WC_Product->__construct('26')
+#3 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_add_cart_ajax_callback('')
+#4 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#5 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#6 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\data-stores\class-wc-product-data-store-cpt.php on line 163
+
+2019-12-19T08:49:33+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(57): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T08:49:38+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(57): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T08:49:40+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(57): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T08:49:43+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(57): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T08:49:44+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(57): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T08:57:42+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(57): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T08:59:44+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(59): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:00:43+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(59): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:01:26+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(59): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:02:06+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(60): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:02:46+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(61): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:03:09+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(62): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:03:27+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(62): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:05:01+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(63): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:06:06+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(63): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:06:27+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(63): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:18:35+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(61): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:18:38+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(61): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:19:30+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(61): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:19:38+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(61): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:31:58+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Variable as array in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php:64
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#4 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 64
+
+2019-12-19T09:32:09+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Variable as array in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php:64
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#4 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 64
+
+2019-12-19T09:32:11+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Variable as array in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php:64
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#4 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 64
+
+2019-12-19T09:34:53+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(69): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T09:54:45+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(99): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T10:29:55+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(102): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T10:30:17+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(102): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T10:32:24+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(79): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T10:32:32+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(79): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T10:33:20+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(79): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T10:46:03+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(79): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T11:06:45+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(79): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+
+2019-12-19T11:08:40+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php:6
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(79): get_product_quick_view_html(0, Array)
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#4 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#5 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php on line 6
+

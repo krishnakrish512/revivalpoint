@@ -1,0 +1,62 @@
+.base-toolbar{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 350;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 5px;
+    height: 55px;
+    background-color: #fff;
+    box-shadow: 0 0 9px rgba(0,0,0,.12);
+
+  @include media-breakpoint-up(lg){
+    display: none;
+  }
+
+  &-item{
+    flex: 1 0 20%;
+  }
+
+  &__icon{
+    color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top:10px;
+
+      .icons{
+          font-size: 16px;
+      }
+    &-wrap{
+      position: relative;
+      width: 18px;
+      margin-bottom: 4px;
+    }
+
+    &-count{
+      background-color: #1daaa3;
+      display: inline-block;
+      height: 15px;
+      width: 15px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 15px;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 11px;
+      position: absolute;
+      top: -8px;
+      left: 18px;
+    }
+    &-label{
+      text-transform: capitalize;
+      font-size: 12px;
+    }
+  }
+}

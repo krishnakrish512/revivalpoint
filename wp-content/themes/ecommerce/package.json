@@ -1,0 +1,40 @@
+{
+  "name": "baser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "autoprefixer": "postcss -u autoprefixer -r assets/css/main.css",
+    "scss": "node-sass --source-map true --precision 8 --output-style compressed -o assets/css assets/scss",
+    "watch:scss": "node-sass -w scss --source-map true --precision 8 --output-style compressed -o assets/css assets/scss",
+    "build:js": "uglifyjs scripts/vendor/**.js scripts/*.js -c -m -o assets/js/all.min.js ",
+    "watch:js": "watch \"npm run build:js\" js/src/",
+    "serve": "browser-sync start --proxy \"http://local.procab.com/baser/html\" --files \"assets/css/*.css\"",
+    "build:all": "npm run scss && npm run autoprefixer",
+    "watch:all": "parallelshell \"npm run serve\" \"npm run watch:scss\"",
+    "wp_autoprefixer": "postcss -u autoprefixer -r ../wp-content/themes/baser/assets/css/style.css",
+    "wp_scss": "node-sass --source-map true --precision 8 --output-style compressed -o ../wp-content/themes/baser/assets/css scss",
+    "wp_watch:scss": "node-sass -w scss --source-map true --precision 8 --output-style compressed -o ../wp-content/themes/baser/assets/css scss",
+    "wp_serve": "browser-sync start --proxy \"http://local.procab.com/baser/\" --files \"../wp-content/themes/baser/assets/css/*.css\"",
+    "wp_build:all": "npm run wp_scss && npm run wp_autoprefixer",
+    "wp_watch:all": "parallelshell \"npm run wp_serve\" \"npm run wp_watch:scss\""
+  },
+  "author": "Procab",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.23.6",
+    "node-sass": "^4.7.2",
+    "parallelshell": "^3.0.2",
+    "postcss-cli": "^5.0.0",
+    "uglify-js": "^3.3.12",
+    "watch": "^1.0.2"
+  },
+  "browserslist": [
+    "defaults",
+    "last 8 iOS versions"
+  ],
+  "dependencies": {
+    "swiper-animation": "^2.0.1"
+  }
+}

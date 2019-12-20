@@ -1,0 +1,272 @@
+2019-12-16T05:19:43+00:00 CRITICAL Uncaught Error: Class 'Ecommerce_Responsive_Nav_Menu' not found in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:69
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\archive-product.php(20): get_header('shop')
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 69
+
+2019-12-16T05:19:44+00:00 CRITICAL Uncaught Error: Class 'Ecommerce_Responsive_Nav_Menu' not found in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:69
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 69
+
+2019-12-16T05:19:44+00:00 CRITICAL Uncaught Error: Class 'Ecommerce_Responsive_Nav_Menu' not found in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:69
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 69
+
+2019-12-16T05:19:44+00:00 CRITICAL Uncaught Error: Class 'Ecommerce_Responsive_Nav_Menu' not found in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:69
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 69
+
+2019-12-16T05:19:48+00:00 CRITICAL Uncaught Error: Class 'Ecommerce_Responsive_Nav_Menu' not found in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:69
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\archive-product.php(20): get_header('shop')
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 69
+
+2019-12-16T05:19:48+00:00 CRITICAL Uncaught Error: Class 'Ecommerce_Responsive_Nav_Menu' not found in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:69
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 69
+
+2019-12-16T05:19:48+00:00 CRITICAL Uncaught Error: Class 'Ecommerce_Responsive_Nav_Menu' not found in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:69
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 69
+
+2019-12-16T05:19:48+00:00 CRITICAL Uncaught Error: Class 'Ecommerce_Responsive_Nav_Menu' not found in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:69
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 69
+
+2019-12-16T05:19:49+00:00 CRITICAL Uncaught Error: Class 'Ecommerce_Responsive_Nav_Menu' not found in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:69
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 69
+
+2019-12-16T05:19:49+00:00 CRITICAL Uncaught Error: Class 'Ecommerce_Responsive_Nav_Menu' not found in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:69
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 69
+
+2019-12-16T05:19:49+00:00 CRITICAL Uncaught Error: Class 'Ecommerce_Responsive_Nav_Menu' not found in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:69
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 69
+
+2019-12-16T05:21:16+00:00 CRITICAL Uncaught Error: Call to undefined method Ecommerce_Responsive_Nav_Walker::walk() in C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php:583
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php(217): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#1 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php(69): wp_nav_menu(Object(stdClass))
+#2 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once('C:\\wamp64\\www\\r...')
+#3 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#4 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#5 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\archive-product.php(20): get_header('shop')
+#6 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#7 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#8 C:\wamp64\www\revivalpoint\ind in C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php on line 583
+
+2019-12-16T05:21:17+00:00 CRITICAL Uncaught Error: Call to undefined method Ecommerce_Responsive_Nav_Walker::walk() in C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php:583
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php(217): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#1 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php(69): wp_nav_menu(Object(stdClass))
+#2 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once('C:\\wamp64\\www\\r...')
+#3 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#4 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#5 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#6 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#7 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#8 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp in C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php on line 583
+
+2019-12-16T05:21:17+00:00 CRITICAL Uncaught Error: Call to undefined method Ecommerce_Responsive_Nav_Walker::walk() in C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php:583
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php(217): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#1 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php(69): wp_nav_menu(Object(stdClass))
+#2 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once('C:\\wamp64\\www\\r...')
+#3 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#4 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#5 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#6 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#7 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#8 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp in C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php on line 583
+
+2019-12-16T05:21:17+00:00 CRITICAL Uncaught Error: Call to undefined method Ecommerce_Responsive_Nav_Walker::walk() in C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php:583
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php(217): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#1 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php(69): wp_nav_menu(Object(stdClass))
+#2 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once('C:\\wamp64\\www\\r...')
+#3 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#4 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#5 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#6 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#7 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#8 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp in C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php on line 583
+
+2019-12-16T05:21:20+00:00 CRITICAL Uncaught Error: Call to undefined method Ecommerce_Responsive_Nav_Walker::walk() in C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php:583
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php(217): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#1 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php(69): wp_nav_menu(Object(stdClass))
+#2 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once('C:\\wamp64\\www\\r...')
+#3 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#4 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#5 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\archive-product.php(20): get_header('shop')
+#6 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#7 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#8 C:\wamp64\www\revivalpoint\ind in C:\wamp64\www\revivalpoint\wp-includes\nav-menu-template.php on line 583
+
+2019-12-16T06:54:09+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:40
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\page.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 40
+
+2019-12-16T06:54:09+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Product_Simple as array in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:40
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\index.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 40
+
+2019-12-16T07:09:11+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on array in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:39
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\page.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 39
+
+2019-12-16T07:10:05+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on array in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:42
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\page.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 42
+
+2019-12-16T07:10:08+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on array in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php:42
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once()
+#1 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#2 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\page.php(3): get_header()
+#4 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#7 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php on line 42
+
+2019-12-16T13:43:13+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 30
+
+2019-12-16T13:45:02+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 29
+
+2019-12-16T13:45:08+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 29
+
+2019-12-16T14:38:51+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 29
+
+2019-12-16T14:40:49+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 29
+
+2019-12-16T14:41:25+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 29
+
+2019-12-16T14:41:26+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 29
+
+2019-12-16T14:41:27+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 29
+
+2019-12-16T14:41:27+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 29
+
+2019-12-16T14:41:28+00:00 CRITICAL syntax error, unexpected 'if' (T_IF) in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 29
+
