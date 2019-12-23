@@ -18,7 +18,7 @@
 	<?php wp_head(); ?>
 
 </head>
-<body>
+<body <?php body_class(); ?>>
 <?php
 //foreach ( WC()->cart->get_cart() as $cart_item ) {
 //	var_dump( $cart_item );
