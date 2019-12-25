@@ -32,7 +32,6 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-
 <div class="b-product_single pb-5">
     <div class="container">
         <div class="row clearfix">

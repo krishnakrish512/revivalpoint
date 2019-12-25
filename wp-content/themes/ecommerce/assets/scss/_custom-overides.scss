@@ -156,8 +156,15 @@
   }
 }
 
+//product detail page
+.flex-viewport{
+  margin-bottom: 20px;
+}
+.flex-control-thumbs{
+  margin-left: -10px !important;
+  margin-right: -10px !important;
 
-
-
-
-
+  li{
+    padding:10px;
+  }
+}
