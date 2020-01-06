@@ -31,7 +31,7 @@ get_header( 'shop' );
     <div class="container">
         <div class="row clearfix">
             <div class="col-xl-3 col-lg-3 col-mb-4 col-sm-12 col-xs-12">
-                <div class="b-sidebar">
+                <div class="b-sidebar mt-4">
                     <div class="b-filters_inner_area p-0">
 						<?php
 						/**
@@ -45,7 +45,7 @@ get_header( 'shop' );
                 </div>
             </div>
             <div class="col-xl-9 col-lg-9 col-mb-8 col-sm-12 col-xs-12">
-                <div class="row clearfix b-shop_head">
+                <div class="row clearfix b-shop_head mt-4">
                     <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-6 col-xs-12">
                         <nav class="b-shop_breadcrumb">
 							<?php woocommerce_breadcrumb(); ?>
