@@ -17,15 +17,25 @@
 
 defined( 'ABSPATH' ) || exit;
 
-/*
- * @hooked wc_empty_cart_message - 10
- */
-do_action( 'woocommerce_cart_is_empty' );
-
-if ( wc_get_page_id( 'shop' ) > 0 ) : ?>
-	<p class="return-to-shop">
-		<a class="button wc-backward" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
-			<?php esc_html_e( 'Return to shop', 'woocommerce' ); ?>
-		</a>
-	</p>
-<?php endif; ?>
+?>
+<section id="b-cart_default">
+    <div class="b-cart b-cart_empty">
+        <div class="text-center">
+            <i class="icon-basket icons"></i>
+            <h2><b>YOUR CART IS CURRENTLY EMPTY.</b></h2>
+            <p>
+                Before proceed to checkout you must add some products to your shopping cart.
+                <br>You will find a lot of interesting products on our "Shop" page.
+            </p>
+			<?php
+			if ( wc_get_page_id( 'shop' ) > 0 ) : ?>
+                <p class="return-to-shop">
+                    <a class="btn"
+                       href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
+						<?php esc_html_e( 'Return to shop', 'woocommerce' ); ?>
+                    </a>
+                </p>
+			<?php endif; ?>
+        </div>
+    </div>
+</section>

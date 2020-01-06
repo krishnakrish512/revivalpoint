@@ -6,7 +6,7 @@ while ( have_posts() ):
 	the_post();
 
 	if ( get_the_content() ) {
-		if ( is_cart() ) {
+		if ( is_cart() || is_checkout() ) {
 			?>
             <div class="b-page_title b-page_title_default text-center">
                 <h1 class="b-entry_title"><span><?= get_the_title() ?></span></h1>
