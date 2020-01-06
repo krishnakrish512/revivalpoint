@@ -1,0 +1,53 @@
+2019-12-26T06:55:24+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Post::get_permalink() in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product.php:47
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\template-loader.php(98): include()
+#1 C:\wamp64\www\revivalpoint\wp-blog-header.php(19): require_once('C:\\wamp64\\www\\r...')
+#2 C:\wamp64\www\revivalpoint\index.php(17): require('C:\\wamp64\\www\\r...')
+#3 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product.php on line 47
+
+2019-12-26T09:04:44+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php:97
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#4 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 97
+
+2019-12-26T09:05:43+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php:97
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#4 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 97
+
+2019-12-26T09:06:47+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php:97
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#4 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 97
+
+2019-12-26T09:07:33+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php:97
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#4 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 97
+
+2019-12-26T09:07:33+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on bool in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php:97
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_get_variation_image_ajax_callback('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#4 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 97
+

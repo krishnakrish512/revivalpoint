@@ -32,11 +32,11 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-<div class="b-product_single pb-5">
-    <div class="container">
-        <div class="row clearfix">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="row clearfix b-product-display">
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+    <div class="b-product_single pb-5">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<?php
 					/**
 					 * Hook: woocommerce_before_single_product_summary.
@@ -47,42 +47,43 @@ if ( post_password_required() ) {
 					do_action( 'woocommerce_before_single_product_summary' );
 					?>
                 </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-12 col-xs-12">
-                <div class="b-product_single_summary summary entry-summary">
-					<?php
-					/**
-					 * Hook: woocommerce_single_product_summary.
-					 *
-					 * @hooked woocommerce_template_single_title - 5
-					 * @hooked woocommerce_template_single_rating - 10
-					 * @hooked woocommerce_template_single_price - 10
-					 * @hooked woocommerce_template_single_excerpt - 20
-					 * @hooked woocommerce_template_single_add_to_cart - 30
-					 * @hooked woocommerce_template_single_meta - 40
-					 * @hooked woocommerce_template_single_sharing - 50
-					 * @hooked WC_Structured_Data::generate_product_data() - 60
-					 */
-					do_action( 'woocommerce_single_product_summary' );
-					?>
-                    <div class="b-product_single_option">
-                        <ul class="pl-0 list-unstyled">
-							<?php woocommerce_template_single_meta(); ?>
-                        </ul>
+                <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-12 col-xs-12">
+                    <div class="b-product_single_summary summary entry-summary">
+						<?php
+						/**
+						 * Hook: woocommerce_single_product_summary.
+						 *
+						 * @hooked woocommerce_template_single_title - 5
+						 * @hooked woocommerce_template_single_rating - 10
+						 * @hooked woocommerce_template_single_price - 10
+						 * @hooked woocommerce_template_single_excerpt - 20
+						 * @hooked woocommerce_template_single_add_to_cart - 30
+						 * @hooked woocommerce_template_single_meta - 40
+						 * @hooked woocommerce_template_single_sharing - 50
+						 * @hooked WC_Structured_Data::generate_product_data() - 60
+						 */
+						do_action( 'woocommerce_single_product_summary' );
+						?>
+                        <div class="b-product_single_option">
+                            <ul class="pl-0 list-unstyled">
+								<?php woocommerce_template_single_meta(); ?>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+	<?php
+	/**
+	 * Hook: woocommerce_after_single_product_summary.
+	 *
+	 * @hooked woocommerce_output_product_data_tabs - 10
+	 * @hooked woocommerce_upsell_display - 15
+	 * @hooked woocommerce_output_related_products - 20
+	 */
+	do_action( 'woocommerce_after_single_product_summary' );
+	?>
 </div>
-<?php
-/**
- * Hook: woocommerce_after_single_product_summary.
- *
- * @hooked woocommerce_output_product_data_tabs - 10
- * @hooked woocommerce_upsell_display - 15
- * @hooked woocommerce_output_related_products - 20
- */
-do_action( 'woocommerce_after_single_product_summary' );
-?>
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+

@@ -41,8 +41,21 @@ get_header( 'shop' ); ?>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-mb-4 col-sm-12 col-xs-12">
                     <ul class="list-unstyled pl-0 float-right mb-0">
-                        <li class="d-inline-block mr-2"><i class="fa fa-long-arrow-left"></i></li>
-                        <li class="d-inline-block"><i class="fa fa-long-arrow-right"></i></li>
+						<?php
+						$previous_product = get_previous_post();
+						$next_product     = get_next_post();
+
+						if ( $previous_product ):
+							?>
+                            <li class="d-inline-block mr-2"><a href="<?= get_permalink( $previous_product->ID ) ?>"><i
+                                            class="fa fa-long-arrow-left"></i></a></li>
+						<?php endif; ?>
+						<?php
+						if ( $next_product ):
+							?>
+                            <li class="d-inline-block"><a href="<?= get_permalink( $next_product->ID ) ?>"><i
+                                            class="fa fa-long-arrow-right"></i></a></li>
+						<?php endif; ?>
                     </ul>
                 </div>
             </div>

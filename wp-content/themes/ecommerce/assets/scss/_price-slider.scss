@@ -1,0 +1,60 @@
+.ui-slider{
+  position: relative;
+  height: 2px;
+  background-color: $gray-light;
+  margin-right: 20px;
+
+  .ui-corner-all{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &-range{
+    height: 2px;
+    background-color: $accent_default;
+  }
+  &-handle{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 0 0 9px rgba(0,0,0,.3);
+    background: #fff;
+    &:focus{
+      outline:none;
+    }
+    &:hover{
+
+    }
+  }
+}
+
+.price_slider_amount{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .price_label{
+    font-weight: 600;
+  }
+}
+
+.b-pagination{
+  .page-numbers{
+    border: 1px solid transparent;
+    border-bottom-color: #B1B1B1;
+    display: inline-block;
+    text-align: center;
+    width: 34px;
+    line-height: 32px;
+    margin-right: 6px;
+    font-size: 16px;
+    color: #000;
+    &:hover,
+    &.current{
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}

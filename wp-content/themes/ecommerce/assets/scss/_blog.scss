@@ -171,17 +171,7 @@
 }
 
 
-/* Pagination */
-.b-pagination{
-	ul{
-		li{
-			display: inline-block;
-			a.b-current_page{background-color: #000; color: #fff;}
-			a{border: 1px solid transparent; border-bottom-color: #B1B1B1; display: inline-block; text-align: center; width: 34px; line-height: 32px; margin-right: 6px; font-size: 16px; color: #000; &:hover{background-color: #000; color: #fff;}}
 
-		}
-	}
-}
 
 .btn-full{background-color: $accent_default; color: #fff; border-color: $accent_default; &:hover{opacity: .8; color: #fff;}}
 .btn-line{border: 2px solid #fff; color: #fff; padding: 10px 40px; background-color: transparent; &:hover{background-color: #000; border-color: #000; color: #fff;}}

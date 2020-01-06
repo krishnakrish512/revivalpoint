@@ -10,8 +10,8 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @package 	WooCommerce/Templates
+ * @see        https://docs.woocommerce.com/document/template-structure/
+ * @package    WooCommerce/Templates
  * @version     3.0.0
  */
 
@@ -21,26 +21,33 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( $related_products ) : ?>
 
-	<section class="related products">
+    <section class="related products" id="b-products">
+        <div class="b-section_title">
+            <h4 class="text-center text-uppercase">
+                RELATED PRODUCTS
+                <span class="b-title_separator"><span></span></span>
+            </h4>
+        </div>
 
-		<h2><?php esc_html_e( 'Related products', 'woocommerce' ); ?></h2>
+        <div class="b-products b-product_grid b-product_grid_four mb-4">
+            <div class="container">
+                <div class="clearfix owl-carousel owl-theme" id="b-related_products">
+					<?php foreach ( $related_products as $related_product ) : ?>
+                        <div>
 
-		<?php woocommerce_product_loop_start(); ?>
+							<?php
+							$post_object = get_post( $related_product->get_id() );
 
-			<?php foreach ( $related_products as $related_product ) : ?>
+							setup_postdata( $GLOBALS['post'] =& $post_object );
 
-				<?php
-				 	$post_object = get_post( $related_product->get_id() );
+							wc_get_template_part( 'content', 'product' ); ?>
+                        </div>
 
-					setup_postdata( $GLOBALS['post'] =& $post_object );
-
-					wc_get_template_part( 'content', 'product' ); ?>
-
-			<?php endforeach; ?>
-
-		<?php woocommerce_product_loop_end(); ?>
-
-	</section>
+					<?php endforeach; ?>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php endif;
 

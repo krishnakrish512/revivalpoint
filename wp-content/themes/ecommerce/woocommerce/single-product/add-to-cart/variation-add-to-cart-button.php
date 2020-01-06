@@ -11,26 +11,37 @@ defined( 'ABSPATH' ) || exit;
 
 global $product;
 ?>
-<div class="woocommerce-variation-add-to-cart variations_button">
+<div class="woocommerce-variation-add-to-cart variations_button b-product_single_action clearfix">
 	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
 	<?php
 	do_action( 'woocommerce_before_add_to_cart_quantity' );
 
-	woocommerce_quantity_input( array(
-		'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
-		'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
-		'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(), // WPCS: CSRF ok, input var ok.
-	) );
+	//	woocommerce_quantity_input( array(
+	//		'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
+	//		'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
+	//		'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(), // WPCS: CSRF ok, input var ok.
+	//	) );
+	?>
+    <div class="b-quantity pull-left">
+        <input type="button" value="-" class="b-minus">
+        <input type="text" step="1" min="<?= $product->get_min_purchase_quantity() ?>"
+               max="<?= ( $product->get_max_purchase_quantity() != - 1 ) ? $product->get_max_purchase_quantity() : '' ?>"
+               name="b-quantity" value="1" title="Qty"
+               class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+        <input type="button" value="+" class="b-plus">
+    </div>
+	<?php
 
 	do_action( 'woocommerce_after_add_to_cart_quantity' );
 	?>
 
-	<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+    <button type="submit"
+            class="single_add_to_cart_button button alt text-uppercase pull-left btn"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
 
 	<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 
-	<input type="hidden" name="add-to-cart" value="<?php echo absint( $product->get_id() ); ?>" />
-	<input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>" />
-	<input type="hidden" name="variation_id" class="variation_id" value="0" />
+    <input type="hidden" name="add-to-cart" value="<?php echo absint( $product->get_id() ); ?>"/>
+    <input type="hidden" name="product_id" value="<?php echo absint( $product->get_id() ); ?>"/>
+    <input type="hidden" name="variation_id" class="variation_id" value="0"/>
 </div>

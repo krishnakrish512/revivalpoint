@@ -24,7 +24,13 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<div class="col-xl-4 col-lg-4 col-mb-4 col-sm-6 col-xs-12 <?php wc_product_class( '', $product ); ?>">
+<?php
+if ( is_shop() || is_archive() ):
+	?>
+    <div class="col-xl-4 col-lg-4 col-mb-4 col-sm-6 col-xs-12 <?php wc_product_class( '', $product ); ?>">
+<?php
+endif;
+?>
     <div class="b-product_grid_single">
 		<?php
 		/**
@@ -101,4 +107,9 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 		//		do_action( 'woocommerce_after_shop_loop_item' );
 		?>
     </div>
-</div>
+<?php
+if ( is_shop() || is_archive() ):
+	?>
+    </div>
+<?php
+endif;
