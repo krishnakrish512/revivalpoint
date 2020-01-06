@@ -6,8 +6,19 @@ while ( have_posts() ):
 	the_post();
 
 	if ( get_the_content() ) {
-		echo "<h1>" . get_the_title() . "</h1>";
-
+		if ( is_cart() ) {
+			?>
+            <div class="b-page_title b-page_title_default text-center">
+                <h1 class="b-entry_title"><span><?= get_the_title() ?></span></h1>
+                <div class="b-breadcrumbs">
+                    <a href="<?= get_home_url() ?>">Home</a>
+                    <span><?= get_the_title() ?></span>
+                </div>
+            </div>
+			<?php
+		} else {
+			echo "<h1>" . get_the_title() . "</h1>";
+		}
 		the_content();
 	}
 
