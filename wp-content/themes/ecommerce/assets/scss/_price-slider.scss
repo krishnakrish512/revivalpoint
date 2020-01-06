@@ -40,21 +40,3 @@
   }
 }
 
-.b-pagination{
-  .page-numbers{
-    border: 1px solid transparent;
-    border-bottom-color: #B1B1B1;
-    display: inline-block;
-    text-align: center;
-    width: 34px;
-    line-height: 32px;
-    margin-right: 6px;
-    font-size: 16px;
-    color: #000;
-    &:hover,
-    &.current{
-      background-color: #000;
-      color: #fff;
-    }
-  }
-}
