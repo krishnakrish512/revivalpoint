@@ -48,12 +48,12 @@ foreach ( $best_selling_ids as $product_id ) {
 
 					$thumbnail_id = get_term_meta( $category_id, 'thumbnail_id', true );
 					?>
-                    <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-6 col-xs-12">
-                        <div class="b-featured_cat_in mb-4 mb-sm-0">
+                    <div class="col-xl-3 col-lg-3 col-mb-3 col-sm-3 col-xs-12">
+                        <div class="b-featured_cat_in mb-4">
                             <a href="<?= get_category_link( $category_id ) ?>">
 								<?php
 								$image = wp_get_attachment_image_url( $thumbnail_id, 'full' );
-								$image = getResizedImage( $image );
+								$image = getResizedImage( $image, [ 273, 273 ] );
 								echo \NextGenImage\getWebPHTML( $image['webp'], $image['orig'], [
 									'class' => 'img-fluid img-fluid-sm d-block',
 									'alt'   => $category['name']
