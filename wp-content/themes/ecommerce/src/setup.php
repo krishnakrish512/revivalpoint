@@ -30,12 +30,9 @@ function ecommerce_scripts() {
 
 	wp_deregister_script( 'jquery' );
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', [], '1.0', false );
-	wp_enqueue_script( 'wc-add-to-cart' );
-	wp_enqueue_script( 'modernizr-script', get_template_directory_uri() . '/assets/js/modernizr-custom.js', [], '1.0', true );
+//	wp_enqueue_script( 'modernizr-script', get_template_directory_uri() . '/assets/js/modernizr-custom.js', [], '1.0', true );
 	wp_enqueue_script( 'tether-script', get_template_directory_uri() . '/assets/js/tether.min.js', [], '1.0', true );
 	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', [], '1.0', true );
-	wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/assets/js/bootstrap.min.js', [], '1.0', true );
-	wp_enqueue_script( 'owl-carousel-script', get_template_directory_uri() . '/assets/js/plugins/owl/owl.carousel.min.js', [], '1.0', true );
 	wp_enqueue_script( 'owl-carousel-script', get_template_directory_uri() . '/assets/js/plugins/owl/owl.carousel.min.js', [], '1.0', true );
 	wp_enqueue_script( 'revolution-tools-script', get_template_directory_uri() . '/assets/js/plugins/revolution/jquery.themepunch.tools.min.js', [], '1.0', true );
 	wp_enqueue_script( 'revolution-script', get_template_directory_uri() . '/assets/js/plugins/revolution/jquery.themepunch.revolution.min.js', [], '1.0', true );
@@ -45,11 +42,11 @@ function ecommerce_scripts() {
 	wp_enqueue_script( 'revolution-slideanims-script', get_template_directory_uri() . '/assets/js/plugins/revolution/revolution.extension.slideanims.min.js', [], '1.0', true );
 
 	if ( is_product() ) {
+		wp_enqueue_script( 'owl-carousel-thumbs-script', get_template_directory_uri() . '/assets/js/plugins/owl/owl.carousel2.thumbs.js', [], '1.0', true );
 		wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/assets/js/plugins/slick/slick.js', [], '1.0', true );
 		wp_enqueue_script( 'jquery-zoomit-script', get_template_directory_uri() . '/assets/js/plugins/zoomit/jquery.zoomit.min.js', [], '1.0', true );
 		wp_enqueue_script( 'lightcase-script', get_template_directory_uri() . '/assets/js/plugins/lightcase/lightcase.js', [], '1.0', true );
 		wp_enqueue_script( 'masonry-script', get_template_directory_uri() . '/assets/js/plugins/masonry/masonry.min.js', [], '1.0', true );
-
 	}
 
 	wp_enqueue_script( 'ecommerce-script', get_template_directory_uri() . '/assets/js/custom.js', [], '1.0', true );
