@@ -36,7 +36,11 @@ get_header( 'shop' ); ?>
             <div class="row clearfix">
                 <div class="col-xl-8 col-lg-8 col-mb-8 col-sm-12 col-xs-12">
                     <div class="b-breadcrumbs">
-						<?php woocommerce_breadcrumb(); ?>
+						<?php woocommerce_breadcrumb( [
+							'delimiter'   => '',
+							'wrap_before' => '<nav class="b-shop_breadcrumb">',
+							'wrap_after'  => '</nav>'
+						] ); ?>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-mb-4 col-sm-12 col-xs-12">
