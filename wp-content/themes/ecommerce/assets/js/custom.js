@@ -1091,6 +1091,9 @@ var App = (function(window){
 $(document).ready(function($) {
     App.init();
 
+    $('select').niceSelect();
+
+
     /* ToolTip */
     $('[data-toggle="tooltip"]').tooltip();
 
@@ -1451,6 +1454,7 @@ $(document).ready(function($) {
 
 
 $(window).on("load", function () {
+
     $(window).scroll(function () {
         var aTop = 400;
         if ($("#b-promo_popup").length > 0) {
