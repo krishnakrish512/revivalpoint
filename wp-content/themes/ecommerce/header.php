@@ -94,6 +94,9 @@
                             <i class="icon-magnifier icons"></i>
                         </a>
                     </div>
+                    <div class="b-wishlist_icon hidden-sm-down hidden-md-down">
+						<?php echo do_shortcode( "[ti_wishlist_products_counter]" ); ?>
+                    </div>
                     <div class="b-cart_basket pr-0">
                         <a href="javascript:void(0);" id="b-mini_cart" class="d-inline-block">
                             <i class="icon-basket icons"></i>
