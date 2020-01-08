@@ -52,3 +52,7 @@ Stack trace:
 #4 {main}
   thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 106
 
+2020-01-08T05:46:54+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\revivalpoint\wp-content\themes\ecommerce\partials\flexible-content\top_categories.php on line 4
+
+2020-01-08T11:46:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\revivalpoint\wp-includes\wp-db.php on line 2030
+
