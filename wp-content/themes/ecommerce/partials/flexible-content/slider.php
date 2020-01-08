@@ -6,11 +6,10 @@ $image = getResizedImage( $image, [ 1900, 400 ] );
     <div id="b-home_01_slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
         <ul>
 			<?php
-			$count = 1;
 			while ( have_rows( 'slider' ) ):
 				the_row();
 				?>
-                <li data-index="<?= ( $count == 1 ) ? 'rs-30' : 'rs-6' ?>" data-transition="zoomout"
+                <li data-transition="zoomout"
                     data-slotamount="default" data-hideafterloop="0"
                     data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
                     data-masterspeed="2000" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500"
@@ -86,8 +85,7 @@ $image = getResizedImage( $image, [ 1900, 400 ] );
                            style="background-color: #000; color: #fff;"><?= get_sub_field( 'link_text' ) ?></a>
                     </div>
                 </li>
-				<?php
-				$count ++;
+			<?php
 			endwhile;
 			?>
         </ul>

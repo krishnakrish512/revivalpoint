@@ -166,6 +166,7 @@ function get_product_quick_view_html( $product_id, $variation = [] ) {
 							endforeach;
 							?>
                         </li>
+                        <li><?php ecommerce_product_sharing( $product->get_id() ); ?></li>
                     </ul>
                 </div>
             </div>
