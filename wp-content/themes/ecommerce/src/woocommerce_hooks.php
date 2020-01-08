@@ -30,13 +30,14 @@ function ecommerce_product_sharing() {
 	$facebook_url = "https://www.facebook.com/sharer.php?u=" . $product->get_permalink();
 	$twitter_url  = add_query_arg(
 		[
-			'text' => urlencode( $product->get_title() ),
-			'url'  => $product->get_permalink()
+			'text'     => urlencode( $product->get_title() ),
+			'url'      => $product->get_permalink(),
+			'hashtags' => 'revivalpoint'
 		],
-		"https://www.twitter.com/share?"
+		"https://www.twitter.com/intent/tweet?"
 	);
 
-	$mail_body = $product->get_short_description() . " For deatils, link here : " . $product->get_permalink();
+	$mail_body = $product->get_short_description() . " For details, link here : " . $product->get_permalink();
 
 	$gmail_url = add_query_arg(
 		[

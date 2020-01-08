@@ -52,3 +52,39 @@ Stack trace:
 #4 {main}
   thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php on line 106
 
+2020-01-08T07:27:19+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on string in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\helper.php:36
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_share_meta('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(2879): do_action('wp_head')
+#4 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php(18): wp_head()
+#5 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#7 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#8 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product.php(22): get_header('shop') in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\helper.php on line 36
+
+2020-01-08T07:27:51+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on string in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\helper.php:37
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_share_meta('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(2879): do_action('wp_head')
+#4 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php(18): wp_head()
+#5 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#7 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#8 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product.php(22): get_header('shop') in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\helper.php on line 37
+
+2020-01-08T07:28:13+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on string in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\helper.php:37
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_share_meta('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(2879): do_action('wp_head')
+#4 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\header.php(18): wp_head()
+#5 C:\wamp64\www\revivalpoint\wp-includes\template.php(722): require_once('C:\\wamp64\\www\\r...')
+#6 C:\wamp64\www\revivalpoint\wp-includes\template.php(671): load_template('C:\\wamp64\\www\\r...', true)
+#7 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
+#8 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product.php(22): get_header('shop') in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\helper.php on line 37
+
