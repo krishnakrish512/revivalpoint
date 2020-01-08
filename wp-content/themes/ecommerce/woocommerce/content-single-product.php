@@ -68,6 +68,7 @@ if ( post_password_required() ) {
                             <ul class="pl-0 list-unstyled">
                                 <li><?php echo do_shortcode( "[ti_wishlists_addtowishlist]" ); ?></li>
 								<?php woocommerce_template_single_meta(); ?>
+                                <li><?php woocommerce_template_single_sharing() ?></li>
                             </ul>
                         </div>
                     </div>
