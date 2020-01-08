@@ -1259,11 +1259,9 @@ $(document).ready(function ($) {
             let productId = $('.quick-add-to-cart').data('product_id');
 
             let variation = {};
-            for (let key in selects) {
-                if (selects.hasOwnProperty(key)) {
-                    variation[selects[key].name] = selects[key].value;
-                }
-            }
+            selects.each(function (key, element) {
+                variation[element.name] = element.value;
+            });
 
             variation = JSON.stringify(variation);
 

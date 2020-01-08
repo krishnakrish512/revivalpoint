@@ -88,3 +88,91 @@ Stack trace:
 #7 C:\wamp64\www\revivalpoint\wp-includes\general-template.php(41): locate_template(Array, true)
 #8 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product.php(22): get_header('shop') in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\helper.php on line 37
 
+2020-01-08T10:33:20+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on null in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php:30
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_product_sharing('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product\share.php(24): do_action('woocommerce_sha...')
+#4 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1600): wc_get_template('single-product/...')
+#6 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php(169): woocommerce_template_single_sharing()
+#7 C:\wamp64\www\revivalpoint\wp-content\themes\ecommer in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php on line 30
+
+2020-01-08T10:33:52+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on null in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php:30
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_product_sharing('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product\share.php(24): do_action('woocommerce_sha...')
+#4 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1600): wc_get_template('single-product/...')
+#6 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php(169): woocommerce_template_single_sharing()
+#7 C:\wamp64\www\revivalpoint\wp-content\themes\ecommer in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php on line 30
+
+2020-01-08T10:35:07+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on null in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php:30
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php(169): ecommerce_product_sharing()
+#1 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\ajax_product.php(56): get_product_quick_view_html('16')
+#2 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_quick_view_ajax_callback('')
+#3 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#4 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#5 C:\wamp64\www\revivalpoint\wp-admin\admin-ajax.php(175): do_action('wp_ajax_ecommer...')
+#6 {main}
+  thrown in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php on line 30
+
+2020-01-08T10:35:47+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on null in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php:32
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_product_sharing('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product\share.php(24): do_action('woocommerce_sha...')
+#4 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1600): wc_get_template('single-product/...')
+#6 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php(169): woocommerce_template_single_sharing()
+#7 C:\wamp64\www\revivalpoint\wp-content\themes\ecommer in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php on line 32
+
+2020-01-08T10:36:58+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on null in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php:33
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_product_sharing('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product\share.php(24): do_action('woocommerce_sha...')
+#4 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1600): wc_get_template('single-product/...')
+#6 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php(169): woocommerce_template_single_sharing()
+#7 C:\wamp64\www\revivalpoint\wp-content\themes\ecommer in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php on line 33
+
+2020-01-08T10:38:46+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on null in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php:33
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_product_sharing('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product\share.php(24): do_action('woocommerce_sha...')
+#4 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1600): wc_get_template('single-product/...')
+#6 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php(169): woocommerce_template_single_sharing()
+#7 C:\wamp64\www\revivalpoint\wp-content\themes\ecommer in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php on line 33
+
+2020-01-08T10:54:30+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on null in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php:33
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_product_sharing('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product\share.php(24): do_action('woocommerce_sha...')
+#4 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1600): wc_get_template('single-product/...')
+#6 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php(169): woocommerce_template_single_sharing()
+#7 C:\wamp64\www\revivalpoint\wp-content\themes\ecommer in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php on line 33
+
+2020-01-08T10:54:32+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on null in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php:33
+Stack trace:
+#0 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(288): ecommerce_product_sharing('')
+#1 C:\wamp64\www\revivalpoint\wp-includes\class-wp-hook.php(312): WP_Hook->apply_filters('', Array)
+#2 C:\wamp64\www\revivalpoint\wp-includes\plugin.php(478): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product\share.php(24): do_action('woocommerce_sha...')
+#4 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include('C:\\wamp64\\www\\r...')
+#5 C:\wamp64\www\revivalpoint\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1600): wc_get_template('single-product/...')
+#6 C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\product.php(169): woocommerce_template_single_sharing()
+#7 C:\wamp64\www\revivalpoint\wp-content\themes\ecommer in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\src\woocommerce_hooks.php on line 33
+

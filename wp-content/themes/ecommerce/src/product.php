@@ -166,17 +166,6 @@ function get_product_quick_view_html( $product_id, $variation = [] ) {
 							endforeach;
 							?>
                         </li>
-                        <li>
-                            <b>Share</b>:
-                            <span class="b-share_product">
-                                    <a href="#" class="fa fa-facebook"></a>
-                                    <a href="#" class="fa fa-twitter"></a>
-                                    <a href="#" class="fa fa-instagram"></a>
-                                    <a href="#" class="fa fa-envelope"></a>
-                                    <a href="#" class="fa fa-google-plus"></a>
-                                    <a href="#" class="fa fa-pint"></a>
-                                  </span>
-                        </li>
                     </ul>
                 </div>
             </div>
