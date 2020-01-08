@@ -1223,6 +1223,8 @@ $(document).ready(function ($) {
                 //initalize the product image slider
                 ProductPopupSlider();
 
+                $('select').niceSelect();
+
                 //disable add to cart button if all select fields are not selected
                 if (document.getElementsByClassName('variation-select').length) {
                     let selects = document.getElementsByClassName('variation-select');
