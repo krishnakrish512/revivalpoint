@@ -65,8 +65,10 @@ foreach ( $best_selling_ids as $product_id ) {
 								<?php
 								if ( $count == 4 ) {
 									$size = [ 263, 555 ];
-								} else {
+								} else if ( $count == 1 ) {
 									$size = [ 540, 540 ];
+								} else {
+									$size = [ 273, 273 ];
 								}
 								$image = wp_get_attachment_image_url( $thumbnail_id, 'full' );
 								$image = getResizedImage( $image, $size );
