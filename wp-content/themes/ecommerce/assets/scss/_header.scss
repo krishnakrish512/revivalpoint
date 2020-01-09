@@ -167,6 +167,11 @@
     .b-wishlist_icon {
         a {
             position: relative;
+            display: block;
+
+            &::before{
+                font-size: 30px;
+            }
         }
 
         span {
@@ -181,8 +186,8 @@
             @include border-radius(50%);
             font-size: 11px;
             position: absolute;
-            top: -8px;
-            left: 110%;
+            top: 0;
+            right: 0;
         }
     }
 

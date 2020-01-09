@@ -297,7 +297,7 @@
   font-family: "Lora","sans-serif";
 }
 .stock{
- font-weight: 600;
+  font-weight: 600;
   padding:5px 10px;
   border-width:2px;
   border-style: solid;
@@ -308,9 +308,35 @@
     border-color: $brand-success;
     color: $brand-success;
   }
+
   &.out-of-stock{
     border-color: $brand-danger;
     color: $brand-danger
   }
+
 }
 
+.b-product_single_summary h1{
+  font-size: 28px;
+}
+
+//Banner content
+.tp-parallax-wrap{
+  left:300px !important;
+  max-width: 750px;
+  width:100%;
+
+   div{
+      width: 100%;
+    }
+
+  .tp-caption{
+    text-align: center !important;
+  }
+}
+
+
+.modal.show .modal-dialog{
+  top: 50%;
+  transform: translate(0, -50%);
+}
