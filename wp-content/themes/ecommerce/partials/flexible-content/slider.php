@@ -14,9 +14,10 @@
                     data-param9=""
                     data-param10="" data-description="">
 					<?php
-					if ( get_sub_field( 'link_url' ) ):
+					if ( get_sub_field( 'is_external' ) ):
 						?>
-                        <a href="<?= get_sub_field( 'link_url' ) ?>" class="absolute-link"></a>
+                        <a href="<?= ( get_sub_field( 'external' ) ) ? get_sub_field( 'link_url' ) : get_sub_field( 'page_link' ) ?>"
+                           class="absolute-link"></a>
 					<?php
 					endif;
 					$image = wp_get_attachment_image_url( get_sub_field( 'image' ), 'full' );
