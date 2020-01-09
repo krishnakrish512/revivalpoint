@@ -1147,12 +1147,14 @@ $(document).ready(function ($) {
         let productId = $(this).data('product_id');
         let quantity = $('input[name="b-quantity"]').val();
         let variation = {};
-        let selects = $('select.variation-select');
+        let selects = document.getElementsByClassName('variation-select');
         //get variation attributes from select fields
         if (selects.length) {
-            selects.each(function (key, element) {
-                variation[element.name] = element.value;
-            });
+            for (let key in selects) {
+                if (selects.hasOwnProperty(key)) {
+                    variation[selects[key].name] = selects[key].value;
+                }
+            }
         }
 
         variation = JSON.stringify(variation);
@@ -1225,14 +1227,15 @@ $(document).ready(function ($) {
 
                 //disable add to cart button if all select fields are not selected
                 if (document.getElementsByClassName('variation-select').length) {
-                    let selects = $('select.variation-select');
+                    let selects = document.getElementsByClassName('variation-select');
                     let optionSelected = true;
-                    selects.each(function (key, element) {
-                        if (!element.value) {
-                            optionSelected = false;
+                    for (let key in selects) {
+                        if (selects.hasOwnProperty(key)) {
+                            if (!selects[key].value) {
+                                optionSelected = false;
+                            }
                         }
-                    });
-
+                    }
                     if (!optionSelected) {
                         $('.quick-add-to-cart').attr('disabled', 'disabled');
                     }
@@ -1247,21 +1250,25 @@ $(document).ready(function ($) {
 
 
     $(document).on('change', '.variation-select', function (e) {
-        let selects = $('select.variation-select');
+        let selects = document.getElementsByClassName('variation-select');
         let optionSelected = true;
-        selects.each(function (key, element) {
-            if (!element.value) {
-                optionSelected = false;
+        for (let key in selects) {
+            if (selects.hasOwnProperty(key)) {
+                if (!selects[key].value) {
+                    optionSelected = false;
+                }
             }
-        });
+        }
 
         if (optionSelected) {
             let productId = $('.quick-add-to-cart').data('product_id');
 
             let variation = {};
-            selects.each(function (key, element) {
-                variation[element.name] = element.value;
-            });
+            for (let key in selects) {
+                if (selects.hasOwnProperty(key)) {
+                    variation[selects[key].name] = selects[key].value;
+                }
+            }
 
             variation = JSON.stringify(variation);
 
@@ -1286,17 +1293,17 @@ $(document).ready(function ($) {
                 success: function (response) {
                     $('#b-qucik_view .modal-body').empty();
                     $('#b-qucik_view .modal-body').append(response);
-                    $('select').niceSelect();
                     ProductPopupSlider();
                     if (document.getElementsByClassName('variation-select').length) {
-                        let selects = $('select.variation-select');
+                        let selects = document.getElementsByClassName('variation-select');
                         let optionSelected = true;
-                        selects.each(function (key, element) {
-                            if (!element.value) {
-                                optionSelected = false;
+                        for (let key in selects) {
+                            if (selects.hasOwnProperty(key)) {
+                                if (!selects[key].value) {
+                                    optionSelected = false;
+                                }
                             }
-                        });
-
+                        }
                         if (!optionSelected) {
                             $('.quick-add-to-cart').attr('disabled', 'disabled');
                         }
@@ -1378,13 +1385,14 @@ $(document).ready(function ($) {
             productId = $(this).attr('value');
             variationId = $('input[name=variation_id]').attr('value');
             quantity = $('input[name="b-quantity"]').val();
-            let selects = $('select.single-variation-select');
+            let selects = document.getElementsByClassName('single-variation-select');
             //get variation attributes from select fields
             if (selects.length) {
-                selects.each(function (key, element) {
-                    variation[element.name] = element.value;
-
-                });
+                for (let key in selects) {
+                    if (selects.hasOwnProperty(key)) {
+                        variation[selects[key].name] = selects[key].value;
+                    }
+                }
             }
         }
 
