@@ -26,10 +26,6 @@ function ecommerce_related_products_args( $args ) {
 add_action( 'woocommerce_share', 'ecommerce_single_product_sharing' );
 function ecommerce_single_product_sharing() {
 	global $product;
-	global $post;
-
-//	var_dump( $product );
-//	exit;
 
 	$facebook_url = "https://www.facebook.com/sharer.php?u=" . $product->get_permalink();
 	$twitter_url  = add_query_arg(
