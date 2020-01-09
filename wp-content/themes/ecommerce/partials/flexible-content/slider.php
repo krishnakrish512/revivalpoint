@@ -5,7 +5,9 @@
 			while ( have_rows( 'slider' ) ):
 				the_row();
 				$subtitle = get_sub_field( 'sub_title' );
-				$subtitle = explode( '#', $subtitle );
+				if ( strpos( $subtitle, '#' ) !== false ) {
+					$subtitle = explode( '#', $subtitle );
+				}
 				?>
                 <li data-transition="zoomout"
                     data-slotamount="default" data-hideafterloop="0"
@@ -64,27 +66,33 @@
                          data-paddingright="[0,0,0,0]"
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
-                         style="font-family: Lora; color: #000; line-height: 60px; text-align: center; text-transform: uppercase; z-index: 999; font-weight: 600"><?= $subtitle[0] ?>
+                         style="font-family: Lora; color: #000; line-height: 60px; text-align: center; text-transform: uppercase; z-index: 999; font-weight: 600"><?= ( is_array( $subtitle ) ) ? $subtitle[0] : $subtitle ?>
                     </div>
-                    <div class="tp-caption tp-resizeme"
-                         data-x="['left','left','left','center']"
-                         data-hoffset="['100','100','70','0']"
-                         data-y="['top','top','top','top']"
-                         data-voffset="['300','300','270','180']"
-                         data-fontsize="['30','30','20','20']"
-                         data-width="none"
-                         data-height="none"
-                         data-whitespace="nowrap"
-                         data-type="text"
-                         data-responsive_offset="on"
-                         data-frames='[{"delay":700,"speed":700,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]'
-                         data-textalign="['inherit','inherit','inherit','inherit']"
-                         data-paddingtop="[0,0,0,0]"
-                         data-paddingright="[0,0,0,0]"
-                         data-paddingbottom="[0,0,0,0]"
-                         data-paddingleft="[0,0,0,0]"
-                         style="font-family: Lora; color: #000; line-height: 60px; text-align: center; text-transform: uppercase; z-index: 999; font-weight: 600"><?= $subtitle[1] ?>
-                    </div>
+					<?php
+					if ( is_array( $subtitle ) ):
+						?>
+                        <div class="tp-caption tp-resizeme"
+                             data-x="['left','left','left','center']"
+                             data-hoffset="['100','100','70','0']"
+                             data-y="['top','top','top','top']"
+                             data-voffset="['300','300','270','180']"
+                             data-fontsize="['30','30','20','20']"
+                             data-width="none"
+                             data-height="none"
+                             data-whitespace="nowrap"
+                             data-type="text"
+                             data-responsive_offset="on"
+                             data-frames='[{"delay":700,"speed":700,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"y:50px;opacity:0;","ease":"nothing"}]'
+                             data-textalign="['inherit','inherit','inherit','inherit']"
+                             data-paddingtop="[0,0,0,0]"
+                             data-paddingright="[0,0,0,0]"
+                             data-paddingbottom="[0,0,0,0]"
+                             data-paddingleft="[0,0,0,0]"
+                             style="font-family: Lora; color: #000; line-height: 60px; text-align: center; text-transform: uppercase; z-index: 999; font-weight: 600"><?= $subtitle[1] ?>
+                        </div>
+					<?php
+					endif;
+					?>
                 </li>
 			<?php
 			endwhile;
