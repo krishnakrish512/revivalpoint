@@ -47,7 +47,7 @@ function get_product_quick_view_html( $product_id, $variation = [] ) {
                     <span class="b-amount"><?= $product->get_price_html() ?></span>
                 </p>
                 <div class="b-produt_description">
-					<?= $product->get_description() ?>
+					<?= $product->get_short_description() ?>
                 </div>
                 <div class="b-product_attr">
 					<?php

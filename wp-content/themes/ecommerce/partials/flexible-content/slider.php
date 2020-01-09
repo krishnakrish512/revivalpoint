@@ -13,13 +13,9 @@
                     data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
                     data-param9=""
                     data-param10="" data-description="">
+                    <a href="<?= ( get_sub_field( 'is_external' ) ) ? get_sub_field( 'link_url' ) : get_sub_field( 'page_link' ) ?>"
+                       class="absolute-link"></a>
 					<?php
-					if ( get_sub_field( 'is_external' ) ):
-						?>
-                        <a href="<?= ( get_sub_field( 'external' ) ) ? get_sub_field( 'link_url' ) : get_sub_field( 'page_link' ) ?>"
-                           class="absolute-link"></a>
-					<?php
-					endif;
 					$image = wp_get_attachment_image_url( get_sub_field( 'image' ), 'full' );
 					$image = getResizedImage( $image );
 					?>
