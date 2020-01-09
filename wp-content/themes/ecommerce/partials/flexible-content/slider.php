@@ -1,20 +1,7 @@
 <?php
 $image = wp_get_attachment_image_url( get_sub_field( 'background_image' ), 'full' );
-$image = getResizedImage( $image, [ 1900, 600 ] );
+$image = getResizedImage( $image, [ 1900, 400 ] );
 ?>
-<style>
-    .fullwidthbanner-container {
-        background-image: url("<?= $image['orig'] ?>");
-    }
-
-    .no-webp .fullwidthbanner-container {
-        background-image: url("<?= $image['orig'] ?>");
-    }
-
-    .webp .fullwidthbanner-container {
-        background-image: url("<?= $image['webp'] ?>");
-    }
-</style>
 <div class="rev_slider_wrapper fullwidthbanner-container bck-cover" data-alias="classic4export" data-source="gallery">
     <div id="b-home_01_slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
         <ul>
@@ -22,13 +9,21 @@ $image = getResizedImage( $image, [ 1900, 600 ] );
 			while ( have_rows( 'slider' ) ):
 				the_row();
 				?>
-                <li data-transition="zoomout" data-slotamount="default" data-hideafterloop="0"
+                <li data-transition="zoomout"
+                    data-slotamount="default" data-hideafterloop="0"
                     data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut"
                     data-masterspeed="2000" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1500"
                     data-fsslotamount="7" data-saveperformance="off" data-title="Intro" data-param1="" data-param2=""
                     data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
                     data-param9=""
                     data-param10="" data-description="">
+					<?php
+					$image = wp_get_attachment_image_url( get_sub_field( 'image' ), 'full' );
+					$image = getResizedImage( $image, [ 1900, 1258 ] );
+					?>
+                    <img src="<?= $image['orig'] ?>" alt=""
+                         data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                         data-bgparallax="10" class="rev-slidebg" data-no-retina>
                     <div class="tp-caption  tp-resizeme"
                          data-x="['left','left','left','center']"
                          data-hoffset="['300','300','170','0']"

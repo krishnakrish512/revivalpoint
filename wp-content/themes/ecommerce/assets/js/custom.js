@@ -329,7 +329,7 @@ var App = (function (window) {
                     responsiveLevels: [1240, 1024, 778, 480],
                     visibilityLevels: [1240, 1024, 778, 480],
                     gridwidth: [1240, 1024, 778, 480],
-                    gridheight: [500, 500, 500, 400],
+                    gridheight: [600, 600, 500, 400],
                     lazyType: "none",
                     parallax: {
                         type: "mouse",

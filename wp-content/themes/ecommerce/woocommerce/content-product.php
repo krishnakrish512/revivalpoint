@@ -54,12 +54,6 @@ endif;
 				?>
             </a>
             <div class="b-product_grid_action">
-                <!--                <a href="javascript:void(0)" data-whishurl="whishlist.html" data-toggle="tooltip" data-placement="left"-->
-                <!--                   title="" data-original-title="Add to Whishlist">-->
-                <!--                    <i class="icon-heart icons b-add_to_whish">-->
-                <!--                        <img src="assets/images/products/product_loading.gif" class="g-loading_gif" alt="">-->
-                <!--                    </i>-->
-                <!--                </a>-->
 				<?php echo do_shortcode( "[ti_wishlists_addtowishlist]" ); ?>
                 <a href="javascript:void(0);" data-toggle="modal" data-target="#b-qucik_view"
                    data-product-id="<?= $product->get_id() ?>"
