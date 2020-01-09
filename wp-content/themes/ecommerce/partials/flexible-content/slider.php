@@ -1,13 +1,11 @@
-<?php
-$image = wp_get_attachment_image_url( get_sub_field( 'background_image' ), 'full' );
-$image = getResizedImage( $image, [ 1900, 400 ] );
-?>
 <div class="rev_slider_wrapper fullwidthbanner-container bck-cover" data-alias="classic4export" data-source="gallery">
     <div id="b-home_01_slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
         <ul>
 			<?php
 			while ( have_rows( 'slider' ) ):
 				the_row();
+				$subtitle = get_sub_field( 'sub_title' );
+				$subtitle = explode( '#', $subtitle );
 				?>
                 <li data-transition="zoomout"
                     data-slotamount="default" data-hideafterloop="0"
@@ -18,8 +16,13 @@ $image = getResizedImage( $image, [ 1900, 400 ] );
                     data-param9=""
                     data-param10="" data-description="">
 					<?php
+					if ( get_sub_field( 'link_url' ) ):
+						?>
+                        <a href="<?= get_sub_field( 'link_url' ) ?>" class="absolute-link"></a>
+					<?php
+					endif;
 					$image = wp_get_attachment_image_url( get_sub_field( 'image' ), 'full' );
-					$image = getResizedImage( $image, [ 1900, 1258 ] );
+					$image = getResizedImage( $image );
 					?>
                     <img src="<?= $image['orig'] ?>" alt=""
                          data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
@@ -61,15 +64,14 @@ $image = getResizedImage( $image, [ 1900, 400 ] );
                          data-paddingright="[0,0,0,0]"
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
-                         style="font-family: Lora; color: #000; line-height: 60px; text-align: center; text-transform: uppercase; z-index: 999; font-weight: 600">
-						<?= get_sub_field( 'sub_title' ) ?>
+                         style="font-family: Lora; color: #000; line-height: 60px; text-align: center; text-transform: uppercase; z-index: 999; font-weight: 600"><?= $subtitle[0] ?>
                     </div>
                     <div class="tp-caption tp-resizeme"
                          data-x="['left','left','left','center']"
-                         data-hoffset="['350','350','200','0']"
+                         data-hoffset="['100','100','70','0']"
                          data-y="['top','top','top','top']"
-                         data-voffset="['380','380','330','250']"
-                         data-fontsize="['73','73','73','40']"
+                         data-voffset="['300','300','270','180']"
+                         data-fontsize="['30','30','20','20']"
                          data-width="none"
                          data-height="none"
                          data-whitespace="nowrap"
@@ -80,9 +82,8 @@ $image = getResizedImage( $image, [ 1900, 400 ] );
                          data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]"
                          data-paddingbottom="[0,0,0,0]"
-                         data-paddingleft="[0,0,0,0]">
-                        <a href="<?= get_sub_field( 'link_url' ) ?>" class="btn"
-                           style="background-color: #000; color: #fff;"><?= get_sub_field( 'link_text' ) ?></a>
+                         data-paddingleft="[0,0,0,0]"
+                         style="font-family: Lora; color: #000; line-height: 60px; text-align: center; text-transform: uppercase; z-index: 999; font-weight: 600"><?= $subtitle[1] ?>
                     </div>
                 </li>
 			<?php
