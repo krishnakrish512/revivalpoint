@@ -6,7 +6,7 @@
                 style="text-align: center; margin-bottom: 10px; width: 40px; border-width: 3px; border-color: black;">
             <p><?= get_sub_field( 'description' ) ?></p>
             <div class="text-center">
-                <a href="<?= get_sub_field( 'instagram_link' ) ?>"
+                <a href="<?= get_sub_field( 'instagram_link' ) ?>" target="_blank" rel="noreferrer noopener"
                    class="btn btn-full"><?= get_sub_field( 'link_text' ) ?></a>
             </div>
         </div>

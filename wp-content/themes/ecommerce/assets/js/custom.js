@@ -791,7 +791,7 @@ var App = (function (window) {
         },
 
         SearchToggle: function () {
-            $("#b-search_toggle").on("click", function () {
+            $("#b-search_toggle,#b-search_toggle-mob").on("click", function () {
                 var head_height = $("header").height();
                 var window_height = $(window).height();
                 var popup_height = window_height - head_height;
