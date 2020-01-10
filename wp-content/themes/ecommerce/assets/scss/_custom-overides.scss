@@ -334,9 +334,11 @@
     text-align: center !important;
   }
 }
+.tp-bgimg{
+  height: auto !important;
+  padding-top:50%;
 
-
-.modal.show .modal-dialog{
-  top: 50%;
-  transform: translate(0, -50%);
+  @include media-breakpoint-up(sm){
+    padding-top: 20%;
+  }
 }

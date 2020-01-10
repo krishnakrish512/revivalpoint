@@ -35,6 +35,8 @@ var App = (function (window) {
             this.HomeSliderBoxed();
             this.HomeSliderBoxedFull();
             this.HomeSliderFashion();
+            this.HomeSlider();
+
 
             /* TESTIMONIAL CAROUSEL */
             this.TestimonialCarousel();
@@ -680,6 +682,17 @@ var App = (function (window) {
                         }
                     }
                 })
+            }
+        },
+
+        HomeSlider: function(){
+            if($(".slider").length > 0){
+                $('.slider').slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    speed:1000
+                });
             }
         },
 
