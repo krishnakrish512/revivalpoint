@@ -1,7 +1,7 @@
 <section class="slider full-width-slider">
     <div class="slider-item">
-        <div class="slider-image bck-cover"
-             style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/banner-1.jpg')">
+        <div class="slider-image">
+            <img src="<?= get_template_directory_uri() ?>/assets/images/banner-1.jpg" alt="">
         </div>
         <div class="slider-content text-center">
             <span class="slider-title__sm text-uppercase h5">Beauty Pressed Power</span>
@@ -10,8 +10,8 @@
         <a href="#" class="absolute-link"></a>
     </div>
     <div class="slider-item">
-        <div class="slider-image bck-cover"
-             style="background-image: url('<?= get_template_directory_uri() ?>/assets/images/banner-1.jpg')">
+        <div class="slider-image">
+            <img src="<?= get_template_directory_uri() ?>/assets/images/banner-1.jpg" alt="">
         </div>
         <div class="slider-content text-center">
             <span class="slider-title__sm text-uppercase h5">shop today</span>
