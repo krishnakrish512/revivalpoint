@@ -33,9 +33,9 @@
     position: relative;
   }
   &-image{
-    position: relative;
-    padding-top:20%;
-    height: 0;
+    img{
+      width: 100%;
+    }
 
 
   }
