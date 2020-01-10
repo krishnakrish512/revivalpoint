@@ -83,11 +83,51 @@
     position: absolute;
     @include centre(y);
     z-index: 11 ;
-    &.slick-prev{
-      left: 0;
+    &[class*='slick-'],
+    &[class^='slick-']{
+      cursor: pointer;
+      min-width: 50px;
+      min-height: 50px;
+      position: absolute;
+      display: block;
+      z-index: 100;
+      border-radius: 100%;
+      overflow: hidden;
+      background: rgba(0,0,0,0.10);
+      border:none;
+      font-size: 0;
+      opacity: 0;
+      transition: all 0.25s ease;
+
+
+      &::after{
+        font-family: simple-line-icons;
+        font-size: 22px;
+        display: block;
+      }
+
+      &:focus{
+        outline: none;
+      }
     }
+    &.slick-prev{
+      left: 35px;
+      &::after{
+        content: "\e605";
+      }
+    }
+
     &.slick-next{
-      right: 0;
+      right: 35px;
+      &::after{
+        content: "\e606";
+      }
+    }
+  }
+  &:hover{
+    [class*='slick-']{
+      opacity: 1;
     }
   }
 }
+
