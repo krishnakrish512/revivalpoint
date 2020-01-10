@@ -35,7 +35,7 @@ global $product;
 
 <?php echo wc_get_product_category_list( $product->get_id(), ', ', '<li class="posted_in">' . _n( 'Category:', 'Categories:', count( $product->get_category_ids() ), 'woocommerce' ) . ' ', '</li>' ); ?>
 
-<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<span class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</span>' ); ?>
+<?php echo wc_get_product_tag_list( $product->get_id(), ', ', '<li class="tagged_as">' . _n( 'Tag:', 'Tags:', count( $product->get_tag_ids() ), 'woocommerce' ) . ' ', '</li>' ); ?>
 
 <?php do_action( 'woocommerce_product_meta_end' ); ?>
 
