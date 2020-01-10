@@ -8,8 +8,9 @@
 				<?php
 				$image = wp_get_attachment_image_url( get_sub_field( 'image' ), 'full' );
 				$image = getResizedImage( $image );
-				echo \NextGenImage\getWebPHTML( $image['webp'], $image['orig'] );
+				//				echo \NextGenImage\getWebPHTML( $image['webp'], $image['orig'] );
 				?>
+                <img src="<?= $image['orig'] ?>" alt="">
             </div>
             <div class="slider-content text-center">
                 <span class="slider-title__sm text-uppercase h5"><?= get_sub_field( 'title' ) ?></span>

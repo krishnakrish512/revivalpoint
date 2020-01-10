@@ -15,7 +15,6 @@ $testimonials_query = new WP_Query( $args );
                 <span class="text-center">
                         <span class="d-inline-block bck-default title-saperator"></span>
                     </span>
-
             </h4>
         </div>
         <div class="b-testimonial b-testimonial_small mb-5">
