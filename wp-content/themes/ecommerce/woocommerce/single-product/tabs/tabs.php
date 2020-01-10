@@ -51,7 +51,7 @@ if ( ! empty( $product_tabs ) ) : ?>
                              id="tab-<?php echo esc_attr( $key ); ?>" role="tabpanel"
                              aria-labelledby="tab-title-<?php echo esc_attr( $key ); ?>">
                             <div class="row clearfix">
-                                <div class="col-xl-12 col-lg-12 col-mb-12 col-sm-12 col-xs-12 text-center">
+                                <div class="col-xl-12 col-lg-12 col-mb-12 col-sm-12 col-xs-12">
 									<?php
 									if ( isset( $product_tab['callback'] ) ) {
 										call_user_func( $product_tab['callback'], $key, $product_tab );
