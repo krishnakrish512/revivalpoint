@@ -44,3 +44,16 @@ function ecommerce_share_meta() {
 }
 
 add_action( 'wp_head', 'ecommerce_share_meta' );
+
+
+/**
+ * function to get url of wishlist page
+ *
+ * @return false|string
+ */
+function ecommerce_get_wishlist_page_url() {
+	$wishlist_page = get_page_by_title( 'Wishlist' );
+
+	return get_the_permalink( $wishlist_page->ID );
+
+}

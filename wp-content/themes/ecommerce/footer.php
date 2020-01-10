@@ -96,41 +96,6 @@
 </div>
 <div class="base-toolbar">
     <div class="base-toolbar-item">
-        <a href="index.html" class="base-toolbar__icon">
-                  <span class="base-toolbar__icon-wrap">
-                      <i class="icon-home icons"></i>
-                  </span>
-            <span class="base-toolbar__icon-label">home</span>
-        </a>
-    </div>
-    <div class="base-toolbar-item">
-        <a href="#" class="base-toolbar__icon" id="b-search_toggle-mob">
-                  <span class="base-toolbar__icon-wrap">
-                      <i class="icon-magnifier icons"></i>
-                  </span>
-            <span class="base-toolbar__icon-label">search</span>
-        </a>
-    </div>
-    <div class="base-toolbar-item">
-        <a href="wishlist.html" class="base-toolbar__icon">
-                  <span class="base-toolbar__icon-wrap">
-                      <i class="icon-heart icons"></i>
-                      <span class="base-toolbar__icon-count">3</span>
-                  </span>
-            <span class="base-toolbar__icon-label">wishlist</span>
-        </a>
-    </div>
-    <div class="base-toolbar-item">
-        <a href="my-account.html" class="base-toolbar__icon">
-                  <span class="base-toolbar__icon-wrap">
-                      <i class="icon-user icons"></i>
-                  </span>
-            <span class="base-toolbar__icon-label">profile</span>
-        </a>
-    </div>
-</div>
-<div class="base-toolbar">
-    <div class="base-toolbar-item">
         <a href="<?= get_home_url() ?>" class="base-toolbar__icon">
                   <span class="base-toolbar__icon-wrap">
                       <i class="icon-home icons"></i>
@@ -139,7 +104,7 @@
         </a>
     </div>
     <div class="base-toolbar-item">
-        <a href="#" class="base-toolbar__icon" id="b-search_toggle-mob">
+        <a href="javascript:;" class="base-toolbar__icon" id="b-search_toggle-mob">
                   <span class="base-toolbar__icon-wrap">
                       <i class="icon-magnifier icons"></i>
                   </span>
@@ -147,13 +112,10 @@
         </a>
     </div>
     <div class="base-toolbar-item">
-        <a href="wishlist.html" class="base-toolbar__icon">
-                  <span class="base-toolbar__icon-wrap">
-                      <i class="icon-heart icons"></i>
-                      <span class="base-toolbar__icon-count">3</span>
-                  </span>
-            <span class="base-toolbar__icon-label">wishlist</span>
-        </a>
+        <span class="base-toolbar__icon-wrap">
+            <?php echo do_shortcode( "[ti_wishlist_products_counter]" ); ?>
+        </span>
+        <span class="base-toolbar__icon-label">wishlist</span>
     </div>
     <div class="base-toolbar-item">
         <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>" class="base-toolbar__icon">
