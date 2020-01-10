@@ -60,12 +60,7 @@ if ( empty( $image_ids ) ) {
 			endforeach;
 			?>
         </div>
-        <div class="b-show-product-gallery-wrap">
-            <a href="javaScript:void(0)" data-toggle="modal" data-target="#b-qucik_view"
-               data-product-id="<?= $product->get_id() ?>" class="quick-view">
-                <i class="icon-magnifier-add icons"></i>
-            </a>
-        </div> <!-- /b-show-product-gallery-wrap-->
+        
 
     </div>
     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
@@ -91,9 +86,3 @@ if ( empty( $image_ids ) ) {
         </div><!-- /b-display-item-list-wrapper -->
     </div>
 </div>
-<div class="b-additional-video-wrap">
-    <a href="https://www.youtube.com/embed/XEfi9EH2K-c" class="b-additional-video-btn" data-rel="lightcase">
-        <span class="b-icon"><i class="icon-control-play icons"></i></span>
-        <span>Watch Video</span>
-    </a>
-</div><!-- /b-additional-video-wrap -->
