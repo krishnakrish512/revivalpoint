@@ -47,7 +47,7 @@ function get_product_quick_view_html( $product_id, $variation = [] ) {
                     <span class="b-amount"><?= $product->get_price_html() ?></span>
                 </p>
                 <div class="b-produt_description">
-					<p><?= $product->get_short_description() ?></p>
+                    <p><?= $product->get_short_description() ?></p>
                 </div>
                 <div class="b-product_attr">
 					<?php
@@ -139,9 +139,9 @@ function get_product_quick_view_html( $product_id, $variation = [] ) {
                             <input type="button" value="+" class="b-plus">
                         </div>
                         <button
-                            class="text-uppercase pull-left btn quick-add-to-cart"
-                            data-product_id="<?= ( $parent_product ) ? $parent_product->get_id() : $product->get_id() ?>"
-                            data-product-type="<?= $product->get_type() ?>">Add to cart
+                                class="text-uppercase pull-left btn quick-add-to-cart"
+                                data-product_id="<?= ( $parent_product ) ? $parent_product->get_id() : $product->get_id() ?>"
+                                data-product-type="<?= $product->get_type() ?>">Add to cart
                         </button>
                     </div>
 
@@ -150,7 +150,7 @@ function get_product_quick_view_html( $product_id, $variation = [] ) {
 				if ( ! $product->is_in_stock() ):
 					?>
                     <div>
-                        <p>Out of Stock</p>
+                        <p class="stock out-of-stock">Out of Stock</p>
                     </div>
 				<?php
 				endif;
