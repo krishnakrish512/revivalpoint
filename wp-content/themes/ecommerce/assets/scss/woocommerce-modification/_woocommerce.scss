@@ -1,5 +1,6 @@
 .woocommerce{
   overflow: hidden;
+  margin-bottom: 40px;
   &-MyAccount-navigation{
     max-width: 25%;
     float: left;
@@ -10,6 +11,10 @@
     float: left;
     width: 100%;
   }
+
+  // my account / orders
+  table.my_account_orders{
+    font-size: inherit;
+  }
 }
 
-.woocommerce table.my_account_orders
