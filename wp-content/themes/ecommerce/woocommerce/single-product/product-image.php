@@ -44,6 +44,7 @@ if ( empty( $image_ids ) ) {
 ?>
 <div class="row clearfix b-product-display">
     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 b-display-single">
+		<?php woocommerce_show_product_sale_flash() ?>
         <div class="b-product-carousel owl-carousel" id="bSingleProductCarousel"
              data-slider-id="bSingleProductCarousel">
 			<?php
