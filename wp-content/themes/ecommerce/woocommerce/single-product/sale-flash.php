@@ -10,8 +10,8 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @package 	WooCommerce/Templates
+ * @see        https://docs.woocommerce.com/document/template-structure/
+ * @package    WooCommerce/Templates
  * @version     1.6.4
  */
 
@@ -24,7 +24,9 @@ global $post, $product;
 ?>
 <?php if ( $product->is_on_sale() ) : ?>
 
-	<?php echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale">' . esc_html__( 'Sale!', 'woocommerce' ) . '</span>', $post, $product ); ?>
+	<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="b-product_labels b-labels_rounded b-new">
+                <span class="b-product_label">' . esc_html__( 'Sale!' ) . '</span>
+            </div>', $post, $product ); ?>
 
 <?php endif;
 
