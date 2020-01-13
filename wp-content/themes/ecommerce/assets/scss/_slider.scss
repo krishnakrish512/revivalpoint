@@ -29,6 +29,7 @@
 
 
 .slider{
+  display: none;
   &-item{
     position: relative;
   }
@@ -36,8 +37,6 @@
     img{
       width: 100%;
     }
-
-
   }
   &-content{
     max-width: 700px;
