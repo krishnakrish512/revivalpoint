@@ -1466,12 +1466,12 @@ $(window).on("load", function () {
     $('.slider').on('init', function () {
         $('.slider').css({display: 'block'});
     });
-    if($(".slider").length > 0){
+    if ($(".slider").length > 0) {
         $('.slider').slick({
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            speed:1000
+            speed: 1000
         });
     }
 
