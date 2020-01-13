@@ -6,7 +6,7 @@
                 <div class="b-footer_block">
                     <div class="b-footer_block_in">
                         <p class="text-center mb-0"><img
-                                    src="<?= wp_get_attachment_image_url( get_theme_mod( 'custom_logo' ), 'full' ) ?>"
+                                    src="<?= get_theme_mod( 'footer_logo' ) ?>"
                                     class="d-block m-auto img-fluid" alt="" title="<?= get_bloginfo( 'name' ) ?>"></p>
 
                         <br>

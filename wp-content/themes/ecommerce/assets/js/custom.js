@@ -685,9 +685,6 @@ var App = (function (window) {
             }
         },
 
-        HomeSlider: function(){
-
-        },
 
         FashionTopCat: function () {
             if ($("#b-top_recent").length > 0) {

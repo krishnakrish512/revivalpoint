@@ -40,6 +40,7 @@ $testimonials_query = new WP_Query( $args );
                             </div>
 						<?php
 						endwhile;
+						wp_reset_query();
 						?>
                     </div>
                 </div>
