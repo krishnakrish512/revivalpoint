@@ -271,17 +271,6 @@
       .woocommerce-variation{
         &-price{
           margin-bottom: 15px;
-          .price{
-            font-size: 30px;
-            color: $accent_default;
-            del{
-              color: $gray-100;
-            }
-            ins{
-              text-decoration: none;
-
-            }
-          }
         }
       }
     }
@@ -293,8 +282,23 @@
   }
 }
 
+.price{
+  color: $accent_default;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: $lato_font;
+  del{
+    color: $gray-100;
+    font-size: 20px;
+  }
+  ins{
+    text-decoration: none;
+  }
+}
+
 .woocommerce-Price-amount{
-  font-family: "Lora","sans-serif";
+  font-family: $lato_font;
+  font-weight: 600;
 }
 .stock{
   font-weight: 600;
