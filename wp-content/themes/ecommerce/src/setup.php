@@ -44,11 +44,11 @@ function ecommerce_scripts() {
 	wp_enqueue_script( 'nice-select-script', get_template_directory_uri() . '/assets/js/plugins/nice-select/jquery.nice-select.min.js', [], '1.0', true );
 
 	//if ( is_product() ) {
-		wp_enqueue_script( 'owl-carousel-thumbs-script', get_template_directory_uri() . '/assets/js/plugins/owl/owl.carousel2.thumbs.js', [], '1.0', true );
-		wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/assets/js/plugins/slick/slick.js', [], '1.0', true );
-		wp_enqueue_script( 'jquery-zoomit-script', get_template_directory_uri() . '/assets/js/plugins/zoomit/jquery.zoomit.min.js', [], '1.0', true );
-		wp_enqueue_script( 'lightcase-script', get_template_directory_uri() . '/assets/js/plugins/lightcase/lightcase.js', [], '1.0', true );
-		wp_enqueue_script( 'masonry-script', get_template_directory_uri() . '/assets/js/plugins/masonry/masonry.min.js', [], '1.0', true );
+	wp_enqueue_script( 'owl-carousel-thumbs-script', get_template_directory_uri() . '/assets/js/plugins/owl/owl.carousel2.thumbs.js', [], '1.0', true );
+	wp_enqueue_script( 'slick-script', get_template_directory_uri() . '/assets/js/plugins/slick/slick.js', [], '1.0', true );
+	wp_enqueue_script( 'jquery-zoomit-script', get_template_directory_uri() . '/assets/js/plugins/zoomit/jquery.zoomit.min.js', [], '1.0', true );
+	wp_enqueue_script( 'lightcase-script', get_template_directory_uri() . '/assets/js/plugins/lightcase/lightcase.js', [], '1.0', true );
+	wp_enqueue_script( 'masonry-script', get_template_directory_uri() . '/assets/js/plugins/masonry/masonry.min.js', [], '1.0', true );
 	//}
 
 	wp_enqueue_script( 'ecommerce-script', get_template_directory_uri() . '/assets/js/custom.js', [], '1.0', true );
@@ -75,3 +75,20 @@ function ecommerce_widgets_init() {
 }
 
 add_action( 'widgets_init', 'ecommerce_widgets_init' );
+
+/**
+ * Create Logo Setting and Upload Control
+ */
+function ecommmerce_new_customizer_settings( $wp_customize ) {
+// add a setting for the site logo
+	$wp_customize->add_setting( 'footer_logo' );
+// Add a control to upload the logo
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'footer_logo',
+		[
+			'label'    => 'Footer Logo',
+			'section'  => 'title_tagline',
+			'settings' => 'footer_logo',
+		] ) );
+}
+
+add_action( 'customize_register', 'ecommmerce_new_customizer_settings' );
