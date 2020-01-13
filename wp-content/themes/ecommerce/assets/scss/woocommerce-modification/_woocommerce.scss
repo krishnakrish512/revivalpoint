@@ -1,6 +1,10 @@
 .woocommerce{
-  overflow: hidden;
-  margin-bottom: 40px;
+
+  &.dashboard,
+  &.tinv-wishlist{
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
   &-MyAccount-navigation{
     max-width: 25%;
     float: left;
