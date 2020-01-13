@@ -16,8 +16,8 @@
             <div class="b-footer_column col-md-4 col-sm-12 offset-md-4 text-center">
                 <div class="b-footer_block">
                     <div class="b-footer_block_in">
-                        <p>STORE - worldwide fashion store since 1978. We sell over 1000+ branded products on our
-                            web-site.</p>
+                        <p>Revival Point - Nepal 𝗔𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰 𝗕𝗲𝗮𝘂𝘁𝘆 𝗣𝗿𝗼𝗱𝘂𝗰𝘁𝘀 𝑺𝒌𝒊𝒏𝒄𝒂𝒓𝒆 |
+                            𝑴𝒂𝒌𝒆𝒖𝒑 | 𝑩𝒆𝒂𝒖𝒕𝒚 "𝘽𝙚 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣 𝙆𝙞𝙣𝙙 𝙊𝙛 𝘽𝙚𝙖𝙪𝙩y”</p>
                         <div class="b-contact_info mb-3">
 							<?php
 							$contact = get_field( 'contact', 'option' );
