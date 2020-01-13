@@ -35,7 +35,7 @@ var App = (function (window) {
             this.HomeSliderBoxed();
             this.HomeSliderBoxedFull();
             this.HomeSliderFashion();
-            this.HomeSlider();
+            //this.HomeSlider();
 
 
             /* TESTIMONIAL CAROUSEL */
@@ -686,14 +686,7 @@ var App = (function (window) {
         },
 
         HomeSlider: function(){
-            if($(".slider").length > 0){
-                $('.slider').slick({
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    speed:1000
-                });
-            }
+
         },
 
         FashionTopCat: function () {
@@ -1471,6 +1464,19 @@ $(document).ready(function ($) {
 
 
 $(window).on("load", function () {
+
+
+    $('.slider').on('init', function () {
+        $('.slider').css({display: 'block'});
+    });
+    if($(".slider").length > 0){
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed:1000
+        });
+    }
 
     $(window).scroll(function () {
         var aTop = 400;

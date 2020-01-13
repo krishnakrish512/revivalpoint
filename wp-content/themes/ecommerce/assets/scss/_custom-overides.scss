@@ -342,3 +342,14 @@
     padding-top: 20%;
   }
 }
+
+//modal
+
+.modal.fade .modal-dialog{
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: 0 auto;
+}
+.slider{
+  display: none;
+}

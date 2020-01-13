@@ -47,7 +47,7 @@ function get_product_quick_view_html( $product_id, $variation = [] ) {
                     <span class="b-amount"><?= $product->get_price_html() ?></span>
                 </p>
                 <div class="b-produt_description">
-					<?= $product->get_short_description() ?>
+					<p><?= $product->get_short_description() ?></p>
                 </div>
                 <div class="b-product_attr">
 					<?php
@@ -128,20 +128,23 @@ function get_product_quick_view_html( $product_id, $variation = [] ) {
 					?>
                 </div>
                 <div class="b-product_single_action clearfix <?= ( ! $product->is_in_stock() ) ? "d-none" : "" ?>">
-                    <p><?= $product->get_stock_quantity() ?> in stock</p>
-                    <div class="b-quantity pull-left">
-                        <input type="button" value="-" class="b-minus">
-                        <input type="text" step="1" min="<?= $product->get_min_purchase_quantity() ?>"
-                               max="<?= ( $product->get_max_purchase_quantity() != - 1 ) ? $product->get_max_purchase_quantity() : '' ?>"
-                               name="b-quantity" value="1" title="Qty"
-                               class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
-                        <input type="button" value="+" class="b-plus">
-                    </div>
-                    <button
+                    <p class="stock in-stock"><?= $product->get_stock_quantity() ?> in stock</p>
+                    <div class="clearfix">
+                        <div class="b-quantity pull-left">
+                            <input type="button" value="-" class="b-minus">
+                            <input type="text" step="1" min="<?= $product->get_min_purchase_quantity() ?>"
+                                   max="<?= ( $product->get_max_purchase_quantity() != - 1 ) ? $product->get_max_purchase_quantity() : '' ?>"
+                                   name="b-quantity" value="1" title="Qty"
+                                   class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+                            <input type="button" value="+" class="b-plus">
+                        </div>
+                        <button
                             class="text-uppercase pull-left btn quick-add-to-cart"
                             data-product_id="<?= ( $parent_product ) ? $parent_product->get_id() : $product->get_id() ?>"
                             data-product-type="<?= $product->get_type() ?>">Add to cart
-                    </button>
+                        </button>
+                    </div>
+
                 </div>
 				<?php
 				if ( ! $product->is_in_stock() ):
