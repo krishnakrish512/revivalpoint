@@ -56,8 +56,13 @@ $testimonials_query = new WP_Query( $args );
                         <li>
                             <a href="<?= get_field( 'social_media', 'option' )['instagram'] ?>" target="_self"></a>
                             <div class="wrapp-pics">
-                                <img src="<?= wp_get_attachment_image_url( $image_id, 'full' ) ?>" alt=""
-                                     class="img-fluid d-block">
+								<?php
+								$image = wp_get_attachment_image_url( $image_id, 'full' );
+								$image = getResizedImage( $image, [] );
+								echo \NextGenImage\getWebPHTML( $image['webp'], $image['orig'], [
+									'class' => "img-fluid d-block"
+								] )
+								?>
                                 <div class="hover-mask"></div>
                             </div>
                         </li>
