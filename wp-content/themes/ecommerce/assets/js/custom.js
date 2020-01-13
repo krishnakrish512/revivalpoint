@@ -376,6 +376,11 @@ $(document).ready(function ($) {
         $('select').niceSelect();
     }
 
+    var loc = window.location.href; // returns the full URL
+    if (/my-account/.test(loc)) {
+        $('.woocommerce').addClass('dashboard');
+    }
+
     /* ToolTip */
     $('[data-toggle="tooltip"]').tooltip();
 
