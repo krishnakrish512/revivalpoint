@@ -62,7 +62,7 @@ endif;
                        class="icon-magnifier-add icons" data-original-title="Quick View"></i>
                 </a>
             </div>
-            <span class="b-product_label"><?php woocommerce_show_product_loop_sale_flash() ?>
+			<?php woocommerce_show_product_loop_sale_flash() ?>
         </div>
         <div class="b-product_grid_info">
 			<?php
