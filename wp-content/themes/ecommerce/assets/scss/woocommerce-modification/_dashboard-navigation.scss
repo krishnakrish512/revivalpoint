@@ -1,0 +1,22 @@
+.woocommerce-MyAccount-navigation{
+  &-link{
+    a{
+      color: inherit;
+      padding:8px 10px;
+      display:block;
+      margin-bottom: 5px;
+      border-radius:3px;
+
+      &:hover{
+        color: $accent_default;
+      }
+    }
+    &.is-active{
+      a{
+        background-color: $gray-lighter;
+        color: $accent_default;
+        font-weight: 600;
+      }
+    }
+  }
+}

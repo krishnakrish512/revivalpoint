@@ -1,0 +1,15 @@
+.woocommerce{
+  overflow: hidden;
+  &-MyAccount-navigation{
+    max-width: 25%;
+    float: left;
+    width: 100%;
+  }
+  &-MyAccount-content{
+    max-width: 75%;
+    float: left;
+    width: 100%;
+  }
+}
+
+.woocommerce table.my_account_orders

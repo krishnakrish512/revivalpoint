@@ -355,3 +355,16 @@
   margin: 0 auto;
 }
 
+
+/*.woocommerce{
+  display: flex;
+}*/
+.inline-link{
+  font-weight: 600;
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover{
+    color: $accent_default;
+  }
+}
