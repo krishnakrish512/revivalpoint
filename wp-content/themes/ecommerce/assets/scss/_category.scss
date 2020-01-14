@@ -2,7 +2,7 @@
 	.b-featured_cat_in{
 		position: relative; overflow: hidden;
 		@include media-breakpoint-down(sm){
-			margin-bottom: 15px;
+			margin-bottom: 30px;
 		}
 		img{
 			@extend .d-transition;

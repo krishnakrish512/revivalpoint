@@ -59,7 +59,7 @@
                                 class="img-fluid d-block"
                                 alt=""></a>
                 </div>
-                <div class="b-header_nav b-header_nav_center ml-auto border-right__dashed pr-5 mr-5 hidden-sm-down hidden-md-down">
+                <div class="b-header_nav b-header_nav_center ml-auto border-right__dashed pr-xl-5 mr-xl-5 pr-lg-2 mr-lg-2 hidden-sm-down hidden-md-down">
                     <div class="b-menu_top_bar_container">
 						<?php
 						wp_nav_menu( [
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="b-header_right">
-                    <div class="b-has_sub b-dropdown_wrapper from-bottom b-user-block border-right__dashed pr-5 hidden-sm-down hidden-md-down">
+                    <div class="b-has_sub b-dropdown_wrapper from-bottom b-user-block border-right__dashed pr-xl-5 pr-lg-3 hidden-sm-down hidden-md-down">
                         <div class="b-user-block__image float-left mr-3">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/lady.svg" alt="">
                         </div>
