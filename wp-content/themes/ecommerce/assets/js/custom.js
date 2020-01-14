@@ -172,12 +172,27 @@ var App = (function (window) {
                         },
                         600: {
                             items: 2,
+                            dots: true,
+                            margin: 15,
+                            nav: false,
+                        },
+                        800:{
+                            items:3,
+                            dots: true,
+                            margin: 15,
+                            nav: false,
+                        },
+                        1000: {
+                            items: 4,
+                            dots: true,
+                            margin: 15,
+                            nav: false,
+                        },
+                        1200: {
+                            items: 4,
                             dots: false,
                             margin: 15,
                             nav: true,
-                        },
-                        1000: {
-                            items: 4
                         }
                     }
                 })
