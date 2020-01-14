@@ -45,6 +45,7 @@ get_header( 'shop' );
                 </div>
             </div>
             <div class="col-xl-9 col-lg-9 col-mb-8 col-sm-12 col-xs-12">
+				<?php woocommerce_output_all_notices() ?>
                 <div class="row clearfix b-shop_head mt-4">
                     <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-6 col-xs-12">
                         <nav class="b-shop_breadcrumb">
