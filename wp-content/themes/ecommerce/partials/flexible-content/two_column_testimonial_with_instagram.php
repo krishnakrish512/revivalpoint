@@ -8,7 +8,7 @@ $args = [
 $testimonials_query = new WP_Query( $args );
 ?>
 <div class="container">
-    <div class="row clearfix mb-2">
+    <div class="row clearfix mb-2 align-items-center">
         <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-6 col-xs-12">
             <section id="b-testimonial">
                 <div class="b-section_title">

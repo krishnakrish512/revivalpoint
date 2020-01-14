@@ -356,9 +356,7 @@
 }
 
 
-/*.woocommerce{
-  display: flex;
-}*/
+
 .inline-link{
   font-weight: 600;
   color: inherit;
@@ -367,4 +365,7 @@
   &:hover{
     color: $accent_default;
   }
+}
+.owl-carousel .owl-item{
+  width: 100%;
 }

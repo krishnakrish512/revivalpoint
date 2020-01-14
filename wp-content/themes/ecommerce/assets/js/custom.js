@@ -162,15 +162,19 @@ var App = (function (window) {
             if ($("#b-top_recent").length > 0) {
                 $('#b-top_recent .owl-carousel').owlCarousel({
                     loop: true,
-                    margin: 15,
-                    nav: true,
-                    dots: false,
+
                     responsive: {
                         0: {
-                            items: 1
+                            items: 1,
+                            dots: true,
+                            margin: 0,
+                            nav: false,
                         },
                         600: {
-                            items: 2
+                            items: 2,
+                            dots: false,
+                            margin: 15,
+                            nav: true,
                         },
                         1000: {
                             items: 4

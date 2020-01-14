@@ -21,16 +21,19 @@ $featured_products = get_posts( $args );
         <p class="text-center"><?= get_sub_field( 'sub_heading' ) ?></p>
     </div>
     <div class="container pt-2 pb-5">
-        <div class="row clearfix b-cat_blocks owl-carousel owl-theme">
-			<?php
-			foreach ( $featured_products as $product_id ):
-				?>
-                <div class="owl-item">
-					<?php get_single_product_html( $product_id ) ?>
-                </div>
-			<?php
-			endforeach;
-			?>
+        <div class="row clearfix">
+            <div class="b-cat_blocks owl-carousel owl-theme px-3">
+                <?php
+                foreach ( $featured_products as $product_id ):
+                    ?>
+                    <div class="owl-item">
+                        <?php get_single_product_html( $product_id ) ?>
+                    </div>
+                <?php
+                endforeach;
+                ?>
+            </div>
+
         </div>
     </div>
 </section>
