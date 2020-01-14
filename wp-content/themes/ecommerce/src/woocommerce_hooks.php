@@ -63,6 +63,9 @@ function ecommerce_single_product_sharing() {
 	<?php
 }
 
+/**
+ * for product sharing in product quick view
+ */
 function ecommerce_product_sharing( $product_id ) {
 	$product = wc_get_product( $product_id );
 
@@ -101,3 +104,24 @@ function ecommerce_product_sharing( $product_id ) {
                           </span>
 	<?php
 }
+
+
+/**
+ * update wordpress tag cloud args
+ *
+ * @param $args
+ *
+ * @return array
+ */
+function ecommerce_widget_tag_cloud_args( $args ) {
+
+	$my_args = array(
+		'smallest' => '14',
+		'unit'     => 'px'
+	);
+	$args    = wp_parse_args( $args, $my_args );
+
+	return $args;
+}
+
+add_filter( 'widget_tag_cloud_args', 'ecommerce_widget_tag_cloud_args' );
