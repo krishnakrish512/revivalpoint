@@ -33,6 +33,29 @@
       .icons{
           font-size: 16px;
       }
+    .wishlist_products_counter{
+      position: relative;
+      &::before{
+        font-size: 22px !important;
+        line-height: normal !important;
+        margin-right: 0 !important;
+        color: rgba(0,0,0,0.9);
+      }
+
+      &_number{
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background-color: $accent_default;
+        color: $white;
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+
     &-wrap{
       position: relative;
       margin-bottom: 4px;

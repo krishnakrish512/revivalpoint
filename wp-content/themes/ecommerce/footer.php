@@ -112,10 +112,13 @@
         </a>
     </div>
     <div class="base-toolbar-item">
-        <span class="base-toolbar__icon-wrap">
+        <div class="base-toolbar__icon">
+            <span class="base-toolbar__icon-wrap">
             <?php echo do_shortcode( "[ti_wishlist_products_counter]" ); ?>
         </span>
-        <span class="base-toolbar__icon-label">wishlist</span>
+            <span class="base-toolbar__icon-label">wishlist</span>
+        </div>
+
     </div>
     <div class="base-toolbar-item">
         <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>" class="base-toolbar__icon">
