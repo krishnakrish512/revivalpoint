@@ -32,6 +32,7 @@ get_header( 'shop' );
         <div class="row clearfix">
             <div class="col-xl-3 col-lg-3 col-mb-4 col-sm-12 col-xs-12">
                 <div class="b-sidebar mob-sidebar mt-4">
+                    <span class="sidebar-close"><i class="icon icon-close"></i></span>
                     <div class="b-filters_inner_area p-0">
 						<?php
 						/**
@@ -57,8 +58,8 @@ get_header( 'shop' );
                         </nav>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-6 col-xs-12 text-right">
-                        <div class="d-flex justify-content-between">
-                            <div class="filter-btn">Filter</div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="filter-btn"><i class="icon icon-menu"></i>Filter</div>
                             <div class="b-filter_button d-inline-block align-self-end">
 								<?php woocommerce_catalog_ordering() ?>
                             </div>
