@@ -163,17 +163,18 @@ var App = (function (window) {
                 $('#b-top_recent .owl-carousel').owlCarousel({
                     loop: true,
 
-                    nav: true,
                     responsive: {
                         0: {
-                            items: 2,
+                            items: 1,
                             dots: true,
-                            margin: 0
+                            margin: 0,
+                            nav: false,
                         },
                         600: {
                             items: 2,
                             dots: false,
                             margin: 15,
+                            nav: true,
                         },
                         1000: {
                             items: 4
