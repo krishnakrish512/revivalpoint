@@ -391,6 +391,10 @@ var App = (function (window) {
 $(document).ready(function ($) {
     App.init();
 
+    $('.filter-btn').on('click', function(){
+        $('.mob-sidebar').addClass('is-open');
+    })
+
     if ($('select').length) {
         $('select').niceSelect();
     }
