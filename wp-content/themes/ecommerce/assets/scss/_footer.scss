@@ -17,8 +17,8 @@
 	.b-social-icons{
 		display: block; list-style: none; line-height: 1; padding: 0;
 		li{
-			color: rgba(255,255,255,.6); margin: 5px 5px 0 5px; display: inline-block;
-			a{font-size: 0; color: rgba(255,255,255,.6); i{font-size: 18px;} &:hover{color: $white;}}
+			color: rgba(255,255,255,.6); margin: 5px 10px 0 5px; display: inline-block;
+			a{font-size: 0; color: rgba(255,255,255,.6); i{font-size: 22px;} &:hover{color: $white;}}
 		}
 		li:first-child {margin-left: 0; padding-left: 0;}
 	}

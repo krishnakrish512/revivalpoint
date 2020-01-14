@@ -35,8 +35,8 @@
       }
     &-wrap{
       position: relative;
-      width: 18px;
       margin-bottom: 4px;
+      display: block;
     }
 
     &-count{
@@ -57,6 +57,7 @@
     &-label{
       text-transform: capitalize;
       font-size: 12px;
+      display: block;
     }
   }
 }

@@ -1,0 +1,24 @@
+.woocommerce{
+
+  &.dashboard,
+  &.tinv-wishlist{
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
+  &-MyAccount-navigation{
+    max-width: 25%;
+    float: left;
+    width: 100%;
+  }
+  &-MyAccount-content{
+    max-width: 75%;
+    float: left;
+    width: 100%;
+  }
+
+  // my account / orders
+  table.my_account_orders{
+    font-size: inherit;
+  }
+}
+
