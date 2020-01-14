@@ -376,6 +376,7 @@ $(document).ready(function ($) {
         $('select').niceSelect();
     }
 
+    //add class to woocommerce div in my-account pages
     var loc = window.location.href; // returns the full URL
     if (/my-account/.test(loc)) {
         $('.woocommerce').addClass('dashboard');
