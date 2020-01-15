@@ -69,8 +69,9 @@ var App = (function (window) {
                     $("body").removeClass('mobile-menu-open');
                 }
             });
-            $(document).on('click', ".b-main_menu-wrapper ul li.has-sub > a", function (event) {
-                $(this).parent().find(".dropdown-inner").slideToggle("slow");
+            $(document).on('click', ".b-main_menu-wrapper ul li.dropdown_wrapper > a i", function (event) {
+                //$(this).parent().find(".dropdown-inner").slideToggle("slow");
+                $(this).parent().next().slideToggle(350);
                 return false;
             });
         },

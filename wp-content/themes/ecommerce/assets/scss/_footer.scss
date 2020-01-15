@@ -64,5 +64,14 @@
 	.b-main_footer{
 		.row{margin: auto;}
 	}
-	.b-scrollToTop{bottom: 15px; right: 15px;}
+	.b-scrollToTop{
+		width: 35px;
+		height: 35px;
+		bottom: 75px;
+		right: 15px;
+		&::after{
+			font-size: 14px;
+			line-height: 37px;
+		}
+	}
 }
