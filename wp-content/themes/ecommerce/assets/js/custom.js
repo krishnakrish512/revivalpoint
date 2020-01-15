@@ -394,6 +394,9 @@ $(document).ready(function ($) {
     $('.filter-btn').on('click', function(){
         $('.mob-sidebar').addClass('is-open');
     })
+    $('.sidebar-close').on('click', function(){
+        $('.mob-sidebar').removeClass('is-open');
+    })
 
     if ($('select').length) {
         $('select').niceSelect();
