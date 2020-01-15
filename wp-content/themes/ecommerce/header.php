@@ -32,19 +32,7 @@
     <ul class="b-user-block">
         <li class="b-user-block__content">
             <h6 class="callout-text m-0 font-weight-bold">Hi, <?= ecommerce_get_user_display_name() ?></h6>
-			<?php
-			if ( ! is_user_logged_in() ):
-				?>
-                <div class="callout-action">
-                    <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
-                       class="text-default">Sign
-                        In</a> or <a
-                            href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
-                            class="text-default"> Register</a>
-                </div>
-			<?php
-			endif;
-			?>
+			<?php ecommerce_user_account_link(); ?>
         </li>
     </ul>
 	<?php
@@ -87,19 +75,9 @@
                         <div class="b-user-block__content float-right">
                             <h5 class="callout-text m-0 font-weight-bold">
                                 Hi, <?= ecommerce_get_user_display_name() ?></h5>
-							<?php
-							if ( ! is_user_logged_in() ):
-								?>
-                                <div class="callout-action">
-                                    <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
-                                       class="text-default">Sign In</a> or
-                                    <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
-                                       class="text-default">
-                                        Register</a>
-                                </div>
-							<?php
-							endif;
-							?>
+                            <div class="callout-action">
+								<?php ecommerce_user_account_link() ?>
+                            </div>
                         </div>
                     </div>
                     <div class="b-search_icon hidden-sm-down hidden-md-down">

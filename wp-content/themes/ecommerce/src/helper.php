@@ -72,3 +72,26 @@ function ecommerce_get_user_display_name() {
 
 	return $username;
 }
+
+
+/**
+ * function to display user user account link
+ */
+function ecommerce_user_account_link() {
+	if ( ! is_user_logged_in() ):
+		?>
+        <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
+           class="text-default">Sign In</a> or
+        <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
+           class="text-default">
+            Register</a>
+	<?php
+	endif;
+
+	if ( is_user_logged_in() ):
+		?>
+        <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
+           class="text-default">User Dashboard</a>
+	<?php
+	endif;
+}
