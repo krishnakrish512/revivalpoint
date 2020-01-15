@@ -32,12 +32,19 @@
     <ul class="b-user-block">
         <li class="b-user-block__content">
             <h6 class="callout-text m-0 font-weight-bold">Hi, <?= ecommerce_get_user_display_name() ?></h6>
-            <div class="callout-action">
-                <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>" class="text-default">Sign
-                    In</a> or <a
-                        href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
-                        class="text-default"> Register</a>
-            </div>
+			<?php
+			if ( ! is_user_logged_in() ):
+				?>
+                <div class="callout-action">
+                    <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
+                       class="text-default">Sign
+                        In</a> or <a
+                            href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
+                            class="text-default"> Register</a>
+                </div>
+			<?php
+			endif;
+			?>
         </li>
     </ul>
 	<?php
@@ -80,15 +87,20 @@
                         <div class="b-user-block__content float-right">
                             <h5 class="callout-text m-0 font-weight-bold">
                                 Hi, <?= ecommerce_get_user_display_name() ?></h5>
-                            <div class="callout-action">
-                                <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
-                                   class="text-default">Sign In</a> or
-                                <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
-                                   class="text-default">
-                                    Register</a>
-                            </div>
+							<?php
+							if ( ! is_user_logged_in() ):
+								?>
+                                <div class="callout-action">
+                                    <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
+                                       class="text-default">Sign In</a> or
+                                    <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
+                                       class="text-default">
+                                        Register</a>
+                                </div>
+							<?php
+							endif;
+							?>
                         </div>
-
                     </div>
                     <div class="b-search_icon hidden-sm-down hidden-md-down">
                         <a href="javascript:;" id="b-search_toggle" class="d-inline-block">
