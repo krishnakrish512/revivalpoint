@@ -406,6 +406,26 @@ $(document).ready(function ($) {
             }
         });
     }
+
+    //contact form validation
+    $('.wpcf7-submit').click(function (e) {
+        let valid = true;
+        if (!$("#userName").val()) {
+            $("#userName-info").html("(required)");
+            $("#userName").css('background-color', '#FFFFDF');
+            valid = false;
+        }
+        if (!$("#userEmail").val()) {
+            $("#userEmail-info").html("(required)");
+            $("#userEmail").css('background-color', '#FFFFDF');
+            valid = false;
+        }
+        if (!valid) {
+            e.preventDefault();
+            return;
+        }
+    });
+
 });
 
 

@@ -1,6 +1,0 @@
-2019-12-20T07:42:12+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in C:\wamp64\www\revivalpoint\wp-content\themes\ecommerce\woocommerce\single-product\product-image.php on line 44
-
-2019-12-20T12:55:31+00:00 CRITICAL Interface 'Psr\Log\LoggerInterface' not found in E:\xampp\htdocs\revivalpoint\wp-content\plugins\next-gen-image\vendor\monolog\monolog\src\Monolog\Logger.php on line 28
-
-2019-12-20T13:31:14+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in E:\xampp\htdocs\revivalpoint\wp-includes\wp-db.php on line 2030
-
