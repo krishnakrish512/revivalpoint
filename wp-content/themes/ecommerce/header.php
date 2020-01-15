@@ -31,7 +31,7 @@
 <div class="b-main_menu-wrapper hidden-lg-up">
     <ul class="b-user-block">
         <li class="b-user-block__content">
-            <h6 class="callout-text m-0 font-weight-bold">Hi, Beautiful</h6>
+            <h6 class="callout-text m-0 font-weight-bold">Hi, <?= ecommerce_get_user_display_name() ?></h6>
             <div class="callout-action">
                 <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>" class="text-default">Sign
                     In</a> or <a
@@ -77,15 +77,9 @@
                         <div class="b-user-block__image float-left mr-3">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/lady.svg" alt="">
                         </div>
-						<?php
-						$username = "Beautiful";
-						if ( is_user_logged_in() ) {
-							$user     = wp_get_current_user();
-							$username = $user->display_name;
-						}
-						?>
                         <div class="b-user-block__content float-right">
-                            <h5 class="callout-text m-0 font-weight-bold">Hi, <?= $username ?></h5>
+                            <h5 class="callout-text m-0 font-weight-bold">
+                                Hi, <?= ecommerce_get_user_display_name() ?></h5>
                             <div class="callout-action">
                                 <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>"
                                    class="text-default">Sign In</a> or

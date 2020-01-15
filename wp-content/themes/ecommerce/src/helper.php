@@ -57,3 +57,18 @@ function ecommerce_get_wishlist_page_url() {
 	return get_the_permalink( $wishlist_page->ID );
 
 }
+
+/**
+ * function to get display name of logged in user
+ *
+ * @return string
+ */
+function ecommerce_get_user_display_name() {
+	$username = "Beautiful";
+	if ( is_user_logged_in() ) {
+		$user     = wp_get_current_user();
+		$username = $user->display_name;
+	}
+
+	return $username;
+}
