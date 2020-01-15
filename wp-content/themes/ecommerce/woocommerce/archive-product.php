@@ -60,7 +60,7 @@ get_header( 'shop' );
                     <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-6 col-xs-12 text-right">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="filter-btn"><i class="icon icon-menu"></i>Filter</div>
-                            <div class="b-filter_button d-inline-block align-self-end">
+                            <div class="b-filter_button d-inline-block ml-auto">
 								<?php woocommerce_catalog_ordering() ?>
                             </div>
                         </div>
