@@ -47,7 +47,7 @@ $col    = 1;
     </p>
 
 <?php if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) : ?>
-    <div class="u-columns woocommerce-Addresses col2-set addresses row">
+    <div class="woocommerce-Addresses addresses row">
 <?php endif; ?>
 
 <?php foreach ( $get_addresses as $name => $address_title ) : ?>
@@ -57,7 +57,7 @@ $col    = 1;
 	$oldcol  = $oldcol * - 1;
 	?>
 
-    <div class="u-column<?php echo $col < 0 ? 1 : 2; ?> col-<?php echo $oldcol < 0 ? 1 : 2; ?> woocommerce-Address col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="woocommerce-Address col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <header class="woocommerce-Address-title title">
             <h3><?php echo esc_html( $address_title ); ?></h3>
             <a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>"
