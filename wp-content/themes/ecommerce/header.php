@@ -32,7 +32,10 @@
     <ul class="b-user-block">
         <li class="b-user-block__content">
             <h6 class="callout-text m-0 font-weight-bold">Hi, <?= ecommerce_get_user_display_name() ?></h6>
-			<?php ecommerce_user_account_link(); ?>
+            <div class="callout-action">
+                <?php ecommerce_user_account_link(); ?>
+            </div>
+
         </li>
     </ul>
 	<?php
