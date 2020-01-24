@@ -26,7 +26,7 @@
                             <i class="fa fa-mobile d-inline-block"></i> Phone: <?= $contact['phone_number'] ?>
                             <br>
                         </div>
-                        <ul class="b-social-icons text-center">
+                        <ul class="b-social-icons text-center mb-3">
 							<?php
 							$social_media = get_field( 'social_media', 'option' );
 							?>
@@ -42,6 +42,14 @@
                                             class="fa fa-instagram"></i>Instagram</a>
                             </li>
                         </ul>
+                        <div class="b-footer_menu">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item"><a href="#">Home</a></li>
+                                <li class="list-inline-item"><a href="#">About</a></li>
+                                <li class="list-inline-item"><a href="#">Shop</a></li>
+                                <li class="list-inline-item"><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

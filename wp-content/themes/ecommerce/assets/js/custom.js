@@ -488,7 +488,7 @@ $(window).on("load", function () {
 });
 
 $(window).scroll(function () {
-    var $fwindow = $(window);
+/*    var $fwindow = $(window);
 
     $('[data-type="background"]').each(function(){
         var $backgroundObj = $(this);
@@ -500,5 +500,5 @@ $(window).scroll(function () {
             // Move the background
             $backgroundObj.css({ backgroundPosition: coords });
         });
-    });
+    });*/
 })
