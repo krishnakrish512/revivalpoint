@@ -4,7 +4,7 @@
 
     <!-- META-DATA -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -65,7 +65,6 @@
 							'menu_class'      => 'pl-0 mb-0 list-unstyled',
 							'container_class' => 'b-main_menu pt-0',
 							'walker'          => new Ecommerce_Nav_Walker()
-
 						] );
 						?>
                     </div>
