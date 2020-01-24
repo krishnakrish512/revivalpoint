@@ -64,7 +64,7 @@ function ecommerce_get_wishlist_page_url() {
  * @return string
  */
 function ecommerce_get_user_display_name() {
-	$username = "Beautiful";
+	$username = "Gorgeous";
 	if ( is_user_logged_in() ) {
 		$user     = wp_get_current_user();
 		$username = $user->display_name;
