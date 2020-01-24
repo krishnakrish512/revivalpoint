@@ -16,7 +16,7 @@ $image = getResizedImage( $image );
     }
 </style>
 <section id="b-newsletter">
-    <div class="b-newsletter b-newsletter_bg mb-5">
+    <div class="b-newsletter b-newsletter_bg mb-5" data-type="background" data-speed="7">
         <div class="b-newsletter_inner">
             <h3 class="text-center font-italic"><?= get_sub_field( 'pre_header' ) ?></h3>
             <h2 class="text-center"><?= get_sub_field( 'header' ) ?></h2>

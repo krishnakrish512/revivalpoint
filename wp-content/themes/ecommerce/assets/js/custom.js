@@ -449,6 +449,9 @@ $(document).ready(function ($) {
         }
     });
 
+
+
+
 });
 
 
@@ -484,3 +487,18 @@ $(window).on("load", function () {
     })
 });
 
+$(window).scroll(function () {
+    var $fwindow = $(window);
+
+    $('[data-type="background"]').each(function(){
+        var $backgroundObj = $(this);
+
+        $fwindow.on('scroll resize', function() {
+            var yPos = - ($fwindow.scrollTop() / $backgroundObj.data('speed'));
+            var coords = '50% '+ yPos + 'px';
+
+            // Move the background
+            $backgroundObj.css({ backgroundPosition: coords });
+        });
+    });
+})
