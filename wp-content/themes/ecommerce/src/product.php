@@ -30,7 +30,8 @@ function get_product_quick_view_html( $product_id, $variation = [] ) {
 							$image = wp_get_attachment_image_url( $image_id, 'full' );
 							$image = getResizedImage( $image, [ 475, 600 ] );
 							echo \NextGenImage\getWebPHTML( $image['webp'], $image['orig'], [
-								'class' => 'img-fluid d-block m-auto'
+								'class' => 'img-fluid d-block m-auto',
+								'alt'   => esc_attr( $product->get_name() )
 							] );
 							?>
                         </div>
@@ -110,13 +111,13 @@ function get_product_quick_view_html( $product_id, $variation = [] ) {
 										?>
                                         <option
                                                 value="<?= $option[0] ?>"
-												<?= ( $variation[ $product_attribute_key ] == $option[0] ) ? 'selected' : '' ?>><?= $option[1] ?></option>
+											<?= ( $variation[ $product_attribute_key ] == $option[0] ) ? 'selected' : '' ?>><?= $option[1] ?></option>
 									<?php
 									else:
 										?>
                                         <option
                                                 value="<?= $option ?>"
-												<?= ( $variation[ $product_attribute_key ] == $option ) ? 'selected' : '' ?>><?= $option ?></option>
+											<?= ( $variation[ $product_attribute_key ] == $option ) ? 'selected' : '' ?>><?= $option ?></option>
 									<?php
 									endif;
 								endforeach;
@@ -189,7 +190,7 @@ function get_single_product_html( $product_id ) {
 				$image = getResizedImage( $image, [ 263, 336 ] );
 				echo \NextGenImage\getWebPHTML( $image['webp'], $image['orig'], [
 					'class' => 'img-fluid img-switch d-block',
-					'alt'   => $product->get_name()
+					'alt'   => esc_attr( $product->get_name() )
 				] );
 				?>
 
