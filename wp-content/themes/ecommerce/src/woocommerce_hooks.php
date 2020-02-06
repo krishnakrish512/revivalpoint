@@ -125,3 +125,23 @@ function ecommerce_widget_tag_cloud_args( $args ) {
 }
 
 add_filter( 'widget_tag_cloud_args', 'ecommerce_widget_tag_cloud_args' );
+
+
+/**
+ * adding additional delivery info tab to the product single page tabsg
+ */
+add_filter( 'woocommerce_product_tabs', 'woo_custom_product_tabs' );
+function woo_custom_product_tabs( $tabs ) {
+	$tabs['additional_tab'] = [
+		'title'    => get_field( 'delivery_info', 'option' )['title'],
+		'priority' => 100,
+		'callback' => 'woo_attrib_additional_tab_content'
+	];
+
+	return $tabs;
+
+}
+
+function woo_attrib_additional_tab_content() {
+	echo get_field( 'delivery_info', 'option' )['detail'];
+}
