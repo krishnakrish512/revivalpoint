@@ -23,7 +23,7 @@ do_action( 'woocommerce_before_cart' );
 <section id="b-cart_default">
     <div class="b-cart b-cart_default pb-5">
         <div class="container">
-            <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
+            <form class="woocommerce-cart-form table-responsive" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 				<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
                 <table class="table htable-over table-condensed"
@@ -149,7 +149,7 @@ fa-trash-o"></i></button>
 					<?php do_action( 'woocommerce_cart_contents' ); ?>
 
                     <tr>
-                        <td colspan="6" class="actions">
+                        <td colspan="5" class="actions">
 
 							<?php if ( wc_coupons_enabled() ) { ?>
                                 <div class="coupon">

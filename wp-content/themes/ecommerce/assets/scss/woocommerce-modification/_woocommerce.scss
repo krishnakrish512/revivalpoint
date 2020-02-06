@@ -27,3 +27,33 @@
   }
 }
 
+.woocommerce-ordering{
+  height: 42px;
+}
+.woocommerce-Price-amount{
+  font-family: $lato_font;
+  font-weight: 600;
+}
+
+//coupon
+.woocommerce-cart-form{
+  .actions{
+    display: flex;
+    justify-content: space-between;
+  }
+  .coupon{
+    display: flex;
+    label{
+      display: none;
+    }
+    .input-text{
+      max-width: 200px;
+      margin-right: 5px;
+    }
+    .button{
+      width: 100%;
+    }
+  }
+}
+
+

@@ -7,6 +7,53 @@
 .line-height-normal{
   line-height: normal;
 }
+.absolute-link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.title-saperator{
+  opacity:  0.7;
+  height: 2px;
+  width: 50px;
+}
+.bck-cover{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.inline-link{
+  font-weight: 600;
+  color: inherit;
+  text-decoration: underline;
+
+  &:hover{
+    color: $accent_default;
+  }
+}
+
+.border-right{
+  border-right:1px solid rgba(0,0,0,0.1);
+}
+.border-right__dashed{
+  position: relative;
+
+  &:after{
+    content: '';
+    display: block;
+    height: 45px;
+    width: 1px;
+    border-right:1px dashed #ccc;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform:translateY(-50%);
+
+  }
+}
 
 
 .b-header_right{
@@ -17,23 +64,6 @@
       visibility: visible;
     }
   }
-
-}
-
-.absolute-link{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-}
-
-
-.title-saperator{
-  opacity:  0.7;
-  height: 2px;
-  width: 50px;
 }
 
 .b-instagram{
@@ -94,25 +124,7 @@
   }
 }
 
-.border-right{
-  border-right:1px solid rgba(0,0,0,0.1);
-}
-.border-right__dashed{
-  position: relative;
 
-  &:after{
-    content: '';
-    display: block;
-    height: 45px;
-    width: 1px;
-    border-right:1px dashed #ccc;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform:translateY(-50%);
-
-  }
-}
 //header
 .b-main_menu{
   .b-dropdown_wrapper{
@@ -131,11 +143,7 @@
 .b-main_menu .dropdown-inner ul>li>a{
   text-transform: capitalize;
 }
-.bck-cover{
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 
   .b-main_menu-wrapper {
     .dropdown-content{
@@ -196,9 +204,7 @@
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-.woocommerce-ordering{
-  height: 42px;
-}
+
 
 
 //product css
@@ -307,10 +313,7 @@
   }
 }
 
-.woocommerce-Price-amount{
-  font-family: $lato_font;
-  font-weight: 600;
-}
+//stock label
 .stock{
   font-weight: 600;
   padding:5px 10px;
@@ -368,15 +371,7 @@
 
 
 
-.inline-link{
-  font-weight: 600;
-  color: inherit;
-  text-decoration: underline;
 
-  &:hover{
-    color: $accent_default;
-  }
-}
 .owl-carousel .owl-item{
   width: 100%;
 }
