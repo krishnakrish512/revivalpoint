@@ -2,6 +2,7 @@
 
 $include_files = [
 	"src/setup.php",
+	"src/filter.php",
 	"src/helper.php",
 	"src/ajax_product.php",
 	"src/acf_hooks.php",

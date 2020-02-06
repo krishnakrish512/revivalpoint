@@ -46,6 +46,17 @@ function ecommerce_scripts() {
 		wp_enqueue_script( 'woocommerce-custom-script', get_template_directory_uri() . '/assets/js/woocommerce-custom.js', [], '1.0', true );
 	}
 
+	//enqueue contact form 7 js and css
+	if ( is_page( 'Contact Us' ) ) {
+		if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
+			wpcf7_enqueue_scripts();
+		}
+
+		if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
+			wpcf7_enqueue_styles();
+		}
+	}
+
 	wp_enqueue_style( 'ecommerce-style', get_template_directory_uri() . '/assets/css/main.css' );
 	wp_enqueue_script( 'ecommerce-script', get_template_directory_uri() . '/assets/js/custom.js', [], '1.0', true );
 

@@ -132,11 +132,13 @@ add_filter( 'widget_tag_cloud_args', 'ecommerce_widget_tag_cloud_args' );
  */
 add_filter( 'woocommerce_product_tabs', 'woo_custom_product_tabs' );
 function woo_custom_product_tabs( $tabs ) {
-	$tabs['additional_tab'] = [
-		'title'    => get_field( 'delivery_info', 'option' )['title'],
-		'priority' => 100,
-		'callback' => 'woo_attrib_additional_tab_content'
-	];
+	if ( get_field( 'delivery_info', 'option' )['detail'] ) {
+		$tabs['additional_tab'] = [
+			'title'    => get_field( 'delivery_info', 'option' )['title'],
+			'priority' => 100,
+			'callback' => 'woo_attrib_additional_tab_content'
+		];
+	}
 
 	return $tabs;
 
@@ -145,3 +147,6 @@ function woo_custom_product_tabs( $tabs ) {
 function woo_attrib_additional_tab_content() {
 	echo get_field( 'delivery_info', 'option' )['detail'];
 }
+
+// Or just remove them all in one line
+//add_filter( 'woocommerce_enqueue_styles', '__return_false' );
