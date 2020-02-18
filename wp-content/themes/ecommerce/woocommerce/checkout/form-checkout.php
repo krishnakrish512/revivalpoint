@@ -32,6 +32,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		}
 
 		?>
+
+
         <form name="checkout" method="post" class="checkout woocommerce-checkout"
               action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
             <div class="row">
@@ -70,10 +72,14 @@ if ( ! defined( 'ABSPATH' ) ) {
                                 </div>
                             </div>
                         </div>
+
+						<?php woocommerce_checkout_payment(); ?>
                     </div>
 				<?php endif; ?>
 
+
             </div>
+
         </form>
     </div>
 </section>

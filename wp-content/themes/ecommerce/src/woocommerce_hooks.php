@@ -2,10 +2,13 @@
 
 // Remove meta hook Woocommerce
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
 // Remove product sharing hook Woocommerce
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_sharing', 50 );
-//remove_action( 'woocommerce_single_product_summary', 'woocommerce_show_product_images', 20 );
+
 remove_action( 'woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10 );
+
+remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20 );
 
 /**
  * Change number of related products output
@@ -91,8 +94,15 @@ function woo_attrib_additional_tab_content() {
  * @return mixed
  */
 function ecommerce_custom_checkout_fields( $fields ) {
-
 	unset( $fields['order']['order_comments'] );
+
+	$fields['billing']['delivery_date'] = [
+		'label'    => 'Preferred Delivery Date',
+		'required' => false,
+		'type'     => 'date',
+		'class'    => [ 'form-row-first' ],
+		'priority' => 120
+	];
 
 	return $fields;
 }
@@ -132,3 +142,15 @@ add_filter( 'woocommerce_default_address_fields', 'ecommerce_default_address_fie
 
 //remove additional information field from checkout page
 add_filter( 'woocommerce_enable_order_notes_field', '__return_false', 9999 );
+
+//Remove "(optional)" from our non required fields
+add_filter( 'woocommerce_form_field', 'remove_checkout_optional_fields_label', 10, 4 );
+function remove_checkout_optional_fields_label( $field, $key, $args, $value ) {
+	// Only on checkout page
+	if ( is_checkout() && ! is_wc_endpoint_url() ) {
+		$optional = '&nbsp;<span class="optional">(' . 'optional' . ')</span>';
+		$field    = str_replace( $optional, '', $field );
+	}
+
+	return $field;
+}
