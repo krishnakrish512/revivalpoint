@@ -32,11 +32,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 		}
 
 		?>
-
-
         <form name="checkout" method="post" class="checkout woocommerce-checkout"
               action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
             <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"
+                             id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?>
+                        </div>
+						<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
+
+                        <div class="panel-body">
+                            <div id="order_review" class="woocommerce-checkout-review-order">
+								<?php do_action( 'woocommerce_checkout_order_review' ); ?>
+                            </div>
+                        </div>
+                    </div>
+					<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
+                </div>
+
 				<?php if ( $checkout->get_checkout_fields() ) : ?>
                     <div id="customer_details" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
@@ -58,24 +73,7 @@ if ( ! defined( 'ABSPATH' ) ) {
                     </div>
 				<?php endif; ?>
 
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
-					<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
-                    <div class="panel panel-info">
-                        <div class="panel-heading"
-                             id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?>
-                        </div>
-						<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
-
-                        <div class="panel-body">
-                            <div id="order_review" class="woocommerce-checkout-review-order">
-								<?php do_action( 'woocommerce_checkout_order_review' ); ?>
-                            </div>
-                        </div>
-                    </div>
-					<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
-                </div>
             </div>
-
         </form>
     </div>
 </section>

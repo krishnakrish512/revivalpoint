@@ -108,6 +108,7 @@ add_filter( 'woocommerce_checkout_fields', 'ecommerce_custom_checkout_fields' );
  */
 function ecommerce_default_address_fields( $fields ) {
 
+	unset( $fields['last_name'] );
 	unset( $fields['address_2'] );
 	unset( $fields['company'] );
 	unset( $fields['country'] );
@@ -116,10 +117,13 @@ function ecommerce_default_address_fields( $fields ) {
 	unset( $fields['state'] );
 	unset( $fields['postcode'] );
 
+	$fields['first_name']['label'] = 'Full Name';
+	$fields['first_name']['class'] = [ 'form-row-wide' ];
 
 	$fields['address_1']['label']       = 'Address';
 	$fields['address_1']['placeholder'] = 'Address';
 	$fields['address_1']['type']        = 'textarea';
+	$fields['address_1']['required']    = false;
 
 	return $fields;
 }

@@ -32,12 +32,17 @@ function ecommerce_share_meta() {
 	if ( $post ) {
 		if ( $post->post_type == "product" && is_single() ) {
 			$product = wc_get_product( $post->ID );
+
+			$image = wp_get_attachment_image_url( $product->get_image_id(), 'full' );
+			$image = getResizedImage( $image, [ 500, 500 ] );
 			?>
             <meta property="og:url" content="<?= $product->get_permalink() ?>"/>
             <meta property="og:type" content="website"/>
             <meta property="og:title" content="<?php bloginfo( 'title' ); ?>"/>
             <meta property="og:description" content="<?= $product->get_title() ?>"/>
-            <meta property="og:image" content="<?= wp_get_attachment_image_url( $product->get_image_id(), 'full' ) ?>"/>
+            <meta property="og:image" content="<?= $image['orig'] ?>"/>
+            <meta property="og:image:width" content="500"/>
+            <meta property="og:image:height" content="500"/>
 			<?php
 		}
 	}
