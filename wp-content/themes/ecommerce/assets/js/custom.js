@@ -177,8 +177,8 @@ var App = (function (window) {
                             margin: 15,
                             nav: false,
                         },
-                        800:{
-                            items:3,
+                        800: {
+                            items: 3,
                             dots: true,
                             margin: 15,
                             nav: false,
@@ -392,10 +392,10 @@ var App = (function (window) {
 $(document).ready(function ($) {
     App.init();
 
-    $('.filter-btn').on('click', function(){
+    $('.filter-btn').on('click', function () {
         $('.mob-sidebar').addClass('is-open');
     })
-    $('.sidebar-close').on('click', function(){
+    $('.sidebar-close').on('click', function () {
         $('.mob-sidebar').removeClass('is-open');
     })
 
@@ -450,6 +450,10 @@ $(document).ready(function ($) {
     });
 
 
+    let date = new Date().getTime();
+    date = date + 3 * 24 * 60 * 60 * 1000;
+    let minDate = new Date(date).toISOString().split('T')[0];
+    $('#preferred_delivery_date').attr('min', minDate);
 
 
 });
@@ -488,17 +492,17 @@ $(window).on("load", function () {
 });
 
 $(window).scroll(function () {
-/*    var $fwindow = $(window);
+    /*    var $fwindow = $(window);
 
-    $('[data-type="background"]').each(function(){
-        var $backgroundObj = $(this);
+        $('[data-type="background"]').each(function(){
+            var $backgroundObj = $(this);
 
-        $fwindow.on('scroll resize', function() {
-            var yPos = - ($fwindow.scrollTop() / $backgroundObj.data('speed'));
-            var coords = '50% '+ yPos + 'px';
+            $fwindow.on('scroll resize', function() {
+                var yPos = - ($fwindow.scrollTop() / $backgroundObj.data('speed'));
+                var coords = '50% '+ yPos + 'px';
 
-            // Move the background
-            $backgroundObj.css({ backgroundPosition: coords });
-        });
-    });*/
+                // Move the background
+                $backgroundObj.css({ backgroundPosition: coords });
+            });
+        });*/
 })

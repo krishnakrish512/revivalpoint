@@ -8,6 +8,7 @@ $include_files = [
 	"src/acf_hooks.php",
 	"src/product.php",
 	"src/woocommerce_hooks.php",
+	"src/woocommerce_custom_checkout.php",
 	"src/classes/Ecommerce_Nav_Walker.php",
 	"src/classes/Ecommerce_Responsive_Nav_Walker.php"
 ];
