@@ -11,6 +11,8 @@ wp-content/log
 ###
 
 ### sass node_modules
+html/assets/node_modules
+wp-content/themes/ecommerce/node_modules
 
 wp-content/uploads/GeoLite2-Country.mmdb
 

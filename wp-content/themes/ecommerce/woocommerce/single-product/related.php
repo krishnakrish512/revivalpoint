@@ -30,7 +30,7 @@ if ( $related_products ) : ?>
         </div>
 
         <div class="b-products b-product_grid b-product_grid_four mb-4">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="clearfix owl-carousel owl-theme" id="b-related_products">
 					<?php foreach ( $related_products as $related_product ) : ?>
                         <div>

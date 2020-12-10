@@ -190,10 +190,10 @@ var App = (function (window) {
                             nav: false,
                         },
                         1200: {
-                            items: 4,
-                            dots: false,
+                            items: 5,
+                            dots: true,
                             margin: 15,
-                            nav: true,
+                            nav: false,
                         }
                     }
                 })
@@ -256,7 +256,7 @@ var App = (function (window) {
                 var owl = $('#b-related_products').owlCarousel({
                     loop: true,
                     margin: 15,
-                    nav: true,
+                    nav: false,
                     dots: true,
                     responsive: {
                         0: {
@@ -266,7 +266,7 @@ var App = (function (window) {
                             items: 3
                         },
                         1000: {
-                            items: 4
+                            items: 5
                         }
                     }
                 })

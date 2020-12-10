@@ -3,7 +3,7 @@
 		margin-bottom: 8px;
 		line-height: 1;
 		a{
-			font-family: $blog_heading_font; font-weight: 400; color: #252222; letter-spacing: .3px; font-size: 15px; display: inline; padding-bottom: 1px; border-bottom: 1px solid rgba(0,0,0,.1);
+			 font-weight: 400; color: #252222; letter-spacing: .3px; font-size: 15px; display: inline; padding-bottom: 1px; border-bottom: 1px solid rgba(0,0,0,.1);
 			&:hover{border-color: $accent_default; }
 		}
 	}
@@ -11,7 +11,11 @@
 
 .b-product_grid_toggle{ 
 	height: 32px; line-height: 32px; overflow: hidden; @extend .d-transition; 
-	.b-price{height: 32px; line-height: 32px; font-weight: 500; top: 0; color: #bbbbbb; display: block; font-size: 16px; text-align: left; position: relative; @extend .d-transition;}
+	.b-price{height: 32px; line-height: 32px; font-weight: 500; top: 0; color: $accent_default; display: block; font-size: 16px; text-align: left; position: relative; @extend .d-transition;
+		del{
+			color: $gray-100;
+		}
+		}
 	.b-add_cart{
 		@extend .d-transition; top: 0px; position: relative; font-family: $default_font;
 		i{font-size: 16px; font-weight: bold; margin-right: 3px; color:$accent_default;}

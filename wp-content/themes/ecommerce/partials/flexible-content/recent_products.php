@@ -20,13 +20,13 @@ $featured_products = get_posts( $args );
         </h4>
         <p class="text-center"><?= get_sub_field( 'sub_heading' ) ?></p>
     </div>
-    <div class="container pt-2 pb-5">
+    <div class="container-fluid pt-2 pb-5">
         <div class="row clearfix">
             <div class="b-cat_blocks owl-carousel owl-theme px-3">
                 <?php
                 foreach ( $featured_products as $product_id ):
                     ?>
-                    <div class="owl-item">
+                    <div class="owl-item pt-4">
                         <?php get_single_product_html( $product_id ) ?>
                     </div>
                 <?php

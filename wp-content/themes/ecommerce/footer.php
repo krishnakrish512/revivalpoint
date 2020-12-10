@@ -62,8 +62,8 @@
             <div class="d-footer_bar">
                 <div class="text-center">
                     <i class="fa fa-copyright"></i> <?= date( 'Y' ) ?> Created by
-                    <a href="http://digitalflow.com.np/" target="_blank"
-                       rel="noopener noreferrer">Digital Flow.</a>
+                    <a href="https://nirvanstudio.com/" target="_blank"
+                       rel="noopener noreferrer">Nirvan Studio</a>
                 </div>
             </div>
         </div>
