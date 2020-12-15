@@ -5,6 +5,7 @@
 			margin-bottom: 30px;
 		}
 		img{
+			width: 100%;
 			@extend .d-transition;
 
 			@include media-breakpoint-down(sm){

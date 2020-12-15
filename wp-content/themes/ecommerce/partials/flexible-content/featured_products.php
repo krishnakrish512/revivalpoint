@@ -11,7 +11,7 @@ $args = [
 $featured_products = get_posts( $args );
 ?>
 <section id="b-products">
-    <div class="b-section_title pt-5">
+    <div class="b-section_title">
         <h4 class="text-center text-uppercase mb-0">
             <b><?= get_sub_field( 'heading' ) ?></b>
             <span class="text-center">

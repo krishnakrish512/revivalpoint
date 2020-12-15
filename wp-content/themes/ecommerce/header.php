@@ -71,7 +71,7 @@
                 </div>
                 <div class="b-header_right">
                     <div class="b-has_sub b-dropdown_wrapper from-bottom b-user-block border-right__dashed pr-xl-5 pr-lg-3 hidden-sm-down hidden-md-down">
-                        <div class="b-user-block__image float-left mr-3">
+                        <div class="b-user-block__image float-left mr-1">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/lady.svg" alt="">
                         </div>
                         <div class="b-user-block__content float-right">

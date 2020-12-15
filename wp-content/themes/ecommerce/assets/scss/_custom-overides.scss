@@ -1,3 +1,26 @@
+
+.pl-100{
+  padding-left: 100px;
+}
+.pr-100{
+  padding-right: 100px;
+}
+.px-100{
+
+
+  @include media-breakpoint-up(lg){
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+.mb-80{
+  margin-bottom: 80px;
+}
+.container{
+  @include media-breakpoint-up(lg){
+    width: 95%;
+  }
+}
 .text-default{
   color: $accent_default !important;
 }
@@ -168,7 +191,7 @@
   &__image{
     display: block;
     width: 35px;
-    padding-top: 8px;
+    padding-top: 18px;
   }
   &__content{
     padding:11px 14px;
@@ -224,6 +247,8 @@
       .b-product_grid_toggle{
         span{
           top:0 !important;
+
+          
         }
       }
 
@@ -235,6 +260,17 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        .b-price{
+         
+          .woocommerce-Price-currencySymbol{
+            font-size: 0;
+            &::before{
+              content: "Rs.";
+              font-size: 16px;
+            }
+          }
+        }
       }
       span{
         &.b-add_cart{

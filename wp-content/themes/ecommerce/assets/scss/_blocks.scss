@@ -25,27 +25,50 @@
 }
 .owl-carousel {
 	.owl-nav {
-		position: absolute; top: 30%; width: 100%;
+		position: absolute; 
+		top: 30%; 
+		width: 100%;
 		> div{
-			background-color: transparent !important; color: #212121;
-			&::before {display: block; content: "\e605"; font-family: simple-line-icons; width: 55px; font-size: 36px; height: 55px; line-height: 55px;}
+			background-color: transparent !important; 
+			color: #212121;
+			&::before {
+				display: block; 
+				content: "\e605"; 
+				font-family: simple-line-icons; 
+				width: 55px; 
+				font-size: 36px;
+				height: 55px; 
+				line-height: 55px;
+			}
 		}
 		> div.owl-prev{
-			left: 50px; position: absolute; opacity: 0; @extend .d-transition_slow; color: rgba(1, 0, 0, 0.47);
-			&:hover{color: #000;}
+			left: -60px; 
+			position: absolute; 
+			opacity: 1; 
+			@extend .d-transition_slow; 
+			color: rgba(1, 0, 0, 0.47);
+			&:hover{
+				color: #000;
+			}
 		}
 		> div.owl-next{
-			right: 50px; position: absolute; opacity: 0; @extend .d-transition_slow; color: rgba(1, 0, 0, 0.47);
-			&:hover{color: #000;}
+			right: -20px; 
+			position: absolute;
+			opacity: 1; 
+			@extend .d-transition_slow; 
+			color: rgba(1, 0, 0, 0.47);
+			&:hover{
+				color: #000;
+			}
 		}
 		.owl-next:before {content: "\e606";}
 	}
-	&:hover{
-		.owl-nav{
-			> div.owl-prev{opacity: 1; left: -80px;}
-			> div.owl-next{opacity: 1; right: -80px;}
-		}
-	}
+	// &:hover{
+	// 	.owl-nav{
+	// 		> div.owl-prev{opacity: 1; left: -80px;}
+	// 		> div.owl-next{opacity: 1; right: -80px;}
+	// 	}
+	// }
 } 
 
 .modal-content{
