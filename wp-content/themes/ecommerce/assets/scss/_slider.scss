@@ -37,7 +37,7 @@
     position: relative;
     padding-top: 51%;
     @include media-breakpoint-up(md){
-      padding-top: 26%;
+      padding-top: 38%;
     }
 
     img{
@@ -60,7 +60,7 @@
     @include media-breakpoint-up(md){
       max-width: calc(100% - 50vw);
       width: 100%;
-      left:10%;
+      left:40px;
     }
   }
   &-title{

@@ -1,13 +1,40 @@
 .b-newsletter_bg{
-	background-image: url("../images/newsletter_bg.jpg"); background-repeat: no-repeat;  padding: 8% 25px; background-position: center; background-size: cover;background-attachment: fixed;
+	background-image: url("../images/newsletter_bg.jpg"); 
+	background-repeat: no-repeat;  
+	padding: 8% 25px; 
+	background-position: center; 
+	background-size: cover;
+	background-attachment: fixed;
 }
 .b-newsletter_inner{
-	h3{font-family: $blog_heading_font; font-size: 26px; color: #ffffff; line-height: 1; margin-bottom: 20px; font-weight: normal;}
-	h2{font-family: $blog_heading_font; font-size: 58px; color: #ffffff; line-height: 1; margin-bottom: 20px; font-weight: normal;}
-	p{color: rgba(255,255,255,.8); max-width: 420px; line-height: 1.5; margin: auto auto 25px;}
+	h3{
+		font-family: $blog_heading_font; 
+		font-size: 26px; 
+		color: #ffffff; 
+		line-height: 1; 
+		margin-bottom: 20px; 
+		font-weight: normal;
+	}
+	h2{
+		font-family: $blog_heading_font; 
+		font-size: 58px; 
+		color: #ffffff; 
+		line-height: 1; 
+		margin-bottom: 20px; 
+		font-weight: normal;
+	}
+	p{
+		color: rgba(255,255,255,.8);
+		max-width: 420px; 
+		line-height: 1.5; 
+		//margin: auto auto 25px;
+		margin-bottom: 25px;
+	}
 }
 .b-newsletter_form{
-	max-width: 590px; position: relative; margin: 0 auto;
+	max-width: 590px; 
+	position: relative; 
+	//margin: 0 auto;
 	label{display: none;}
 	.form-group{
 		position: relative;  max-width: 415px; width: 100%; margin-right: 3px;

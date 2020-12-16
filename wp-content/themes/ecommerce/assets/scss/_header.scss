@@ -115,7 +115,7 @@
     img {
         max-height: 20px;
         @include media-breakpoint-up(lg){
-            max-height: 26px;
+            max-height: 18px;
         }
     }
 }

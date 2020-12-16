@@ -12,18 +12,17 @@
                 ?>
                 <img src="<?= $image['orig'] ?>" alt="">
             </div>
-
-            <div class="slider-content text-center">
+     <div class="slider-content text-white">
+                <h2 class="slider-title__lg text-uppercase"><?= get_sub_field( 'title' ) ?></h2>
+                <span class="slider-title__sm text-uppercase"><?= get_sub_field( 'sub_title' ) ?></span>
                 <?php if ( get_sub_field('link_url') || get_sub_field('page_link')): ?>
                     <a href="<?= (get_sub_field('is_external')) ? get_sub_field('link_url') : get_sub_field('page_link') ?>">
-                        <button type="button" class="text-uppercase"><?= get_sub_field('button_title') ?></button>
+                        <button type="button" class="text-uppercase btn btn-bg"><?= get_sub_field('button_title') ?></button>
                     </a>
                 <?php endif; ?>
-                                <span class="slider-title__sm text-uppercase h5"><?= get_sub_field( 'title' )
-               ?></span>
-                                <h2 class="slider-title__lg text-uppercase"><?= get_sub_field( 'sub_title' )
-                ?>
-            </div>
+
+
+     </div>
             <a href="<?= (get_sub_field('is_external')) ? get_sub_field('link_url') : get_sub_field('page_link') ?>"
                class="absolute-link"></a>
         </div>
