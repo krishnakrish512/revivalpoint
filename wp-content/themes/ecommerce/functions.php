@@ -7,6 +7,7 @@ $include_files = [
 	"src/ajax_product.php",
 	"src/acf_hooks.php",
 	"src/product.php",
+    "src/woocommerce_filter.php",
 	"src/woocommerce_hooks.php",
 	"src/woocommerce_custom_checkout.php",
 	"src/classes/Ecommerce_Nav_Walker.php",

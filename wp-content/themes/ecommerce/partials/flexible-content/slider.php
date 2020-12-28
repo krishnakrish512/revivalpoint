@@ -1,5 +1,6 @@
 <section class="slider full-width-slider">
 
+
     <?php
 
     while (have_rows('slider')):
@@ -7,10 +8,10 @@
         the_row();
 
         ?>
-
         <div class="slider-item">
 
             <div class="slider-image">
+
 
                 <?php
 
@@ -21,7 +22,6 @@
                 //				echo \NextGenImage\getWebPHTML( $image['webp'], $image['orig'] );
 
                 ?>
-
                 <img src="<?= $image['orig'] ?>" alt="">
 
             </div>
@@ -51,17 +51,16 @@
             </div>
 
             <a href="<?= (get_sub_field('is_external')) ? get_sub_field('link_url') : get_sub_field('page_link') ?>"
-
                class="absolute-link"></a>
 
         </div>
+
 
     <?php
 
     endwhile;
 
     ?>
-
 </section>
 
 
