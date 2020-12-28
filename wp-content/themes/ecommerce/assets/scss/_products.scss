@@ -29,6 +29,7 @@
 	img{
 		@extend .d-transition; 
 		width: 100%;
+		height: auto;
 	} 
 	&:hover {
 		.b-product_grid_toggle{ 
@@ -336,6 +337,10 @@
 			}
 			iframe{
 				margin: 0 auto;
+				width: 100%;
+				@media only screen and (min-width: 992px){
+					width: auto;
+				}
 			}
 		}
 	}
