@@ -43,8 +43,23 @@
 .b-filters_inner_area{
 	margin-bottom: 35px; color: rgba(0,0,0,.8); background-color: #F9F9F9; padding: 30px 30px 20px 30px; 
 	h5.b-filter_title{
-		font-size: 16px; text-transform: uppercase; font-weight: 700; letter-spacing: 1.5px; color: #1B1919; margin-bottom: 25px; position: relative; padding-bottom: 4px;
-		&::before{content: ""; position: absolute; bottom: 0; display: inline-block; width: 30px; height: 2px; background-color: rgba(0,0,0,.1);}
+		font-size: 16px; 
+		text-transform: uppercase; 
+		font-weight: 700; 
+		letter-spacing: 1.5px; 
+		color: #1B1919; 
+		margin-bottom: 25px; 
+		position: relative; 
+		padding-bottom: 4px;
+		&::before{
+			content: ""; 
+			position: absolute; 
+			bottom: 0; 
+			display: inline-block; 
+			width: 30px; 
+			height: 2px; 
+			background-color: rgba(0,0,0,.1);
+		}
 	}
 	ul{
 		padding-left: 0; list-style: none;

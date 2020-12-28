@@ -24,8 +24,12 @@
 	} 
 }
 .b-product_grid_single{
-	margin-bottom: 40px; position: relative;
-	img{@extend .d-transition; width: 100%;} 
+	margin-bottom: 40px; 
+	position: relative;
+	img{
+		@extend .d-transition; 
+		width: 100%;
+	} 
 	&:hover {
 		.b-product_grid_toggle{ 
 			.b-price{top: -30px}
@@ -319,8 +323,22 @@
 /* Products Tabs */
 .alignleft {float: left; margin-top: 3px; margin-bottom: 20px; margin-right: 25px;}
 .b-product_tabs{
-	padding-top: 30px; padding-bottom: 50px; background-color: #F9F9F9;
-	.tab-content{width: 100%; > div{width: 100%}}
+	padding-top: 30px; 
+	padding-bottom: 50px; 
+	background-color: #F9F9F9;
+	.tab-content{
+		width: 100%; 
+		> div{
+			width: 100%;
+			.mx-auto{
+				display:flex;
+				justify-content: center;
+			}
+			iframe{
+				margin: 0 auto;
+			}
+		}
+	}
 	.nav{
 		margin-bottom: 25px; text-align: center; display: block; width: 100%; border-bottom: none;
 		li{
@@ -406,3 +424,49 @@
 	}
 }
 
+
+.b-product_single_order-by{
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(119,119,119,0.17);
+	ul{
+		li{
+			display:inline-block;
+			margin-right: 8px;
+			a{
+				width: 35px;
+				height: 35px;
+				display: block;
+				background: #efefef;
+				border-radius: 100%;
+				text-align: center;
+				line-height: 38px;
+				font-size: 18px;
+				color:inherit;
+
+				&.phone{
+					&:hover{
+						background-color: #b21ee6;
+						color: #fff;
+					}
+				}
+				&.WhatsApp{
+					&:hover{
+						background-color: #25d366;
+						color: #fff;
+					}
+				}
+				&.viber{
+					&:hover{
+						background-color: #665CAC;
+						color: #fff;
+					}
+				}
+				
+				
+			}
+		}
+	}
+}
