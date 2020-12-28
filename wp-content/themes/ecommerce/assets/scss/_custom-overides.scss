@@ -238,6 +238,7 @@
 .b-product_grid {
   img {
     width: 100% !important;
+    height : auto !important;
   }
   &_single{
     transform: translateY(0);
