@@ -24,7 +24,7 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 	<?php do_action( 'woocommerce_edit_account_form_start' ); ?>
 
 	<p class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first">
-		<label for="account_first_name"><?php esc_html_e( 'First name', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
+		<label for="account_first_name"><?php esc_html_e( 'Full name', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
 		<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="account_first_name" id="account_first_name" autocomplete="given-name" value="<?php echo esc_attr( $user->first_name ); ?>" />
 	</p>
 	<p class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
@@ -43,6 +43,20 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 		<label for="account_email"><?php esc_html_e( 'Email address', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
 		<input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" autocomplete="email" value="<?php echo esc_attr( $user->user_email ); ?>" />
 	</p>
+
+    <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+        <label for="billing_phone">Phone</label>
+        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="billing_phone"
+               id="billing_phone" autocomplete="family-name"
+               value="<?php echo esc_attr( get_user_meta( $user->ID, 'billing_phone', true ) ); ?>"/>
+    </p>
+
+    <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+        <label for="billing_address_1">Address</label>
+        <input type="textarea" class="woocommerce-Input woocommerce-Input--text input-text" name="billing_address_1"
+               id="billing_address_1" autocomplete="family-name"
+               value="<?php echo esc_attr( get_user_meta( $user->ID, 'billing_address_1', true ) ); ?>"/>
+    </p>
 
 	<fieldset>
 		<legend><?php esc_html_e( 'Password change', 'woocommerce' ); ?></legend>

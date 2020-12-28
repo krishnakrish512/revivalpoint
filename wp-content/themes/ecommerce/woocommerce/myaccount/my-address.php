@@ -42,7 +42,7 @@ $oldcol = 1;
 $col    = 1;
 ?>
 
-    <p>
+    <p class="d-none">
 		<?php echo apply_filters( 'woocommerce_my_account_my_address_description', esc_html__( 'The following addresses will be used on the checkout page by default.', 'woocommerce' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
     </p>
 
@@ -57,7 +57,7 @@ $col    = 1;
 	$oldcol  = $oldcol * - 1;
 	?>
 
-    <div class="woocommerce-Address col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="woocommerce-Address col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 d-none">
         <header class="woocommerce-Address-title title">
             <h3><?php echo esc_html( $address_title ); ?></h3>
             <a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>"

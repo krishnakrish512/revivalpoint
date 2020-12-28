@@ -98,9 +98,9 @@ add_filter('woocommerce_product_tabs', 'woo_custom_product_video_tab');
 function woo_custom_product_video_tab($tabs)
 {
     global $post;
-    if (get_field('tutorial_video', $post->ID)){
+    if (get_field('tutorial_video', $post->ID)) {
         $tabs['Product_video'] = [
-            'title' =>'Tutorial Video',
+            'title' => 'Tutorial Video',
             'priority' => 110,
             'callback' => 'woo_attrib_additional_product_video_content'
         ];
@@ -109,6 +109,11 @@ function woo_custom_product_video_tab($tabs)
 }
 
 function woo_attrib_additional_product_video_content()
-{?>
-    <iframe width = "560" height = "315" src ="<?php the_field('tutorial_video');?>"  frameborder = "0" allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe >
-<?php }?>
+{
+    ?>
+    <div class="mx-auto">
+        <iframe width="560" height="315" src="<?php the_field('tutorial_video'); ?>" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+<?php } ?>
