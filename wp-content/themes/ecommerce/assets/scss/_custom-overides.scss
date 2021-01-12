@@ -1,6 +1,10 @@
 
 .pl-100{
-  padding-left: 100px;
+
+  @include media-breakpoint-up(lg){
+    padding-left: 100px;
+  }
+  
 }
 .pr-100{
   padding-right: 100px;
@@ -234,6 +238,7 @@
 .b-product_grid {
   img {
     width: 100% !important;
+    height : auto !important;
   }
   &_single{
     transform: translateY(0);
@@ -514,3 +519,11 @@
   }
 }
 
+.tagcloud{
+  .tag-cloud-link{
+    display: block;
+    margin-bottom: 10px;
+    font-size: inherit !important;
+    color: inherit;
+  }
+}

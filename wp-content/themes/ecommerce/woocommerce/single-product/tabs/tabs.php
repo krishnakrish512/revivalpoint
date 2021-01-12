@@ -32,7 +32,7 @@ if ( ! empty( $product_tabs ) ) : ?>
 
     <div class="woocommerce-tabs wc-tabs-wrapper b-gray_bg b-product_tabs">
         <div class="container">
-            <div class="row">
+            <div class="">
                 <ul class="tabs wc-tabs nav nav-tabs clearfix" role="tablist">
 					<?php foreach ( $product_tabs as $key => $product_tab ) : ?>
                         <li class="<?php echo esc_attr( $key ); ?>_tab nav-item"

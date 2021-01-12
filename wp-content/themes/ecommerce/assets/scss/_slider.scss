@@ -35,7 +35,7 @@
   }
   &-image{
     position: relative;
-    padding-top: 51%;
+    padding-top: 100%;
     @include media-breakpoint-up(md){
       padding-top: 38%;
     }

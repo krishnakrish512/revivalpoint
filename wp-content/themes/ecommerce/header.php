@@ -105,7 +105,7 @@
                         </a>
                     </div>
                     <div class="hidden-lg-up">
-                        <i class="icon-menu icons b-nav_icon" id="b-nav_icon"></i>
+                        <i class="fa fa-bars  b-nav_icon" id="b-nav_icon"></i>
                     </div>
                 </div>
             </div>
