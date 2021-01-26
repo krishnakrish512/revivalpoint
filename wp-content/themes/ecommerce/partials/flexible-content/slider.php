@@ -27,22 +27,22 @@
             </div>
 
             <div class="slider-content text-white">
+                <div class="slider-content__inner">
+                    <h2 class="slider-title__lg text-uppercase"><?= get_sub_field('title') ?></h2>
 
-                <h2 class="slider-title__lg text-uppercase"><?= get_sub_field('title') ?></h2>
+                    <span class="slider-title__sm text-uppercase"><?= get_sub_field('sub_title') ?></span>
 
-                <span class="slider-title__sm text-uppercase"><?= get_sub_field('sub_title') ?></span>
+                    <?php if (get_sub_field('button_title')): ?>
 
-                <?php if (get_sub_field('button_title')): ?>
+                        <a class="text-uppercase btn btn-full btn-lg" href="<?= (get_sub_field('is_external')) ? get_sub_field('link_url') : get_sub_field('page_link') ?>">
+<?= get_sub_field('button_title') ?>
 
-                    <a href="<?= (get_sub_field('is_external')) ? get_sub_field('link_url') : get_sub_field('page_link') ?>">
+                        </a>
 
-                        <button type="button"
+                    <?php endif; ?>
+                </div>
 
-                                class="text-uppercase btn btn-full btn-lg"><?= get_sub_field('button_title') ?></button>
 
-                    </a>
-
-                <?php endif; ?>
 
 
 

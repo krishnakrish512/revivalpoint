@@ -58,7 +58,13 @@ p{line-height: 1.5;}
 		&::after{content:""; display: block; height: 1px; width: 100%; background-color: #ececec; position: absolute; top: 0; bottom: 0; margin: auto;}
 	}
 }
-.btn.btn-bg{background-color: $accent_default;}
+.btn.btn-bg{
+  background-color: $accent_default;
+  &:hover{
+    background-color: lighten($accent_default, 5%);
+  }
+}
+
 a:focus,a:active,input:focus,input:active{outline: none;}
 
 /* Minimal */

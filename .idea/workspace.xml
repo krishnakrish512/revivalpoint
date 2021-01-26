@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0eaa6777-c959-4924-b104-055d8e3ed901" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_blog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_common-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_common-styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_custom-overides.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_custom-overides.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_products.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_slider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/woocommerce-modification/_woocommerce.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/woocommerce-modification/_woocommerce.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/partials/flexible-content/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/partials/flexible-content/slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/woocommerce/archive-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/woocommerce/archive-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/woocommerce/content-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/woocommerce/content-product.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nYZiPnLqsW1QjlVxlR3Bde1Il3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0eaa6777-c959-4924-b104-055d8e3ed901" name="Default Changelist" comment="" />
+      <created>1611569110985</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611569110985</updated>
+      <workItem from="1611569114744" duration="8502000" />
+      <workItem from="1611639112664" duration="1517000" />
+      <workItem from="1611648319411" duration="5454000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1611645482763">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1611645482763" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1611582385086">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1611582385086" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1611570561616" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1611582385085">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1611582385085" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1611570561616" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1611582385084">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1611582385084" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1611570561615" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1611582385086">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1611582385086" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1611570561616" />
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1611639119640">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1611639119640" />
+    <state x="380" y="96" width="606" height="536" key="find.popup" timestamp="1611581336111">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="380" y="96" width="606" height="536" key="find.popup/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1611581336111" />
+  </component>
+</project>

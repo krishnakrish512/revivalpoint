@@ -27,7 +27,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 <?php
 if ( is_shop() || is_archive() ):
 	?>
-    <div class="col-xl-3 col-lg-3 col-mb-4 col-sm-6 col-xs-12 <?php wc_product_class( '', $product ); ?>">
+    <div class="col-xl-3 col-lg-3 col-mb-4 col-sm-6 col-xs-12 col-6 <?php wc_product_class( '', $product ); ?>">
 <?php
 endif;
 ?>

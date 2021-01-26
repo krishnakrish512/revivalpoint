@@ -200,7 +200,17 @@
 
 
 
-.btn-full{background-color: $accent_default; color: #fff; border-color: $accent_default; &:hover{opacity: .8; color: #fff;}}
+.btn-full{
+	background-color: $accent_default;
+	color: #fff;
+	border-color: $accent_default;
+	&:hover{
+		background-color: darken($accent_default, 20%);
+		border-color: darken($accent_default, 20%);
+		//opacity: .8;
+		color: #fff;
+	}
+}
 .btn-line{border: 2px solid #fff; color: #fff; padding: 10px 40px; background-color: transparent; &:hover{background-color: #000; border-color: #000; color: #fff;}}
 
 

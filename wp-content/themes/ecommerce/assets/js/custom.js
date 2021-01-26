@@ -99,18 +99,19 @@ var App = (function (window) {
             if ($("#b-gallery_logo.b-count_04").length > 0) {
                 $('#b-gallery_logo.b-count_04.owl-carousel').owlCarousel({
                     loop: true,
+                    autoplay:true,
                     margin: 10,
                     nav: false,
                     dots: false,
                     responsive: {
                         0: {
-                            items: 2
+                            items: 3
                         },
                         600: {
                             items: 3
                         },
                         1000: {
-                            items: 4
+                            items: 6
                         }
                     }
                 })
@@ -166,9 +167,9 @@ var App = (function (window) {
                     autoplay: true,
                     responsive: {
                         0: {
-                            items: 1,
+                            items: 2,
                             dots: true,
-                            margin: 0,
+                            margin: 15,
                             nav: false,
                         },
                         600: {
@@ -260,7 +261,7 @@ var App = (function (window) {
                     dots: true,
                     responsive: {
                         0: {
-                            items: 1
+                            items: 2
                         },
                         600: {
                             items: 3

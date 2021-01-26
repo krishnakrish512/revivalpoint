@@ -52,17 +52,26 @@
 
   }
   &-content{
-    @include centre(y);
+    position: absolute;
+    top: 0;
+    height: 100%;
     left:0;
     padding:0 15px;
     width: 100%;
+    display: flex;
+    align-items: center;
 
     @include media-breakpoint-up(md){
       max-width: calc(100% - 50vw);
       width: 100%;
-      left:40px;
+      left:100px;
+    }
+    .btn{
+      position: relative;
+      z-index: 11;
     }
   }
+
   &-title{
     &__sm{
       font-weight: 700;
@@ -105,6 +114,7 @@
     }
   }
 
+
 }
 
 .full-width-slider{
@@ -122,7 +132,8 @@
       z-index: 100;
       border-radius: 100%;
       overflow: hidden;
-      background: rgba(0,0,0,0.10);
+      background: rgba(0,0,0,0.3);
+      color: #fff;
       border:none;
       font-size: 0;
       opacity: 0;
@@ -137,6 +148,9 @@
 
       &:focus{
         outline: none;
+      }
+      &:hover{
+        background-color: #000;
       }
     }
     &.slick-prev{
