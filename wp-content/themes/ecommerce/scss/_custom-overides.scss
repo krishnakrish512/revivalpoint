@@ -560,9 +560,11 @@
 
 .tagcloud{
   .tag-cloud-link{
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
     font-size: inherit !important;
     color: inherit;
+    border: 1px solid #efefef;
+    padding:5px 10px;
   }
 }

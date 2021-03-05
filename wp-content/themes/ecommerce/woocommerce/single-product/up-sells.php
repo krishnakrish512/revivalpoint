@@ -24,7 +24,7 @@ if ( $upsells ) : ?>
 	<section class="up-sells upsells products">
 		<div class="container">
 		<div class="b-section_title">
-			<h4 class="text-center text-uppercase"><?php esc_html_e( 'You may also like&hellip;', 'woocommerce' ); ?></h4>
+			<h4 class="text-center text-uppercase"><?php esc_html_e( 'You may also like&hellip;', 'woocommerce' ); ?><span class="b-title_separator"><span></span></span></h4>
 		</div>
 		
 

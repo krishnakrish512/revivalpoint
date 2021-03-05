@@ -17,16 +17,17 @@ $image = getResizedImage( $image );
 </style>
 <section id="b-newsletter">
     <div class="b-newsletter b-newsletter_bg mb-5">
-        <div class="b-newsletter_inner row">
-        <div class="col-lg-8 offset-lg-2 text-center">
-            <h3 class="font-italic"><?= get_sub_field( 'pre_header' ) ?></h3>
-            <h2><?= get_sub_field( 'header' ) ?></h2>
-            <p><?= get_sub_field( 'description' ) ?></p>
-            <div class="b-newsletter_form mx-auto">
-                <?php echo do_shortcode( '[newsletter_form form="1"]' ) ?>
+        <div class="container">
+            <div class="b-newsletter_inner row">
+                <div class="col-lg-8 ">
+                    <h3 class="font-italic"><?= get_sub_field( 'pre_header' ) ?></h3>
+                    <h2><?= get_sub_field( 'header' ) ?></h2>
+                    <p><?= get_sub_field( 'description' ) ?></p>
+                    <div class="b-newsletter_form">
+                        <?php echo do_shortcode( '[newsletter_form form="1"]' ) ?>
+                    </div>
+                </div>
             </div>
-        </div>
-            
         </div>
     </div>
 </section>

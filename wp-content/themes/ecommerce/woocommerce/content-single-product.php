@@ -70,7 +70,7 @@ if ( post_password_required() ) {
 							<h6 class="font-weight-bold mb-0 mr-3 text-uppercase">Order By :</h6>
 							<ul class="list-unstyled mb-0">
 								<li>
-									<a href="" class="phone" title="order by phone">
+									<a href="" class="phone" title="order by phone" rel="tooltip">
 										<i class="ico-phone"></i>
 									</a>
 								</li>
@@ -80,7 +80,7 @@ if ( post_password_required() ) {
 									</a>
 								</li>
 								<li>
-									<a href="viber://chat?number=%2B<?= $viber_number ?>" class="viber" target="_blank" title="order by phone">
+									<a href="viber://chat?number=%2B<?= $viber_number ?>" class="viber d-none" target="_blank" title="order by phone">
 										<i class="ico-viber"></i>
 									</a>
 								</li>
