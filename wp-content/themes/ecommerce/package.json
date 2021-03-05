@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "autoprefixer": "postcss -u autoprefixer -r assets/css/main.css",
-    "scss": "node-sass --source-map true --precision 8 --output-style compressed -o css scss",
-    "watch:scss": "node-sass -w scss --source-map true --precision 8 --output-style compressed -o css scss",
+    "scss": "node-sass --source-map true --precision 8 --output-style compressed -o assets/css scss",
+    "watch:scss": "node-sass -w scss --source-map true --precision 8 --output-style compressed -o assets/css scss",
     "build:js": "uglifyjs scripts/vendor/*.js scripts/custom/*.js -c -m -o assets/js/all.min.js ",
     "watch:js": "watch \"npm run build:js\" js/src/",
-    "serve": "browser-sync start --proxy \"http://local.procab.com/juanderer/slices\" --files \"assets/css/*.css\" \"assets/js/custom/*.js\" \"assets/js/custom/*/**.js\" \"*.html\"",
+    "serve": "browser-sync start --proxy \"http://local.procab.com/force-promotion/slices\" --files \"assets/css/*.css\" \"assets/js/custom/*.js\" \"assets/js/custom/*/**.js\" \"*.html\"",
     "build:all": "npm run scss && npm run autoprefixer",
     "watch:all": "parallelshell \"npm run serve\" \"npm run watch:scss\""
   },

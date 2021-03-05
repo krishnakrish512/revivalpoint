@@ -24,6 +24,10 @@
   @include media-breakpoint-up(lg){
     width: 95%;
   }
+  @include media-breakpoint-up(xxl){
+    width: 1140px;
+    max-width: 100%;
+  }
 }
 .text-default{
   color: $accent_default !important;

@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0eaa6777-c959-4924-b104-055d8e3ed901" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_blog.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_common-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_common-styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_custom-overides.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_custom-overides.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_products.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_products.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/_slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/woocommerce-modification/_woocommerce.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/assets/scss/woocommerce-modification/_woocommerce.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/partials/flexible-content/slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/partials/flexible-content/slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/woocommerce/archive-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/woocommerce/archive-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/woocommerce/content-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/woocommerce/content-product.php" afterDir="false" />
-    </list>
+    <list default="true" id="0eaa6777-c959-4924-b104-055d8e3ed901" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +24,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../juanderer" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SvnConfiguration">
@@ -57,7 +39,7 @@
       <updated>1611569110985</updated>
       <workItem from="1611569114744" duration="8502000" />
       <workItem from="1611639112664" duration="1517000" />
-      <workItem from="1611648319411" duration="5454000" />
+      <workItem from="1611648319411" duration="5683000" />
     </task>
     <servers />
   </component>
@@ -65,10 +47,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1611645482763">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1611660244175">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1611645482763" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1611660244175" />
     <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1611582385086">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

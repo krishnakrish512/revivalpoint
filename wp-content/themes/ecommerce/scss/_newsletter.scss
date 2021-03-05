@@ -27,8 +27,7 @@
 		color: rgba(255,255,255,.8);
 		max-width: 420px; 
 		line-height: 1.5; 
-		//margin: auto auto 25px;
-		margin-bottom: 25px;
+		margin: auto auto 25px;
 	}
 }
 .b-newsletter_form{
@@ -37,7 +36,7 @@
 	//margin: 0 auto;
 	label{display: none;}
 	.form-group{
-		position: relative;  max-width: 415px; width: 100%; margin-right: 3px;
+		position: relative;  max-width: 395px; width: 100%; margin-right: 3px;
 		&::before{content: "\f0e0"; color: #fff; font-family: FontAwesome; position: absolute; left: 0; top: 10px; font-size: 14px; opacity: .4;}
 	}
 	input[type="email"]{
