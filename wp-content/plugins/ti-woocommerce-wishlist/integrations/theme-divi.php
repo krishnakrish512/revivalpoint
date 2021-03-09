@@ -4,7 +4,7 @@
  *
  * @name Divi
  *
- * @version 4.0.7
+ * @version 4.4.6
  *
  * @slug Divi
  *
@@ -26,6 +26,8 @@ function divi_init() {
 		global $post;
 		$product = wc_get_product( $post->ID );
 		if ( ! empty( $product ) && ! $product->is_in_stock() ) {
+			remove_action( 'woocommerce_single_product_summary', 'tinvwl_view_addto_htmlout', 29 );
+			remove_action( 'woocommerce_single_product_summary', 'tinvwl_view_addto_htmlout', 31 );
 			add_action( 'woocommerce_' . $product->get_type() . '_add_to_cart', 'divi_single_product_summary', 40 );
 		}
 	}

@@ -6,8 +6,8 @@
                 <div class="b-footer_block">
                     <div class="b-footer_block_in">
                         <p class="text-center mb-0"><img
-                                    src="<?= get_theme_mod( 'footer_logo' ) ?>"
-                                    class="d-block m-auto img-fluid" alt="" title="<?= get_bloginfo( 'name' ) ?>"></p>
+                                    src="<?= get_theme_mod('footer_logo') ?>"
+                                    class="d-block m-auto img-fluid" alt="" title="<?= get_bloginfo('name') ?>"></p>
 
                         <br>
                     </div>
@@ -16,40 +16,38 @@
             <div class="b-footer_column col-md-4 col-sm-12 offset-md-4 text-center">
                 <div class="b-footer_block">
                     <div class="b-footer_block_in">
-						<?= get_field( 'footer_text', 'option' ) ?>
+                        <?= get_field('footer_text', 'option') ?>
                         <div class="b-contact_info mb-3">
-							<?php
-							$contact = get_field( 'contact', 'option' );
-							?>
+                            <?php
+                            $contact = get_field('contact', 'option');
+                            ?>
                             <i class="fa fa-location-arrow d-inline-block"></i> <?= $contact['address'] ?>
                             <br>
                             <i class="fa fa-mobile d-inline-block"></i> Phone: <?= $contact['phone_number'] ?>
                             <br>
                         </div>
                         <ul class="b-social-icons text-center mb-3">
-							<?php
-							$social_media = get_field( 'social_media', 'option' );
-							?>
+                            <?php
+                            $social_media = get_field('social_media', 'option');
+                            ?>
                             <li class="b-social_facebook"><a href="<?= $social_media['facebook'] ?>" target="_blank"
                                                              rel="noopener noreferrer"><i
                                             class="fa fa-facebook"></i>Facebook</a>
-                            </li>
-                            <li class="b-social_twitter"><a href="<?= $social_media['twitter'] ?>" target="_blank"
-                                                            rel="noopener noreferrer"><i class="fa fa-twitter"></i>Twitter</a>
                             </li>
                             <li class="b-social_instagram"><a href="<?= $social_media['instagram'] ?>" target="_blank"
                                                               rel="noopener noreferrer"><i
                                             class="fa fa-instagram"></i>Instagram</a>
                             </li>
                         </ul>
-                        <div class="b-footer_menu">
-                            <ul class="list-unstyled list-inline">
-                                <li class="list-inline-item"><a href="#">Home</a></li>
-                                <li class="list-inline-item"><a href="#">About</a></li>
-                                <li class="list-inline-item"><a href="#">Shop</a></li>
-                                <li class="list-inline-item"><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
+                        <?php
+                        wp_nav_menu([
+                            'theme_location' => 'footer',
+                            'menu_class' => 'list-unstyled list-inline',
+                            'container' => 'div',
+                            'container_class' => 'b-footer_menu',
+                            'li_class' => 'list-inline-item'
+                        ]);
+                        ?>
                     </div>
                 </div>
             </div>
@@ -61,9 +59,9 @@
         <div class="container">
             <div class="d-footer_bar">
                 <div class="text-center">
-                    <i class="fa fa-copyright"></i> <?= date( 'Y' ) ?> Created by
-                    <a href="https://nirvanstudio.com/" target="_blank"
-                       rel="noopener noreferrer">Nirvan Studio</a>
+                    <i class="fa fa-copyright"></i> <?= date('Y') ?> Created by
+                    <a href="https://nirvanstudio.com" target="_blank"
+                       rel="noopener noreferrer">Nirvan Studio.</a>
                 </div>
             </div>
         </div>
@@ -121,14 +119,14 @@
     <div class="base-toolbar-item">
         <div class="base-toolbar__icon">
             <span class="base-toolbar__icon-wrap">
-            <?php echo do_shortcode( "[ti_wishlist_products_counter]" ); ?>
+            <?php echo do_shortcode("[ti_wishlist_products_counter]"); ?>
         </span>
             <span class="base-toolbar__icon-label">wishlist</span>
         </div>
 
     </div>
     <div class="base-toolbar-item">
-        <a href="<?= get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ?>" class="base-toolbar__icon">
+        <a href="<?= get_permalink(get_option('woocommerce_myaccount_page_id')) ?>" class="base-toolbar__icon">
                   <span class="base-toolbar__icon-wrap">
                       <i class="icon-user icons"></i>
                   </span>

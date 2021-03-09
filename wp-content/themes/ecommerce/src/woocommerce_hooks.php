@@ -33,14 +33,6 @@ function ecommerce_single_product_sharing()
     global $product;
 
     $facebook_url = "https://www.facebook.com/sharer.php?u=" . $product->get_permalink();
-    $twitter_url = add_query_arg(
-        [
-            'text' => urlencode($product->get_title()),
-            'url' => $product->get_permalink(),
-            'hashtags' => 'revivalpoint'
-        ],
-        "https://www.twitter.com/intent/tweet?"
-    );
 
     $mail_body = $product->get_short_description() . " For details, link here : " . $product->get_permalink();
 
@@ -60,8 +52,6 @@ function ecommerce_single_product_sharing()
     <span class="b-share_product">
                             <a href="<?= $facebook_url ?>" target="_blank" rel="noreferrer noopener"
                                class="fa fa-facebook"></a>
-                            <a href="<?= $twitter_url ?>" target="_blank" rel="noreferrer noopener"
-                               class="fa fa-twitter"></a>
                             <a href="<?= $gmail_url ?>" target="_blank" rel="noreferrer noopener"
                                class="fa fa-envelope"></a>
                           </span>
@@ -74,7 +64,6 @@ function ecommerce_single_product_sharing()
 add_filter('woocommerce_product_tabs', 'woo_custom_product_tabs');
 function woo_custom_product_tabs($tabs)
 {
-
     if (get_field('delivery_info', 'option')['detail']) {
         $tabs['additional_tab'] = [
             'title' => get_field('delivery_info', 'option')['title'],
