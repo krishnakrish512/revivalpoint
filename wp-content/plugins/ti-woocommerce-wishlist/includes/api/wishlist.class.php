@@ -174,7 +174,7 @@ class TInvWL_Includes_API_Wishlist {
 					$data['author'] = $request['user_id'];
 				}
 
-				if ( $data ) {
+				if ( $data && current_user_can( 'tinvwl_general_settings' ) ) {
 					$update = $wl->update( $wishlist['ID'], $data );
 
 					if ( $update ) {
@@ -185,6 +185,8 @@ class TInvWL_Includes_API_Wishlist {
 
 					throw new WC_REST_Exception( 'ti_woocommerce_wishlist_api_wishlist_update_error', __( 'Update wishlist data failed.', 'ti-woocommerce-wishlist' ), 400 );
 
+				} else {
+					throw new WC_REST_Exception( 'ti_woocommerce_wishlist_api_wishlist_forbidden', __( 'Update wishlist data failed.', 'ti-woocommerce-wishlist' ), 403 );
 				}
 			}
 		} catch ( WC_REST_Exception $e ) {
@@ -231,10 +233,6 @@ class TInvWL_Includes_API_Wishlist {
 
 				$products = $wlp->get( $args );
 
-				if ( ! $products ) {
-					throw new WC_REST_Exception( 'ti_woocommerce_wishlist_api_wishlist_products_not_found', __( 'No products found for this wishlist.', 'ti-woocommerce-wishlist' ), 400 );
-				}
-
 				$response = array();
 
 				foreach ( $products as $product ) {
@@ -267,6 +265,10 @@ class TInvWL_Includes_API_Wishlist {
 
 				if ( ! $wishlist ) {
 					throw new WC_REST_Exception( 'ti_woocommerce_wishlist_api_invalid_share_key', __( 'Invalid wishlist share key.', 'ti-woocommerce-wishlist' ), 400 );
+				}
+
+				if ( ! current_user_can( 'tinvwl_general_settings' ) ) {
+					throw new WC_REST_Exception( 'ti_woocommerce_wishlist_api_wishlist_forbidden', __( 'Add product to wishlist failed.', 'ti-woocommerce-wishlist' ), 403 );
 				}
 
 				$wlp = new TInvWL_Product();
@@ -316,6 +318,11 @@ class TInvWL_Includes_API_Wishlist {
 			$item_id = $request['item_id'];
 
 			if ( ! empty( $item_id ) ) {
+
+				if ( ! current_user_can( 'tinvwl_general_settings' ) ) {
+					throw new WC_REST_Exception( 'ti_woocommerce_wishlist_api_wishlist_forbidden', __( 'Product not found.', 'ti-woocommerce-wishlist' ), 403 );
+				}
+
 				$wlp = new TInvWL_Product();
 
 				$args       = array();

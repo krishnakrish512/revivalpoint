@@ -426,7 +426,11 @@ class TInvWL_Form {
 
 		$extra    = self::__atrtostr( $extra );
 		$multiple = ( count( $value ) > 1 && false === stripos( $extra, 'multiple' ) ) ? ' multiple="multiple"' : '';
-		$form     = '';
+
+		if ( $multiple || strpos( $extra, 'multiple' ) > - 1 ) {
+			$data['name'] = $data['name'] . '[]';
+		}
+		$form = '';
 		foreach ( $options as $key => $val ) {
 			$key = (string) $key;
 			if ( is_array( $val ) ) {
@@ -570,6 +574,9 @@ class TInvWL_Form {
 		}
 		$mimefiles = array_filter( $mimefiles );
 		$mimefiles = wp_json_encode( $mimefiles );
+
+		$extra_field  .= ' disabled="disabled"';
+		$data['type'] = 'text';
 
 		wp_enqueue_media();
 
