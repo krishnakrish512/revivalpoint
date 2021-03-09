@@ -64,6 +64,28 @@ if ( post_password_required() ) {
 						 */
 						do_action( 'woocommerce_single_product_summary' );
 						?>
+						<div class="b-product_single_order-by">
+                           <?php $whatsapp_number = get_field( 'whatsapp_number', 'option' );
+                            $viber_number    = get_field( 'viber_number', 'option' );?>
+							<h6 class="font-weight-bold mb-0 mr-3 text-uppercase">Order By :</h6>
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="" class="phone" title="order by phone" rel="tooltip">
+										<i class="ico-phone"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://wa.me/<?= $whatsapp_number ?>" class="WhatsApp" target="_blank" title="order by phone">
+										<i class="ico-whatsapp"></i>
+									</a>
+								</li>
+								<li>
+									<a href="viber://chat?number=%2B<?= $viber_number ?>" class="viber d-none" target="_blank" title="order by phone">
+										<i class="ico-viber"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
                         <div class="b-product_single_option">
                             <ul class="pl-0 list-unstyled">
                                 <li><?php echo do_shortcode( "[ti_wishlists_addtowishlist]" ); ?></li>

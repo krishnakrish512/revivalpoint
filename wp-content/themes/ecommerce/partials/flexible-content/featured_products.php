@@ -11,7 +11,7 @@ $args = [
 $featured_products = get_posts( $args );
 ?>
 <section id="b-products">
-    <div class="b-section_title pt-5">
+    <div class="b-section_title">
         <h4 class="text-center text-uppercase mb-0">
             <b><?= get_sub_field( 'heading' ) ?></b>
             <span class="text-center">
@@ -20,8 +20,8 @@ $featured_products = get_posts( $args );
         </h4>
         <p class="text-center"><?= get_sub_field( 'sub_heading' ) ?></p>
     </div>
-    <div class="b-products b-product_grid b-product_grid_four mb-4">
-        <div class="container">
+    <div class="b-products b-product_grid b-product_grid_five mb-4">
+        <div class="container-fluid">
             <div class="row clearfix">
 				<?php
 				foreach ( $featured_products as $product_id ):

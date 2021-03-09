@@ -79,3 +79,30 @@ function woo_attrib_additional_tab_content()
 {
     echo get_field('delivery_info', 'option')['detail'];
 }
+
+/**
+ * adding additional Product video tab to the product single page tabsg
+ */
+add_filter('woocommerce_product_tabs', 'woo_custom_product_video_tab');
+function woo_custom_product_video_tab($tabs)
+{
+    global $post;
+    if (get_field('tutorial_video', $post->ID)) {
+        $tabs['Product_video'] = [
+            'title' => 'Tutorial Video',
+            'priority' => 110,
+            'callback' => 'woo_attrib_additional_product_video_content'
+        ];
+    }
+    return $tabs;
+}
+
+function woo_attrib_additional_product_video_content()
+{
+    ?>
+    <div class="mx-auto">
+        <iframe width="560" height="315" src="<?php the_field('tutorial_video'); ?>" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+<?php } ?>

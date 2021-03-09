@@ -57,7 +57,7 @@
                                 class="img-fluid d-block"
                                 alt=""></a>
                 </div>
-                <div class="b-header_nav b-header_nav_center ml-auto border-right__dashed pr-xl-5 mr-xl-5 pr-lg-2 mr-lg-2 hidden-sm-down hidden-md-down">
+                <div class="b-header_nav b-header_nav_center ml-auto border-right__dashed pr-xl-3 mr-xl-3 pr-lg-2 mr-lg-2 hidden-sm-down hidden-md-down">
                     <div class="b-menu_top_bar_container">
 						<?php
 						wp_nav_menu( [
@@ -71,7 +71,7 @@
                 </div>
                 <div class="b-header_right">
                     <div class="b-has_sub b-dropdown_wrapper from-bottom b-user-block border-right__dashed pr-xl-5 pr-lg-3 hidden-sm-down hidden-md-down">
-                        <div class="b-user-block__image float-left mr-3">
+                        <div class="b-user-block__image float-left mr-1">
                             <img src="<?= get_template_directory_uri() ?>/assets/images/lady.svg" alt="">
                         </div>
                         <div class="b-user-block__content float-right">
@@ -95,8 +95,8 @@
                             <i class="icon-basket icons"></i>
                             <span class="b-cart_totals hidden-sm-down hidden-md-down">
                               <span class="b-cart_number"><?= WC()->cart->get_cart_contents_count() ?></span>
-                              <span class="b-subtotal_divider">/</span>
-                              <span class="b-cart_subtotal">
+                              <span class="b-subtotal_divider d-none">/</span>
+                              <span class="b-cart_subtotal d-none">
                                 <span class="b-cart_amount amount">
                                   <?= WC()->cart->get_cart_subtotal() ?>
                                 </span>
@@ -105,7 +105,7 @@
                         </a>
                     </div>
                     <div class="hidden-lg-up">
-                        <i class="icon-menu icons b-nav_icon" id="b-nav_icon"></i>
+                        <i class="fa fa-bars  b-nav_icon" id="b-nav_icon"></i>
                     </div>
                 </div>
             </div>

@@ -99,18 +99,19 @@ var App = (function (window) {
             if ($("#b-gallery_logo.b-count_04").length > 0) {
                 $('#b-gallery_logo.b-count_04.owl-carousel').owlCarousel({
                     loop: true,
+                    autoplay:true,
                     margin: 10,
                     nav: false,
                     dots: false,
                     responsive: {
                         0: {
-                            items: 2
+                            items: 3
                         },
                         600: {
                             items: 3
                         },
                         1000: {
-                            items: 4
+                            items: 6
                         }
                     }
                 })
@@ -163,12 +164,12 @@ var App = (function (window) {
             if ($("#b-top_recent").length > 0) {
                 $('#b-top_recent .owl-carousel').owlCarousel({
                     loop: true,
-
+                    autoplay: true,
                     responsive: {
                         0: {
-                            items: 1,
+                            items: 2,
                             dots: true,
-                            margin: 0,
+                            margin: 15,
                             nav: false,
                         },
                         600: {
@@ -185,12 +186,12 @@ var App = (function (window) {
                         },
                         1000: {
                             items: 4,
-                            dots: true,
+                            dots: false,
                             margin: 15,
-                            nav: false,
+                            nav: true,
                         },
                         1200: {
-                            items: 4,
+                            items: 5,
                             dots: false,
                             margin: 15,
                             nav: true,
@@ -256,17 +257,17 @@ var App = (function (window) {
                 var owl = $('#b-related_products').owlCarousel({
                     loop: true,
                     margin: 15,
-                    nav: true,
+                    nav: false,
                     dots: true,
                     responsive: {
                         0: {
-                            items: 1
+                            items: 2
                         },
                         600: {
                             items: 3
                         },
                         1000: {
-                            items: 4
+                            items: 5
                         }
                     }
                 })
@@ -470,7 +471,8 @@ $(window).on("load", function () {
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            speed: 1000
+            autoplay: true,
+            autoplaySpeed: 5000,
         });
     }
 

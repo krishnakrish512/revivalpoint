@@ -11,7 +11,7 @@ $testimonials_query = new WP_Query( $args );
     <div class="row clearfix mb-2 align-items-center">
         <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-6 col-xs-12">
             <section id="b-testimonial">
-                <div class="b-section_title">
+                <div class="b-section_title pt-0">
                     <h4 class="text-center text-uppercase">
                         WHAT THEY SAY ABOUT US
                         <span class="b-title_separator"><span></span></span>
