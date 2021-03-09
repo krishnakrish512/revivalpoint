@@ -265,6 +265,10 @@
   }
   &_info{
       padding: 15px;
+      display: flex;
+      flex-direction: column;
+      min-height: 130px;
+      justify-content: space-between;
       .b-product_grid_toggle{
         display: flex;
         justify-content: space-between;
