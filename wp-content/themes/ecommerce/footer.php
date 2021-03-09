@@ -39,27 +39,20 @@
                                             class="fa fa-instagram"></i>Instagram</a>
                             </li>
                         </ul>
-                        <!--                        <div class="b-footer_menu">-->
                         <?php
                         wp_nav_menu([
                             'theme_location' => 'footer',
                             'menu_class' => 'list-unstyled list-inline',
-                            'container' => '<div>',
-                            'container_class' => 'b-footer_menu'
+                            'container' => 'div',
+                            'container_class' => 'b-footer_menu',
+                            'li_class' => 'list-inline-item'
                         ]);
                         ?>
-                        <!--                            <ul class="list-unstyled list-inline">-->
-                        <!--                                <li class="list-inline-item"><a href="#">Home</a></li>-->
-                        <!--                                <li class="list-inline-item"><a href="#">About</a></li>-->
-                        <!--                                <li class="list-inline-item"><a href="#">Shop</a></li>-->
-                        <!--                                <li class="list-inline-item"><a href="#">Contact</a></li>-->
-                        <!--                            </ul>-->
                     </div>
                 </div>
             </div>
-    </div>
-    </aside>
-    <!-- footer-main -->
+        </aside>
+        <!-- footer-main -->
     </div>
     <!-- footer-bar -->
     <div class="b-copyrights_wrapper">
@@ -67,8 +60,8 @@
             <div class="d-footer_bar">
                 <div class="text-center">
                     <i class="fa fa-copyright"></i> <?= date('Y') ?> Created by
-                    <a href="http://digitalflow.com.np/" target="_blank"
-                       rel="noopener noreferrer">Digital Flow.</a>
+                    <a href="https://nirvanstudio.com" target="_blank"
+                       rel="noopener noreferrer">Nirvan Studio.</a>
                 </div>
             </div>
         </div>
