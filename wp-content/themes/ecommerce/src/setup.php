@@ -8,7 +8,10 @@ function ecommerce_setup()
     add_theme_support('title-tag');
     add_theme_support('woocommerce');
 
-    register_nav_menu('primary', 'Primary');
+    register_nav_menus([
+        'primary' => 'Primary',
+        'footer' => 'Footer'
+    ]);
 
 
 //	add_theme_support( 'wc-product-gallery-zoom' );

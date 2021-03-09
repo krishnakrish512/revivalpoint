@@ -39,19 +39,27 @@
                                             class="fa fa-instagram"></i>Instagram</a>
                             </li>
                         </ul>
-                        <div class="b-footer_menu">
-                            <ul class="list-unstyled list-inline">
-                                <li class="list-inline-item"><a href="#">Home</a></li>
-                                <li class="list-inline-item"><a href="#">About</a></li>
-                                <li class="list-inline-item"><a href="#">Shop</a></li>
-                                <li class="list-inline-item"><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
+                        <!--                        <div class="b-footer_menu">-->
+                        <?php
+                        wp_nav_menu([
+                            'theme_location' => 'footer',
+                            'menu_class' => 'list-unstyled list-inline',
+                            'container' => '<div>',
+                            'container_class' => 'b-footer_menu'
+                        ]);
+                        ?>
+                        <!--                            <ul class="list-unstyled list-inline">-->
+                        <!--                                <li class="list-inline-item"><a href="#">Home</a></li>-->
+                        <!--                                <li class="list-inline-item"><a href="#">About</a></li>-->
+                        <!--                                <li class="list-inline-item"><a href="#">Shop</a></li>-->
+                        <!--                                <li class="list-inline-item"><a href="#">Contact</a></li>-->
+                        <!--                            </ul>-->
                     </div>
                 </div>
             </div>
-        </aside>
-        <!-- footer-main -->
+    </div>
+    </aside>
+    <!-- footer-main -->
     </div>
     <!-- footer-bar -->
     <div class="b-copyrights_wrapper">
