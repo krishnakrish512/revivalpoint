@@ -267,12 +267,13 @@
       padding: 15px;
       display: flex;
       flex-direction: column;
-      min-height: 130px;
+      min-height: 120px;
       justify-content: space-between;
       .b-product_grid_toggle{
         display: flex;
         justify-content: space-between;
         width: 100%;
+        transform: translateY(-7px);
 
         .b-price{
          
@@ -302,9 +303,14 @@
       }
   }
   &_five{
+    .container,
+    .container-fluid{
+    }
     [class*="col-"]{
         flex: 0 0 50%;
         max-width: 60%;
+        padding-left: 8px;
+        padding-right: 8px;
         @include media-breakpoint-up(lg){
           flex: 0 0 20%;
           max-width: 20%;

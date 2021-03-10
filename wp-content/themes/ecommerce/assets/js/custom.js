@@ -64,9 +64,19 @@ var App = (function (window) {
                 $("body").toggleClass('mobile-menu-open');
                 return false;
             });
+            $("#b-mini_cart").on('click', function (event) {
+                $("body").toggleClass('b-mini_cart_toggle');
+                return false;
+            });
             $(document).on('click', function (e) {
-                if (!$(e.target).is('.b-main_menu-wrapper, .b-main_menu-wrapper *')) {
+                if (!$(e.target).is('.b-mini_cart, .b-main_menu-wrapper, .b-main_menu-wrapper *')) {
                     $("body").removeClass('mobile-menu-open');
+                    $("body").removeClass('b-mini_cart_toggle');
+                }
+            });
+            $(document).on('click', function (e) {
+                if (!$(e.target).is('.b-mini_cart')) {
+                    $("body").removeClass('b-mini_cart_toggle');
                 }
             });
             $(document).on('click', ".b-main_menu-wrapper ul li.dropdown_wrapper > a i", function (event) {
@@ -170,31 +180,31 @@ var App = (function (window) {
                         0: {
                             items: 2,
                             dots: true,
-                            margin: 15,
+                            margin: 16,
                             nav: false,
                         },
                         600: {
                             items: 2,
                             dots: true,
-                            margin: 15,
+                            margin: 16,
                             nav: false,
                         },
                         800: {
                             items: 3,
                             dots: true,
-                            margin: 15,
+                            margin: 16,
                             nav: false,
                         },
                         1000: {
                             items: 4,
                             dots: false,
-                            margin: 15,
+                            margin: 16,
                             nav: true,
                         },
                         1200: {
                             items: 5,
                             dots: false,
-                            margin: 15,
+                            margin: 16,
                             nav: true,
                         }
                     }

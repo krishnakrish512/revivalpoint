@@ -30,6 +30,7 @@ $grid-breakpoints: (
         xxl: 1400px
 
 );
+
 // Responsive visibility utilities
 @each $bp in map-keys($grid-breakpoints) {
   .hidden-#{$bp}-up {
