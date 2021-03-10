@@ -75,8 +75,21 @@ body{
 .b-product-display{
   position: relative;
   .b-display-single{
-    order: 2;
+    //order: 2;
+    margin-bottom: 30px;
+    // @media only screen and (min-width:992px){
+    //   margin-bottom: 0;
+    // }
     .b-produt-item{
+      height: 320px;
+      overflow: hidden;
+      @media only screen and (min-width:992px){
+        height: 450px;
+      }
+      img{
+        height: 100%;
+        margin: auto;
+      }
       &:focus{
         outline: none;
       }
@@ -125,9 +138,14 @@ body{
 
 .b-display-list-wrapper{
   position: relative;
+  margin-bottom: 30px;
+  @media only screen and (min-width:768px){
+    margin-bottom: 0;
+  }
   .b-display-item-list{
     .b-display-item{
-      margin-bottom: 8px;
+      //margin-bottom: 8px;
+      padding: 0 15px;
       cursor: pointer;
       -webkit-transition: all 0.2s linear;
       -moz-transition: all 0.2s linear;
@@ -158,9 +176,6 @@ body{
 }
 .b-slider-action{
   button{
-    width: 50%;
-    display: inline-block;
-    margin-right: -3px;
     background-color: #F5F5F5;
     border: none;
     font-size: 20px;
@@ -168,8 +183,19 @@ body{
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
     transition: all 0.3s linear;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     &.slick-prev{
       border-right: 1px solid $white;
+      left:0;
+      transform : rotate(-90deg);
+    }
+    &.slick-next{
+      //border-right: 1px solid $white;
+      right:0;
+      transform : rotate(-90deg);
     }
     i{
       color: $black;
@@ -185,6 +211,34 @@ body{
       outline: none;
     }
   }
+  // button{
+  //   width: 50%;
+  //   display: inline-block;
+  //   margin-right: -3px;
+  //   background-color: #F5F5F5;
+  //   border: none;
+  //   font-size: 20px;
+  //   -webkit-transition: all 0.3s linear;
+  //   -moz-transition: all 0.3s linear;
+  //   -ms-transition: all 0.3s linear;
+  //   transition: all 0.3s linear;
+  //   &.slick-prev{
+  //     border-right: 1px solid $white;
+  //   }
+  //   i{
+  //     color: $black;
+  //   }
+  //   &:hover{
+  //     background-color: $black;
+  //     i{
+  //       color: $white;
+  //     }
+  //   }
+  //   &:focus{
+  //     border: none;
+  //     outline: none;
+  //   }
+  // }
   .b-bottom-thumbs &{
     box-shadow: 0 0 9px rgba($black,.1);
     display: inline-block;
@@ -850,4 +904,16 @@ body{
 
 
 
-//
+
+.default-content{
+  table{
+    width: 100%;
+    tr{
+      border:1px solid #ccc;
+      td{
+        padding: 15px;
+        border: 1px solid #ccc
+      }
+    }
+  }
+}

@@ -43,7 +43,7 @@ if ( empty( $image_ids ) ) {
 }
 ?>
 <div class="row clearfix b-product-display">
-    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 b-display-single">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 b-display-single">
 		<?php woocommerce_show_product_sale_flash() ?>
         <div class="b-product-carousel owl-carousel" id="bSingleProductCarousel"
              data-slider-id="bSingleProductCarousel">
@@ -52,17 +52,19 @@ if ( empty( $image_ids ) ) {
 				$image = wp_get_attachment_image_url( $image_id, 'full' );
 				$image = getResizedImage( $image );
 				?>
-                <div class="b-produt-item">
+                <div class="b-produt-item gallery">
+                    <a href="<?= wp_get_attachment_image_url( $image_id, 'full' ) ?>">
                     <img src="<?= wp_get_attachment_image_url( $image_id, 'full' ) ?>" alt="" class="img-fluid"
-                         data-zoomed="<?= wp_get_attachment_image_url( $image_id, 'full' ) ?>"
+                         
                          data-image-id="<?= $image_id ?>">
+                         </a>
                 </div>
 			<?php
 			endforeach;
 			?>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
         <div class="b-display-list-wrapper">
             <div class="owl-thumbs b-display-item-list" id="bSingleProduct" data-slider-id="bSingleProductCarousel">
 				<?php
