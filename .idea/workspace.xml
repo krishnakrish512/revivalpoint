@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f0fe80cc-4aff-46af-848c-10bb74ccd1ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/src/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/src/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/src/setup.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/src/setup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/src/woocommerce_hooks.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/src/woocommerce_hooks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/ecommerce/woocommerce/single-product/product-image.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/ecommerce/woocommerce/single-product/product-image.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
       <workItem from="1613655252729" duration="457000" />
       <workItem from="1613739427542" duration="2061000" />
       <workItem from="1615293081530" duration="9376000" />
-      <workItem from="1615379449465" duration="423000" />
+      <workItem from="1615379449465" duration="3869000" />
     </task>
     <servers />
   </component>

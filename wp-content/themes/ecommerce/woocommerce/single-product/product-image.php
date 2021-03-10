@@ -15,70 +15,75 @@
  * @version 3.5.1
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 // Note: `wc_get_gallery_image_html` was added in WC 3.3.2 and did not exist prior. This check protects against theme overrides being used on older versions of WC.
-if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
-	return;
+if (!function_exists('wc_get_gallery_image_html')) {
+    return;
 }
 
 global $product;
 
-$columns           = apply_filters( 'woocommerce_product_thumbnails_columns', 4 );
+$columns = apply_filters('woocommerce_product_thumbnails_columns', 4);
 $post_thumbnail_id = $product->get_image_id();
-$wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_classes', array(
-	'woocommerce-product-gallery',
-	'woocommerce-product-gallery--' . ( $product->get_image_id() ? 'with-images' : 'without-images' ),
-	'woocommerce-product-gallery--columns-' . absint( $columns ),
-	'images',
-) );
+$wrapper_classes = apply_filters('woocommerce_single_product_image_gallery_classes', array(
+    'woocommerce-product-gallery',
+    'woocommerce-product-gallery--' . ($product->get_image_id() ? 'with-images' : 'without-images'),
+    'woocommerce-product-gallery--columns-' . absint($columns),
+    'images',
+));
 
 $image_ids = $product->get_gallery_image_ids();
 
-if ( empty( $image_ids ) ) {
-	$image_ids = [ $product->get_image_id() ];
+if (empty($image_ids)) {
+    $image_ids = [$product->get_image_id()];
 
 } else {
-	array_unshift( $image_ids, $product->get_image_id() );
+    array_unshift($image_ids, $product->get_image_id());
 }
 ?>
 <div class="row clearfix b-product-display">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 b-display-single">
-		<?php woocommerce_show_product_sale_flash() ?>
+        <?php woocommerce_show_product_sale_flash() ?>
         <div class="b-product-carousel owl-carousel" id="bSingleProductCarousel"
              data-slider-id="bSingleProductCarousel">
-			<?php
-			foreach ( $image_ids as $image_id ):
-				$image = wp_get_attachment_image_url( $image_id, 'full' );
-				$image = getResizedImage( $image );
-				?>
+            <?php
+            foreach ($image_ids as $image_id):
+                $image = wp_get_attachment_image_url($image_id, 'full');
+                $image = getResizedImage($image);
+                ?>
                 <div class="b-produt-item gallery">
-                    <a href="<?= wp_get_attachment_image_url( $image_id, 'full' ) ?>">
-                    <img src="<?= wp_get_attachment_image_url( $image_id, 'full' ) ?>" alt="" class="img-fluid"
-                         
-                         data-image-id="<?= $image_id ?>">
-                         </a>
+                    <a href="<?= wp_get_attachment_image_url($image_id, 'full') ?>">
+                        <img src="<?= wp_get_attachment_image_url($image_id, 'full') ?>" alt="" class="img-fluid"
+
+                             data-image-id="<?= $image_id ?>">
+                    </a>
                 </div>
-			<?php
-			endforeach;
-			?>
+            <?php
+            endforeach;
+            ?>
         </div>
     </div>
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
         <div class="b-display-list-wrapper">
             <div class="owl-thumbs b-display-item-list" id="bSingleProduct" data-slider-id="bSingleProductCarousel">
-				<?php
-				foreach ( $image_ids as $image_id ):
-					$image = wp_get_attachment_image_url( $image_id, 'full' );
-					$image = getResizedImage( $image );
-					?>
+                <?php
+                foreach ($image_ids as $image_id):
+                    $image = wp_get_attachment_image_url($image_id, 'full');
+                    $image = getResizedImage($image, [500, 500]);
+                    ?>
                     <div class="owl-thumb-item b-display-item">
-                        <img src="<?= wp_get_attachment_image_url( $image_id, 'full' ) ?>" alt="" class="img-fluid"
-                             data-thumb-image-id="<?= $image_id ?>">
+                        <?php
+                        echo \NextGenImage\getWebPHTML($image['webp'], $image['orig'], [
+                            'data-thumb-image-id' => $image_id,
+                            'class' => 'img-fluid'
+                        ])
+                        ?>
+
                     </div>
-				<?php
-				endforeach;
-				?>
+                <?php
+                endforeach;
+                ?>
             </div><!-- /b-display-item-list -->
             <div class="b-slider-action">
                 <button class="slick-prev"><i class="fa fa-angle-up"></i></button>
