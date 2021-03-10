@@ -20,7 +20,7 @@ while ( have_posts() ):
 			echo "<h1>" . get_the_title() . "</h1>";
 		}
 		?>
-        <div class="container">
+        <div class="container default-content">
 			<?php the_content(); ?>
         </div>
 		<?php

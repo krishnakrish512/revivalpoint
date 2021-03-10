@@ -29,13 +29,12 @@
 
 
 .slider{
-  display: none;
   &-item{
     position: relative;
   }
   &-image{
     position: relative;
-    padding-top: 100%;
+    padding-top: 50%;
     @include media-breakpoint-up(md){
       padding-top: 38%;
     }
@@ -43,12 +42,13 @@
     img{
       position: absolute;
       top: 0;
-      width: 100%;
+      max-width: 130%;
 
       @include media-breakpoint-up(md){
           max-width: 100%;
       }
     }
+
 
 
   }
@@ -114,7 +114,18 @@
       }
     }
   }
-
+  &.desktop-slider{
+    display: block !important;
+    @include media-breakpoint-up(lg){
+      display: block !important;
+    }
+  }
+  &.mobile-slider{
+    display: none !important;
+    @include media-breakpoint-up(lg){
+      display: none !important;
+    }
+  }
 
 }
 
@@ -174,5 +185,3 @@
     }
   }
 }
-
-

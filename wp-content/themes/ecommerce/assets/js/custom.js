@@ -49,7 +49,7 @@ var App = (function (window) {
             this.SingleProductCarousel();
 
             /* SINGLE PRODUCT ZOOM */
-            this.ProductZoom();
+            //this.ProductZoom();
         },
 
         getObject: function (selector) {
@@ -165,6 +165,7 @@ var App = (function (window) {
                 $('#b-top_recent .owl-carousel').owlCarousel({
                     loop: true,
                     autoplay: true,
+                    autoplaySpeed: 1000,
                     responsive: {
                         0: {
                             items: 2,
@@ -343,10 +344,12 @@ var App = (function (window) {
                     speed: 800,
                     infinite: false,
                     autoplay: false,
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    vertical: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    vertical: false,
                     draggable: false,
+                    center: true,
+                    margin: 10,
                 });
 
                 $(document).on('click', '.b-display-list-wrapper .b-slider-action .slick-prev', function () {
@@ -381,11 +384,11 @@ var App = (function (window) {
             }
         },
 
-        ProductZoom: function () {
-            $('.b-produt-item').each(function () {
-                $(this).find('img').zoomIt();
-            });
-        }
+        // ProductZoom: function () {
+        //     $('.b-produt-item').each(function () {
+        //         $(this).find('img').zoomIt();
+        //     });
+        // }
     }
 })(window);
 
