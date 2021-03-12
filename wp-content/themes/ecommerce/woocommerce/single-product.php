@@ -31,7 +31,7 @@ get_header( 'shop' ); ?>
  */
 //		do_action( 'woocommerce_before_main_content' );
 ?>
-    <div class="b-product_single_breadcrumbs pt-3 pb-3">
+    <div class="b-product_single_breadcrumbs pt-3 pb-3 mb-5">
         <div class="container">
             <div class="row clearfix">
                 <div class="col-xl-8 col-lg-8 col-mb-8 col-sm-12 col-xs-12">
