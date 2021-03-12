@@ -270,6 +270,7 @@ var App = (function (window) {
                     margin: 15,
                     nav: false,
                     dots: true,
+                    autoplay: true,
                     responsive: {
                         0: {
                             items: 2

@@ -578,3 +578,15 @@
     padding:5px 10px;
   }
 }
+
+.woocommerce-mini-cart{
+  &-item{
+    position: relative;
+    padding-right: 15px;
+    a.remove{
+      position: absolute;
+      right: 0;
+      font-size: 25px;
+    }
+  }
+}
