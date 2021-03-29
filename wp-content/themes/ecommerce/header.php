@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 
 </head>
 <body>
@@ -25,7 +25,7 @@
         <span class="b-close_search" id="b-close_cart"></span>
     </div>
     <div class="widget_shopping_cart_content">
-		<?php woocommerce_mini_cart(); ?>
+        <?php woocommerce_mini_cart(); ?>
     </div>
 </div>
 <div class="b-main_menu-wrapper hidden-lg-up">
@@ -38,14 +38,14 @@
 
         </li>
     </ul>
-	<?php
-	wp_nav_menu( [
-		'menu_location' => 'primary',
-		'menu_class'    => 'categories',
-		'container'     => '',
-		'walker'        => new Ecommerce_Responsive_Nav_Walker()
-	] );
-	?>
+    <?php
+    wp_nav_menu([
+        'theme_location' => 'primary',
+        'menu_class' => 'categories',
+        'container' => '',
+        'walker' => new Ecommerce_Responsive_Nav_Walker()
+    ]);
+    ?>
 </div>
 <div class="b-wrapper">
     <header id="b-header">
@@ -53,20 +53,20 @@
             <div class="container d-flex justify-content-between align-items-center">
                 <div class="b-logo">
                     <a href="<?= get_home_url() ?>" class="d-inline-block"><img
-                                src="<?= wp_get_attachment_image_url( get_theme_mod( 'custom_logo' ), 'full' ) ?>"
+                                src="<?= wp_get_attachment_image_url(get_theme_mod('custom_logo'), 'full') ?>"
                                 class="img-fluid d-block"
                                 alt=""></a>
                 </div>
                 <div class="b-header_nav b-header_nav_center ml-auto border-right__dashed pr-xl-3 mr-xl-3 pr-lg-2 mr-lg-2 hidden-sm-down hidden-md-down">
                     <div class="b-menu_top_bar_container">
-						<?php
-						wp_nav_menu( [
-							'menu_location'   => 'primary',
-							'menu_class'      => 'pl-0 mb-0 list-unstyled',
-							'container_class' => 'b-main_menu pt-0',
-							'walker'          => new Ecommerce_Nav_Walker()
-						] );
-						?>
+                        <?php
+                        wp_nav_menu([
+                            'theme_location' => 'primary',
+                            'menu_class' => 'pl-0 mb-0 list-unstyled',
+                            'container_class' => 'b-main_menu pt-0',
+                            'walker' => new Ecommerce_Nav_Walker()
+                        ]);
+                        ?>
                     </div>
                 </div>
                 <div class="b-header_right">
@@ -78,7 +78,7 @@
                             <h5 class="callout-text m-0 font-weight-bold">
                                 Hi, <?= ecommerce_get_user_display_name() ?></h5>
                             <div class="callout-action">
-								<?php ecommerce_user_account_link() ?>
+                                <?php ecommerce_user_account_link() ?>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                         </a>
                     </div>
                     <div class="b-wishlist_icon hidden-sm-down hidden-md-down">
-						<?php echo do_shortcode( "[ti_wishlist_products_counter]" ); ?>
+                        <?php echo do_shortcode("[ti_wishlist_products_counter]"); ?>
                     </div>
                     <div class="b-cart_basket pr-0">
                         <a href="javascript:void(0);" id="b-mini_cart" class="d-inline-block">

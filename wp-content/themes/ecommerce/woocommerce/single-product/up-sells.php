@@ -10,41 +10,44 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @package 	WooCommerce/Templates
+ * @see        https://docs.woocommerce.com/document/template-structure/
+ * @package    WooCommerce/Templates
  * @version     3.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+if (!defined('ABSPATH')) {
+    exit;
 }
 
-if ( $upsells ) : ?>
+if ($upsells) : ?>
 
-	<section class="up-sells upsells products">
-		<div class="container">
-		<div class="b-section_title">
-			<h4 class="text-center text-uppercase"><?php esc_html_e( 'You may also like&hellip;', 'woocommerce' ); ?><span class="b-title_separator"><span></span></span></h4>
-		</div>
-		
+    <section class="up-sells upsells products">
+        <div class="container">
+            <div class="b-section_title">
+                <h4 class="text-center text-uppercase"><?php esc_html_e('You may also like&hellip;', 'woocommerce'); ?>
+                    <span class="b-title_separator"><span></span></span></h4>
+            </div>
 
-		<?php woocommerce_product_loop_start(); ?>
 
-			<?php foreach ( $upsells as $upsell ) : ?>
+            <?php woocommerce_product_loop_start(); ?>
 
-				<?php
-					$post_object = get_post( $upsell->get_id() );
+            <?php foreach ($upsells as $upsell) : ?>
 
-					setup_postdata( $GLOBALS['post'] =& $post_object );
+                <?php
+                $post_object = get_post($upsell->get_id());
 
-					wc_get_template_part( 'content', 'product' ); ?>
+                setup_postdata($GLOBALS['post'] =& $post_object);
+                ?>
+                <div class="col-xl-3 col-lg-4 col-mb-4 col-sm-6 col-xs-12">
+                    <?php
+                    wc_get_template_part('content', 'product'); ?>
+                </div>
+            <?php endforeach; ?>
 
-			<?php endforeach; ?>
+            <?php woocommerce_product_loop_end(); ?>
+        </div>
 
-		<?php woocommerce_product_loop_end(); ?>
-		</div>
-
-	</section>
+    </section>
 
 <?php endif;
 

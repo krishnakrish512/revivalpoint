@@ -105,4 +105,17 @@ function woo_attrib_additional_product_video_content()
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
     </div>
-<?php } ?>
+<?php }
+
+
+function woocommerce_template_loop_product_title()
+{
+    $product_title = get_the_title();
+
+    if (strlen($product_title) > 60) {
+        $product_title = substr($product_title, 0, 60) . "...";
+    }
+
+    echo '<h2 class="' . esc_attr(apply_filters('woocommerce_product_loop_title_classes', 'woocommerce-loop-product__title')) . '">' . $product_title . '</h2>';
+}
+
