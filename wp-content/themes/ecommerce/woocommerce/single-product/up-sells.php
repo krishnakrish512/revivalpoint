@@ -29,22 +29,22 @@ if ($upsells) : ?>
             </div>
 
 
-            <?php woocommerce_product_loop_start(); ?>
+            <div class="row clearfix products b-product_grid_five">
 
-            <?php foreach ($upsells as $upsell) : ?>
+                <?php foreach ($upsells as $upsell) : ?>
 
-                <?php
-                $post_object = get_post($upsell->get_id());
-
-                setup_postdata($GLOBALS['post'] =& $post_object);
-                ?>
-                <div class="col-xl-3 col-lg-4 col-mb-4 col-sm-6 col-xs-12">
                     <?php
-                    wc_get_template_part('content', 'product'); ?>
-                </div>
-            <?php endforeach; ?>
+                    $post_object = get_post($upsell->get_id());
 
-            <?php woocommerce_product_loop_end(); ?>
+                    setup_postdata($GLOBALS['post'] =& $post_object);
+                    ?>
+                    <div class="col-xl-3 col-lg-4 col-mb-4 col-sm-6 col-xs-12">
+                        <?php
+                        wc_get_template_part('content', 'product'); ?>
+                    </div>
+                <?php endforeach; ?>
+
+            </div>
         </div>
 
     </section>
