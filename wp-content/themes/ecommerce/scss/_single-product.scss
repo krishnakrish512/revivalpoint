@@ -80,6 +80,8 @@ body{
     // @media only screen and (min-width:992px){
     //   margin-bottom: 0;
     // }
+
+
     .b-produt-item{
       height: 320px;
       overflow: hidden;
@@ -88,7 +90,7 @@ body{
       }
       img{
         height: 100%;
-        margin: auto;
+        margin-left: auto;
       }
       &:focus{
         outline: none;
@@ -912,7 +914,7 @@ body{
       border:1px solid #ccc;
       td{
         padding: 15px;
-        border: 1px solid #ccc
+        border: 1px solid #ccc;
       }
     }
   }

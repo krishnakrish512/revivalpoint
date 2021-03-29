@@ -36,7 +36,7 @@ if (post_password_required()) {
     <div class="b-product_single pb-5">
         <div class="container">
             <div class="row clearfix">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 pr-md-4">
                     <?php
                     /**
                      * Hook: woocommerce_before_single_product_summary.
@@ -47,7 +47,7 @@ if (post_password_required()) {
                     do_action('woocommerce_before_single_product_summary');
                     ?>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-12 col-xs-12">
+                <div class="col-xl-6 col-lg-6 col-mb-6 col-sm-12 col-xs-12 pl-md-4">
                     <div class="b-product_single_summary summary entry-summary">
                         <?php
                         /**
