@@ -87,15 +87,12 @@ a:focus,a:active,input:focus,input:active{outline: none;}
     justify-content: center;
   }
   .b-product_grid_single{
-      flex: 0 0 100%;
-      max-width: 100%;
+
       padding-left: 15px;
       padding-right: 15px;;
 
-      @media only screen and (min-width:576px){
         flex: 0 0 50%;
         max-width: 50%;
-      }
 
       @media only screen and (min-width:768px){
         flex: 0 0 33.33%;
@@ -107,4 +104,8 @@ a:focus,a:active,input:focus,input:active{outline: none;}
       }
 
   }
+}
+
+.spacing-mb-n40{
+  margin-bottom: -40px;
 }
