@@ -23,7 +23,8 @@
                             ?>
                             <i class="fa fa-location-arrow d-inline-block"></i> <?= $contact['address'] ?>
                             <br>
-                            <i class="fa fa-mobile d-inline-block"></i> Phone: <?= $contact['phone_number'] ?>
+                            <a href="tel:<?= $contact['phone_number'] ?>"><i class="fa fa-mobile d-inline-block"></i> Phone: <?= $contact['phone_number'] ?></a>
+                            
                             <br>
                         </div>
                         <ul class="b-social-icons text-center mb-3">
