@@ -268,8 +268,8 @@ var App = (function (window) {
                 var owl = $('#b-related_products').owlCarousel({
                     loop: true,
                     margin: 15,
-                    nav: false,
-                    dots: true,
+                    nav: true,
+                    dots: false,
                     autoplay: true,
                     responsive: {
                         0: {

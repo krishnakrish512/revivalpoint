@@ -42,7 +42,7 @@ function get_product_quick_view_html($product_id, $variation = [])
                 ?>
             </div>
         </div>
-        <div class="col-md-6 product_content pr-5 pt-4">
+        <div class="col-md-6 product_content">
             <div class="b-product_single_summary">
                 <h1><?= $product->get_name() ?></h1>
                 <p class="b-price">

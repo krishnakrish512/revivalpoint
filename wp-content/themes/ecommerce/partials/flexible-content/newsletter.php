@@ -16,7 +16,7 @@ $image = getResizedImage( $image );
     }
 </style>
 <section id="b-newsletter">
-    <div class="b-newsletter b-newsletter_bg mb-5">
+    <div class="b-newsletter b-newsletter_bg">
         <div class="container">
             <div class="b-newsletter_inner row">
                 <div class="col-lg-8 ">
