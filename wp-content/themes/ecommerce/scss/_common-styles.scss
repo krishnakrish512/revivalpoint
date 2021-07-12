@@ -109,3 +109,19 @@ a:focus,a:active,input:focus,input:active{outline: none;}
 .spacing-mb-n40{
   margin-bottom: -40px;
 }
+
+.payment-method{
+  li{
+    display: inline-block;
+    a{
+      display: block;
+      width: 100px;
+      background-color: #fff;
+      height: 43px;
+      line-height:43px;
+      img{
+        max-width: 85%;
+      }
+    }
+  }
+}

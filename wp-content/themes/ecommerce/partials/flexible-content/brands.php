@@ -1,4 +1,4 @@
-<section id="b-gallery_logo_outer" class="mb-5 mt-5">
+<section id="b-gallery_logo_outer" class="mb-5">
     <div class="b-gallery_logo">
         <div class="container">
             <div class="row clearfix">

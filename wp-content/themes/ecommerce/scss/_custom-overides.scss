@@ -358,7 +358,32 @@
     }
   }
 }
-
+.woocommerce-cart-form{
+  @include media-breakpoint-down(md){
+    overflow-x: scroll;
+  }
+  .actions{
+    @include media-breakpoint-down(md){
+      flex-direction: column;
+    }
+    .coupon{
+      @include media-breakpoint-down(md){
+        margin-bottom: 10px;
+      }
+    }
+  }
+ 
+  .table{
+    thead{
+      th.product-name{
+        @include media-breakpoint-down(md){
+          min-width: 300px;
+        }
+        
+      }
+    }
+  }
+}
 
 .b-product_single{
   &_summary{
