@@ -121,13 +121,13 @@
   }
   &.desktop-slider{
     display: none !important;
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(md){
       display: block !important;
     }
   }
   &.mobile-slider{
     display: block !important;
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(md){
       display: none !important;
     }
   }

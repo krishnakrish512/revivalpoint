@@ -71,8 +71,8 @@
                         <div class="d-flex align-items-center justify-content-md-end flex-column flex-md-row">
                             <p class="mb-2 mb-md-0 mr-md-2">Payment Method</p>
                             <ul class="list-unstyled payment-method mb-0">
-                                <li class="text-center"><a href="#"><img src="https://revivalpointbeauty.com/wp-content/plugins/khalti-woocommerce-master/assets/images/payment.jpg" alt="" width="50px"></a></li>
-                                <li class="text-center"><a href="#"><img src="https://revivalpointbeauty.com/wp-content/plugins/esewa/assets/images/esewa__.png" alt=""></a></li>
+                                <li class="text-center"><span><img src="https://revivalpointbeauty.com/wp-content/plugins/khalti-woocommerce-master/assets/images/payment.jpg" alt="" width="50px"></span></li>
+                                <li class="text-center"><span><img src="https://revivalpointbeauty.com/wp-content/plugins/esewa/assets/images/esewa__.png" alt=""></span></li>
                             </ul>
                         </div>
                         
