@@ -125,3 +125,11 @@ a:focus,a:active,input:focus,input:active{outline: none;}
     }
   }
 }
+
+.fb_dialog{
+  &_content{
+    [data-testid="bubble_iframe"]{
+      bottom: 60px !important;
+    }
+  }
+}

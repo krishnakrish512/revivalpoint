@@ -135,6 +135,7 @@
 }
 
 .full-width-slider{
+  overflow: hidden;
   .slick-arrow{
     position: absolute;
     @include centre(y);

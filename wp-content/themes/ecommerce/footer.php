@@ -154,6 +154,15 @@
 </div>
 
 <?php wp_footer(); ?>
+<script>
+    var winWidth = $(window).width();
+    if(winWidth >= 767){
+        $(window).on('load',function(){
+            $('.slider').height($('.slider-item').height());
+        })
+    }
+    
+</script>
 
 </body>
 </html>
