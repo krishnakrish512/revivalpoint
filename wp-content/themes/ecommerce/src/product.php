@@ -208,6 +208,15 @@ function get_single_product_html($product_id)
                        class="icon-magnifier-add icons" data-original-title="Quick View"></i>
                 </a>
             </div>
+            <?php
+            if ($product->is_on_sale()):
+                ?>
+                <div class="b-product_labels b-labels_rounded b-new">
+                    <span class="b-product_label">Sale!</span>
+                </div>
+            <?php
+            endif;
+            ?>
         </div>
         <div class="b-product_grid_info">
             <h3 class="product-title">
