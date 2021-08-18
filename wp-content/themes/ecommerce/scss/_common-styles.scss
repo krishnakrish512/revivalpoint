@@ -115,12 +115,10 @@ a:focus,a:active,input:focus,input:active{outline: none;}
     display: inline-block;
     span{
       display: block;
-      width: 100px;
-      background-color: #fff;
-      height: 43px;
-      line-height:43px;
+      padding: 0 5px;
+      // background-color: #fff;
       img{
-        max-width: 85%;
+        max-width: 70px;
       }
     }
   }

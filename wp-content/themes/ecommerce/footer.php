@@ -60,19 +60,23 @@
         <div class="container">
             <div class="d-footer_bar">
                 <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-6 mb-2 mb-md-0">
+                    <div class="col-lg-5 col-md-6 mb-2 mb-md-0">
                         <div class="text-md-left text-center ">
                             <i class="fa fa-copyright"></i> <?= date('Y') ?> Created by
                             <a href="https://nirvanstudio.com" target="_blank"
                             rel="noopener noreferrer">Nirvan Studio.</a>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-6">
+                    <div class="col-lg-7 col-md-6">
                         <div class="d-flex align-items-center justify-content-md-end flex-column flex-md-row">
                             <p class="mb-2 mb-md-0 mr-md-2">Payment Method</p>
                             <ul class="list-unstyled payment-method mb-0">
-                                <li class="text-center"><span><img src="https://revivalpointbeauty.com/wp-content/plugins/khalti-woocommerce-master/assets/images/payment.jpg" alt="" width="50px"></span></li>
-                                <li class="text-center"><span><img src="https://revivalpointbeauty.com/wp-content/plugins/esewa/assets/images/esewa__.png" alt=""></span></li>
+                                <li class="text-center"><span><img src="<?php bloginfo('template_url'); ?>/assets/images/cod.png" alt=""></span></li>
+                                <li class="text-center"><span><img src="<?php bloginfo('template_url'); ?>/assets/images/fone-pay.png" alt=""></span></li>
+                                <li class="text-center"><span><img src="<?php bloginfo('template_url'); ?>/assets/images/khalti.png" alt=""></span></li>
+                                <li class="text-center"><span><img src="<?php bloginfo('template_url'); ?>/assets/images/imepay.png" alt=""></span></li>
+                                <li class="text-center"><span><img src="<?php bloginfo('template_url'); ?>/assets/images/esewa.png" alt=""></span></li>
+                                
                             </ul>
                         </div>
                         
