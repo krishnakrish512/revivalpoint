@@ -25,6 +25,35 @@
   table.my_account_orders{
     font-size: inherit;
   }
+
+  .cart-collaterals{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    .cart_totals {
+      margin-left: auto;
+    }
+    .cross-sells{
+      width: 100%;
+      float: none;
+      margin-top: 50px;
+
+      .row {
+        margin-right: -45px;
+        .b-product_grid_single{
+          flex: 0 0 39%;
+          margin-left:15px;
+          margin-right: 15px;
+          @include media-breakpoint-up(md){
+            flex:0 0 28%;
+          }
+          @include media-breakpoint-up(lg){
+            flex: 0 0 17%;
+          }
+        }
+      }
+    }
+  }
 }
 
 .woocommerce-ordering{
@@ -54,11 +83,39 @@
       width: 100%;
     }
   }
+  .cart-collaterals{
+
+    // .cross-sells,
+    // .cart_totals{
+    //   float: none;
+    //   width: 100%;
+    // }
+
+    
+  }
 }
+
+
 .woocommerce-checkout{
   .panel-body{
     padding: 0 15px;
   }
 }
+
+  .mini-product{
+    display: flex;
+    justify-content: space-between;
+    &-img{
+      width: 20%;
+      img{
+        max-width: 100%;
+      }
+    }
+    &-info{
+      width: 80%;
+      padding-left: 10px; 
+    }
+  }
+
 
 
