@@ -248,17 +248,23 @@
     transform: translateY(0);
     box-shadow: none;
     transition: all 0.25s ease;
-
+    .b-product_grid_toggle{
+      height: auto;
+    }
+    .b-price{
+      height: auto;
+      line-height: normal;
+    }
     &:hover{
       transform: translateY(-10px);
       box-shadow: 0 0 10px rgba(0,0,0,.1);
 
       .b-product_grid_toggle{
         span{
-          top:0 !important;
-
-          
+          top:0 !important;          
         }
+        
+
       }
 
     }
