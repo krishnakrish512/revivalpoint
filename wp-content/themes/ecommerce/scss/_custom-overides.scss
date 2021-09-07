@@ -671,3 +671,7 @@
 .b-scrollToTop{
   bottom: 115px;
 }
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order{
+  text-transform: capitalize;
+}
