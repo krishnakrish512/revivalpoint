@@ -62,9 +62,9 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-6 mb-2 mb-md-0">
                         <div class="text-md-left text-center ">
-                            <i class="fa fa-copyright"></i> <?= date('Y') ?> Created by
-                            <a href="https://nirvanstudio.com" target="_blank"
-                            rel="noopener noreferrer">Nirvan Studio.</a>
+                            <i class="fa fa-copyright"></i> <?= date('Y') ?> Revival Beauty. All Rights Reserved | Website By: <a href="https://nirvanstudio.com" target="_blank"
+                            rel="noopener noreferrer">Nirvan Studio.</a> 
+                            
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-6">
